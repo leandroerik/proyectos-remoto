@@ -1,0 +1,54 @@
+{
+    "Variables": [
+        {
+            "Name": "hb_salesforce_alta_plazo_fijo",
+            "Value": "APIEvent-ef5d00c2-81c2-016b-c935-22f99bb47bcb"
+        },
+        {
+            "Name": "hb_salesforce_alta_plazo_fijo_uva",
+            "Value": "APIEvent-219cafdb-fbee-82b6-3d94-24a9d1518cbc"
+        },
+        {
+            "Name": "hb_salesforce_alta_plazo_fijo_uva_precancelable",
+            "Value": "APIEvent-6efc01f1-9659-7f74-7282-209f6b54e38e"
+        },
+        {
+            "Name": "hb_salesforce_baja_renovacion_plazo_fijo",
+            "Value": "APIEvent-47ddd66b-3850-5640-ecfc-c04862865894"
+        },
+        {
+            "Name": "hb_salesforce_baja_renovacion_plazo_fijo_dolares",
+            "Value": "APIEvent-47ddd66b-3850-5640-ecfc-c04862865894"
+        },
+        {
+            "Name": "hb_salesforce_baja_renovacion_plazo_fijo_uva",
+            "Value": "APIEvent-afa30ecc-437e-3d28-89e8-0140c2626437"
+        },
+        {
+            "Name": "hb_salesforce_alta_plazo_fijo_logro",
+            "Value": "APIEvent-107ee8e8-6dce-8be5-4e3f-87f1e101cf01"
+        },
+        {
+            "Name": "hb_salesforce_baja_plazo_fijo_logro",
+            "Value": "APIEvent-9aabdc52-82ec-213b-1331-3d08aaca9529"
+        },
+        {
+            "Name": "hb_salesforce_modificacion_plazo_fijo_logros",
+            "Value": "APIEvent-c6740b39-64eb-be9e-7b15-e11e65cda0cb"
+        },
+        {
+            "Name": "hb_salesforce_solicitud_cancelacion_anticipada_pf_uva",
+            "Value": "APIEvent-41e2e24f-08f2-c057-7ec5-f0791636eb28"
+        },
+        {
+            "Name": "hb_salesforce_alta_plazo_fijo_logro_uva",
+            "Value": "APIEvent-82e4a79f-62de-c1dd-270e-d4ef291fa8de"
+        },
+        {
+            "Name": "hb_prendido_salesforce_cobis",
+            "Value": "8824120_7526300_420417_1803121"
+        }
+    ],
+    "Redeploy": false
+}
+

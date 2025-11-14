@@ -1,0 +1,21 @@
+{
+    "Variables": [
+		{
+			"Name": "mb_api_url_canales",
+			"Value": "http://api-canales-canales-homo.appd.bh.com.ar"
+		},
+		{
+			"Name": "mb_prendidoConsentimiento",
+			"Value": "true"
+		},
+		{
+			"Name": "mb_prendidoConsentimiento_cobis",
+			"Value": "8787974_4605085"
+		},
+		{
+			"Name": "mb_api_url_consentimiento",
+			"Value": "https://connections.preprod.modo.com.ar/"
+		}
+    ],
+    "Redeploy": true
+}

@@ -1,0 +1,14 @@
+{
+    "Variables": [
+		{
+            "Name": "mb_prendido_pago_vep",
+            "Value": "true"  
+        },
+		{
+            "Name": "mb_api_url_veps",
+            "Value": "http://api-linkpagosvep-microservicios-homo.appd.bh.com.ar"  
+        }
+
+    ],
+    "Redeploy": false
+}

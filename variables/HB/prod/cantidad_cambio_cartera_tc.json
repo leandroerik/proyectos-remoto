@@ -1,0 +1,12 @@
+{
+    "Variables": [{
+            "Name": "hb_cantidadDiasCambioCartera",
+            "Value": "90"
+        },
+		{
+            "Name": "hb_cantidadMaximaAnualCambioCartera",
+            "Value": "2"
+        }
+    ],
+    "Redeploy": false
+}

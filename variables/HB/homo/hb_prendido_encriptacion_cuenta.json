@@ -1,0 +1,9 @@
+{
+    "Variables": [
+        {
+            "Name": "hb_prendido_encriptacion_cuenta",
+            "Value": "true"
+        }
+    ],
+    "Redeploy": false
+}

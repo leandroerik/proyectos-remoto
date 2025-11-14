@@ -1,0 +1,9 @@
+{
+    "Variables": [
+        {
+            "Name": "mb_criterio_seleccion_puntas",
+            "Value": "false"
+        }
+    ],
+    "Redeploy": false
+}

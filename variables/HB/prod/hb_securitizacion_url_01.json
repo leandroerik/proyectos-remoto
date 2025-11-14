@@ -1,0 +1,36 @@
+{
+    "Variables": [
+        {
+            "Name": "backend_api_seguridad",
+            "Value": "http://api-seguridad-op.microservicios-prod.svc.cluster.local:8080"
+        },{
+            "Name": "backend_api_personas",
+            "Value": "http://api-personas-op.microservicios-prod.svc.cluster.local:8080"
+        },{
+            "Name": "backend_api_auditor",
+            "Value": "http://auditor-op.microservicios-prod.svc.cluster.local:8080"
+        },{
+            "Name": "hb_api_url_cajasseguridad",
+            "Value": "http://api-cajasseguridad.microservicios-prod.svc.cluster.local:8080"
+        },{
+            "Name": "hb_api_url_inversiones",
+            "Value": "http://api-inversiones.microservicios-prod.svc.cluster.local:8080"
+        },{
+            "Name": "hb_api_url_prestamos",
+            "Value": "http://api-prestamos.microservicios-prod.svc.cluster.local:8080"
+        },{
+            "Name": "hb_api_url_productos",
+            "Value": "http://api-productos.microservicios-prod.svc.cluster.local:8080"
+        },{
+            "Name": "hb_api_url_seguro",
+            "Value": "http://api-seguro.microservicios-prod.svc.cluster.local:8080"
+        },{
+            "Name": "hb_api_url_tarjetascredito",
+			"Value": "http://api-tarjetascredito-op.microservicios-prod.svc.cluster.local:8080"
+        },{
+            "Name": "hb_api_url_tarjetasdebito",
+            "Value": "http://api-tarjetasdebito.microservicios-prod.svc.cluster.local:8080"
+        }
+    ],
+    "Redeploy": false
+}

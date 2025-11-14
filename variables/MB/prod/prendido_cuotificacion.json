@@ -1,0 +1,33 @@
+{
+    "Variables": [
+		{
+            "Name": "mb_prendido_cuotificacion",
+            "Value": "true"  
+        },
+		{
+            "Name": "mb_cuotificacion_importe_minimo",
+            "Value": "10000"  
+        },
+		{
+            "Name": "mb_cuotificacion_importe_maximo",
+            "Value": "20000000"  
+        },
+		{
+            "Name": "mb_cuotificacion_categorias",
+            "Value": "COMPRAS"  
+        },
+		{
+            "Name": "mb_cuotificacion_subcategorias",
+            "Value": "TARJETA DE DEBITO"  
+        },
+		{
+			"Name": "mb_prendido_cuotificacion_tooltip",
+			"Value": "true"  
+		},
+		{
+			"Name": "mb_prendido_menu_pago_codigos",
+			"Value": "PERSP_PERSPSG_PPADELANTO_PPCUOTIFSG"  
+		}
+    ],
+    "Redeploy": false
+}

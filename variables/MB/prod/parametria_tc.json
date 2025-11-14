@@ -1,0 +1,12 @@
+{
+    "Variables": [{
+            "Name": "mb_prendidoVtoTcParametrica",
+            "Value": "true"
+        },
+		{
+            "Name": "mb_prendidoVtoTcParametrica_cobis",
+            "Value": "1234567890"
+        }
+    ],
+    "Redeploy": false
+}

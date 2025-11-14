@@ -1,0 +1,93 @@
+{
+	"Variables": [
+    {
+		"Name": "tas_kiosco_id",
+		"Value": "TODOS"	
+	},
+	{
+		"Name": "backend_sql_hipotecariotas_url",
+		"Value": "jdbc:sqlserver://desamssql16.bh.com.ar:1142;databaseName=hipotecarioTAS;sendStringParametersAsUnicode=false"
+	},
+	{
+		"Name": "backend_sql_tashbs_url",
+		"Value": "jdbc:sqlserver://desamssql16.bh.com.ar:1142;databaseName=hbs;sendStringParametersAsUnicode=false"
+	},
+	{ 
+		"Name": "backend_api_ventas_old",
+		"Value": ""
+	},
+	{ 
+		"Name": "backend_api_personas_old",
+		"Value": ""
+	},
+	{ 
+		"Name": "backend_api_productos_old",
+		"Value": ""
+	},
+	{ 
+		"Name": "backend_api_seguridad_old",
+		"Value": ""
+	},
+	{ 
+		"Name": "backend_api_tarjetascredito_old",
+		"Value": ""
+	},
+	{ 
+		"Name": "backend_api_plazosfijos_old",
+		"Value": ""
+	},
+	{ 
+		"Name": "backend_api_prestamos_old",
+		"Value": ""
+	},
+	{ 
+		"Name": "backend_api_cuentas_old",
+		"Value": ""
+	},
+	{ 
+		"Name": "backend_api_inversiones_old",
+		"Value": ""
+	},
+	{ 
+		"Name": "backend_api_notificaciones_old",
+		"Value": ""
+	},
+	{ 
+		"Name": "backend_api_tas_old",
+		"Value": ""
+	},
+	{ 
+		"Name": "backend_api_servicios_old",
+		"Value": ""
+	},
+	{ 
+		"Name": "backend_api_scheduler_old",
+		"Value": ""
+	},
+	{ 
+		"Name": "backend_api_cheques_old",
+		"Value": ""
+	},
+	{ 
+		"Name": "backend_api_tarjetasdebito_old",
+		"Value": ""
+	},
+	{ 
+		"Name": "backend_api_simuladores_old",
+		"Value": ""
+	},
+	{ 
+		"Name": "backend_api_paquetes_old",
+		"Value": ""
+	},
+	{ 
+		"Name": "backend_api_catalogo_old",
+		"Value": ""
+	},
+	{ 
+		"Name": "backend_api_cajasseguridad_old",
+		"Value": ""
+	}
+  ],
+  "Redeploy": false
+}

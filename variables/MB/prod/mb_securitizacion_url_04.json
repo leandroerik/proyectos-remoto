@@ -1,0 +1,45 @@
+{
+    "Variables": [
+        {
+            "Name": "mb_api_url_scheduler",
+            "Value": "http://api-scheduler-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "mb_api_url_seguridad",
+            "Value": "http://api-seguridad-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "mb_api_url_seguro",
+            "Value": "http://api-seguro.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "mb_api_url_simuladores",
+            "Value": "http://api-simuladores-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "mb_api_url_tarjetascredito",
+            "Value": "http://api-tarjetascredito-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "mb_api_url_tarjetasdebito",
+            "Value": "http://api-tarjetasdebito.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "mb_api_url_veps",
+            "Value": "http://api-linkpagosvep-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "mb_api_url_cvu",
+            "Value": "http://api-cvu-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "mb_api_url_viviendas",
+            "Value": "http://api-viviendas-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "mb_api_url_altacuentas",
+            "Value": "http://api-altacuentas-op.microservicios-prod.svc.cluster.local:8080"
+        }
+    ],
+    "Redeploy": false
+}

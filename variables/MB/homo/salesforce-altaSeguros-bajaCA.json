@@ -1,0 +1,12 @@
+{
+    "Variables": [
+        {
+            "Name": "mb_salesforce_baja_caja_ahorro_ok",
+            "Value": "APIEvent-cbb7468b-27bc-ea13-1d85-2138be11612e"
+        },{
+            "Name": "mb_salesforce_alta_seguros",
+            "Value": "APIEvent-c5daf368-0f18-d71a-bda1-f85ff53081af"
+        }
+    ],
+    "Redeploy": false
+}

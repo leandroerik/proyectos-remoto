@@ -1,0 +1,9 @@
+{
+    "Variables": [
+        {
+            "Name": "hb_api_url_seguro",
+            "Value": "http://api-seguro-microservicios-prod.ocpp.bh.com.ar"
+        }
+    ],
+    "Redeploy": false
+}

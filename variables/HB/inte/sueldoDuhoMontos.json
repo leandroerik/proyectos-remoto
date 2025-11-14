@@ -1,0 +1,26 @@
+{
+    "Variables": [{
+            "Name": "hb_meta_bonificacion_plan_sueldo_black_pack",
+            "Value": "1400000"
+        }, {
+            "Name": "hb_meta_bonificacion_plan_sueldo_platinum_pack",
+            "Value": "1000000"
+        }, {
+            "Name": "hb_meta_bonificacion_plan_sueldo_gold_pack",
+            "Value": "550000"
+        }, {
+            "Name": "hb_meta_bonificacion_plan_sueldo_buho_pack",
+            "Value": "350000"
+        }, {
+            "Name": "hb_meta_bonificacion_plan_sueldo_facil_pack",
+            "Value": "200000"
+        }, {
+            "Name": "hb_monto_minimo_plan_sueldo_sin_paquete",
+            "Value": "150000"
+        }, {
+            "Name": "hb_monto_minimo_plan_sueldo",
+            "Value": "150000"
+        }
+    ],
+    "Redeploy": false
+}

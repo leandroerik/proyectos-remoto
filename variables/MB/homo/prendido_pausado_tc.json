@@ -1,0 +1,14 @@
+{
+    "Variables": [
+		{
+            "Name": "mb_prendido_pausado_tc",
+            "Value": "false"  
+        },
+		{
+            "Name": "mb_prendido_pausado_tc_cobis",
+            "Value": "5841097_6318754"  
+        }
+
+    ],
+    "Redeploy": false
+}

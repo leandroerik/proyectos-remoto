@@ -1,0 +1,10 @@
+{
+    "Variables": [
+		{
+            "Name": "mb_prendido_debin_recurrente",
+            "Value": "true"  
+        }
+    ],
+    "Redeploy": false
+}
+

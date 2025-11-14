@@ -1,0 +1,25 @@
+{
+    "Variables": [
+        {
+            "Name": "hb_api_url_ventas_windows",
+			"Value": "http://api-ventas-microservicios-desa.apps.aro-desa.bh.com.ar"
+        },
+        {
+            "Name": "hb_api_url_viviendas",
+            "Value": "http://api-viviendas-microservicios-desa.apps.aro-desa.bh.com.ar"
+        },
+        {
+            "Name": "hb_api_url_altacuentas",
+            "Value": "http://api-altacuentas-microservicios-desa.apps.aro-desa.bh.com.ar"
+        },
+        {
+            "Name": "hb_api_url_inversiones_agenda",
+            "Value": "https://inversiones.api-gateway.bh.com.ar:443"
+        },
+        {
+            "Name": "hb_api_url_rewards",
+            "Value": "http://api-rewards-microservicios-desa.apps.aro-desa.bh.com.ar"
+        }
+    ],
+    "Redeploy": false
+}

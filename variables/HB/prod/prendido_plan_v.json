@@ -1,0 +1,9 @@
+{
+    "Variables": [
+		{
+            "Name": "hb_prendido_plan_v",
+            "Value": "true"  
+        }
+    ],
+    "Redeploy": false
+}

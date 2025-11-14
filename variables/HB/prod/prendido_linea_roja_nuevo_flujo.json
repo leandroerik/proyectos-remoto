@@ -1,0 +1,8 @@
+{
+    "Variables": [{
+            "Name": "hb_prendido_linea_roja_nuevo_flujo",
+            "Value": "true"
+        }
+    ],
+    "Redeploy": false
+}

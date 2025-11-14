@@ -1,0 +1,15 @@
+{
+    "Variables": [{
+            "Name": "hb_texto_mora",
+            "Value": "<strong style=\"color:#FFFFFF\">¿Ten&eacutes saldos impagos en tus productos?</strong> <br> <small style=\"color:#FFFFFF\">Conoc&eacute; c&oacute;mo podes solucionarlos desde el men&uacute; Autogesti&oacute;n de Deuda o ingresando a WhatsApp </small>"
+        },{
+            "Name": "hb_texto_boton_mora",
+            "Value": "ir a WhatsApp"
+        },{
+            "Name": "hb_url_whatsapp",
+            "Value": "https://wa.me/5491144117777"
+        }
+
+    ],
+    "Redeploy": false
+}

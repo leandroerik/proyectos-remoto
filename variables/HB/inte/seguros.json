@@ -1,0 +1,121 @@
+{
+    "Variables": [
+        {
+            "Name": "hb_enlatados_habilitados_mascotas_cliente",
+            "Value": "008_011_009_010_013"
+        },
+        {
+            "Name": "hb_enlatados_habilitados_mascotas_empleado",
+            "Value": "008_011_009_010_013"
+        },
+        {
+            "Name": "hb_enlatados_habilitados_hogar_ambiente_1_cliente",
+            "Value": "127_124_125"
+        },
+        {
+            "Name": "hb_enlatados_habilitados_hogar_ambiente_2_cliente",
+            "Value": "128_125_127"
+        },
+        {
+            "Name": "hb_enlatados_habilitados_hogar_ambiente_3_cliente",
+            "Value": "128_129_127"
+        },
+        {
+            "Name": "hb_enlatados_habilitados_hogar_ambiente_4_cliente",
+            "Value": "130_128_129"
+        },
+        {
+            "Name": "hb_enlatados_habilitados_hogar_ambiente_1_empleado",
+            "Value": "093_095_092"
+        },
+        {
+            "Name": "hb_enlatados_habilitados_hogar_ambiente_2_empleado",
+            "Value": "096_093_095"
+        },
+        {
+            "Name": "hb_enlatados_habilitados_hogar_ambiente_3_empleado",
+            "Value": "098_095_096"
+        },
+        {
+            "Name": "hb_enlatados_habilitados_hogar_ambiente_4_empleado",
+            "Value": "098_096_099"
+        },
+        {
+            "Name": "hb_enlatados_habilitados_compra_protegida_cliente",
+            "Value": "028"
+        },
+        {
+            "Name": "hb_enlatados_habilitados_compra_protegida_empleado",
+            "Value": "028"
+        },
+        {
+            "Name": "hb_enlatados_habilitados_vida_conyuge",
+            "Value": "055_057_056"
+        },
+        {
+            "Name": "hb_enlatados_habilitados_vida_sin_conyuge",
+            "Value": "055_057_056"
+        },
+        {
+            "Name": "hb_enlatados_habilitados_salud",
+            "Value": "069_070"
+        },
+        {
+            "Name": "hb_enlatados_habilitados_bienes_moviles_cliente_bolso",
+            "Value": "073_072"
+        },
+        {
+            "Name": "hb_enlatados_habilitados_bienes_moviles_cliente_electro",
+            "Value": "077_078_076"
+        },
+        {
+            "Name": "hb_enlatados_habilitados_bienes_moviles_cliente_full",
+            "Value": "081_082_071"
+        },
+        {
+            "Name": "hb_enlatados_habilitados_bienes_moviles_empleado_bolso",
+            "Value": "071_070"
+        },
+        {
+            "Name": "hb_enlatados_habilitados_bienes_moviles_empleado_electro",
+            "Value": "075_076_074"
+        },
+        {
+            "Name": "hb_enlatados_habilitados_bienes_moviles_empleado_full",
+            "Value": "080_081_079"
+        },
+        {
+            "Name": "hb_enlatados_habilitados_atm_empleado",
+            "Value": "018"
+        },
+        {
+            "Name": "hb_enlatados_habilitados_atm_cliente",
+            "Value": "018"
+        },
+        {
+            "Name": "hb_enlatados_habilitados_ap_cliente",
+            "Value": "047_054_055"
+        },
+        {
+            "Name": "hb_enlatados_habilitados_ap_empleado",
+            "Value": "047_045_048"
+        },
+        {
+            "Name": "hb_enlatados_habilitados_ap_mayores",
+            "Value": "034_036_038_040"
+        },
+        {
+            "Name": "hb_enlatados_habilitados_movilidad_cliente",
+            "Value": "011_005_007_008_010"
+        },
+        {
+            "Name": "hb_enlatados_habilitados_movilidad_empleado",
+            "Value": "011_005_007_008_010"
+        },
+        {
+            "Name": "hb_enlatados_habilitados_salud_senior",
+            "Value": "007_008_009_010"
+        }
+    ],
+    "Redeploy": false
+}

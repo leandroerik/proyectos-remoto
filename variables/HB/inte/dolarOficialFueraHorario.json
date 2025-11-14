@@ -1,0 +1,13 @@
+{
+    "Variables": [
+        {
+            "Name": "hb_dolarFueraHorario_cobis",
+            "Value": "9040759"
+        },
+        {
+            "Name": "hb_dolarSinCotizaciones_cobis",
+            "Value": "298840"
+        }
+    ],
+    "Redeploy": false
+}

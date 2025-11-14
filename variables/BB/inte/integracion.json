@@ -1,0 +1,13 @@
+{
+	"Variables": [
+		{
+			"Name": "drs_bd_url",
+			"Value": "jdbc:sqlserver://sqlmi-homoazsql97.2166f53655b4.database.windows.net;authentication=ActiveDirectoryPassword;trustServerCertificate=false;encrypt=true;loginTimeout=30"
+		}
+		,{
+			"Name": "buhobank_prendido_modo_escucha",
+			"Value": "false"
+		}
+	],
+	"Redeploy": false
+}

@@ -1,0 +1,9 @@
+{
+    "Variables": [
+        {
+			"Name": "hb_api_url_inversiones_agenda",
+			"Value": "https://inversiones.api-gateway.bh.com.ar:443"
+		}
+    ],
+    "Redeploy": false
+}

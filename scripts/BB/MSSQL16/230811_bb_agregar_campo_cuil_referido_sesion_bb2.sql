@@ -1,0 +1,10 @@
+USE esales
+GO
+
+IF NOT EXISTS (
+SELECT * FROM INFORMATION_SCHEMA.COLUMNS
+WHERE COLUMN_NAME = 'cuil_referido' AND TABLE_NAME = 'Sesion_Esales_BB2')
+BEGIN
+  ALTER TABLE [dbo].[Sesion_Esales_BB2] ADD cuil_referido VARCHAR(30) NULL
+END
+GO

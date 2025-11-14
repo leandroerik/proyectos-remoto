@@ -1,0 +1,38 @@
+{
+    "Variables": [
+        {
+            "Name": "hb_api_url_personas",
+            "Value": "http://api-personas-microservicios-desa.apps.aro-desa.bh.com.ar"
+        },
+        {
+            "Name": "hb_api_url_plazosfijos",
+            "Value": "http://api-plazosfijos-microservicios-desa.apps.aro-desa.bh.com.ar"
+        },{
+            "Name": "hb_api_url_prisma",
+            "Value": "http://api-prisma-microservicios-desa.apps.aro-desa.bh.com.ar"
+        },{
+            "Name": "hb_api_url_procesos",
+            "Value": "http://api-procesos-microservicios-desa.apps.aro-desa.bh.com.ar"
+        },{
+            "Name": "hb_api_url_recaudaciones",
+            "Value": "https://api-recaudaciones-microservicios-desa.apps.aro-desa.bh.com.ar"
+        },{
+            "Name": "hb_api_url_scheduler",
+            "Value": "http://api-scheduler-microservicios-desa.apps.aro-desa.bh.com.ar"
+        },{
+            "Name": "hb_api_url_seguridad",
+            "Value": "https://api-seguridad-microservicios-desa.apps.aro-desa.bh.com.ar"
+        },{
+            "Name": "hb_api_url_simuladores",
+            "Value": "http://api-simuladores-microservicios-desa.apps.aro-desa.bh.com.ar"
+        },{
+            "Name": "hb_api_url_veps",
+            "Value": "http://api-linkpagosvep-microservicios-desa.apps.aro-desa.bh.com.ar"
+        },
+        {
+            "Name": "hb_api_url_cvu",
+            "Value": "https://api-cvu-microservicios-desa.apps.aro-desa.bh.com.ar"
+        }
+    ],
+    "Redeploy": false
+}

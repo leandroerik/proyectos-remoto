@@ -1,0 +1,9 @@
+{
+    "Variables": [
+        {
+            "Name": "hb_prendido_solodefault_dic",
+            "Value": "true"
+        }
+    ],
+    "Redeploy": false
+}

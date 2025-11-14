@@ -1,0 +1,8 @@
+{
+    "Variables": [{
+            "Name": "hb_cantidad_digitos_bin_tarjeta_credito",
+            "Value": "8"  
+        }
+    ],
+    "Redeploy": false
+}

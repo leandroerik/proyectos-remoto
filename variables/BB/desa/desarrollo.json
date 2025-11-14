@@ -1,0 +1,29 @@
+{
+	"Variables": [
+		{
+			"Name": "drs_bd_url",
+			"Value": "jdbc:sqlserver://sqlmi-desaazsql97.d3b76db2ab38.database.windows.net;authentication=ActiveDirectoryPassword;trustServerCertificate=false;encrypt=true;loginTimeout=30"
+		},
+		{
+			"Name": "buhobank_prendido_modo_transaccional",
+			"Value": "true"
+		},
+		{
+			"Name": "buhobank_prendido_modo_escucha",
+			"Value": "false"
+		},
+		{
+			"Name": "backend_api_auditor",
+			"Value": "http://auditor-microservicios-desa.appd.bh.com.ar"
+		},
+		{
+			"Name": "buhobank_val_bic",
+			"Value": "jMDW0gmkwFr0n1p+ljO1Gw=="
+		},
+		{
+			"Name": "buhobank_prendido_val_emulador",
+			"Value": "true"
+		}
+	],
+	"Redeploy": false
+}

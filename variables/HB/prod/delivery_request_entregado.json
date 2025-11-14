@@ -1,0 +1,8 @@
+{
+    "Variables": [{
+            "Name": "hb_delivery_request_entregado",
+            "Value": "¡Activala y comenz&aacute; a usarla!"
+        }
+    ],
+    "Redeploy": false
+}

@@ -1,0 +1,89 @@
+{
+    "Variables": [
+		{
+            "Name": "mb_prendido_modo_transaccional_login",
+            "Value": "false"
+        },
+		{
+            "Name": "mb_prendido_modo_transaccional_login_cobis",
+            "Value": "0123456789"
+        },
+		{
+            "Name": "mb_prendido_modo_transaccional_nuevo_beneficiario",
+            "Value": "false"
+        },
+		{
+            "Name": "mb_prendido_modo_transaccional_nuevo_beneficiario_cobis",
+            "Value": "0123456789"
+        },
+		{
+            "Name": "mb_prendido_modo_transaccional_debin",
+            "Value": "false"
+        },
+		{
+            "Name": "mb_prendido_modo_transaccional_debin_cobis",
+            "Value": "0123456789"
+        },
+		{
+            "Name": "mb_prendido_modo_transaccional_venta_dolares",
+            "Value": "false"
+        },
+		{
+            "Name": "mb_prendido_modo_transaccional_venta_dolares_cobis",
+            "Value": "0123456789"
+        },
+		{
+            "Name": "mb_prendido_modo_transaccional_rescate_fondos",
+            "Value": "false"
+        },
+		{
+            "Name": "mb_prendido_modo_transaccional_rescate_fondos_cobis",
+            "Value": "0123456789"
+        },
+		{
+            "Name": "mb_prendido_modo_transaccional_datos_personales",
+            "Value": "false"
+        },
+		{
+            "Name": "mb_prendido_modo_transaccional_datos_personales_cobis",
+            "Value": "0123456789"
+        },
+		{
+            "Name": "mb_prendido_modo_transaccional_alta_producto",
+            "Value": "false"
+        },
+		{
+            "Name": "mb_prendido_modo_transaccional_alta_producto_cobis",
+            "Value": "0123456789"
+        },
+		{
+            "Name": "mb_prendido_modo_transaccional_alta_segundo_factor",
+            "Value": "false"
+        },
+		{
+            "Name": "mb_prendido_modo_transaccional_alta_segundo_factor_cobis",
+            "Value": "0123456789"
+        },
+		{
+            "Name": "mb_prendido_modo_transaccional_alta_nuevo_dispositivo",
+            "Value": "false"
+        },
+		{
+            "Name": "mb_prendido_modo_transaccional_alta_nuevo_dispositivo_cobis",
+            "Value": "0123456789"
+        },
+		{
+            "Name": "mb_prendido_modo_transaccional_alta_soft_token",
+            "Value": "false"
+        },
+		{
+            "Name": "mb_prendido_modo_transaccional_alta_soft_token_cobis",
+            "Value": "0123456789"
+        },
+		{
+            "Name": "url_transmit",
+            "Value": "https://api.transmitsecurity.io"
+        }
+	],
+    "Redeploy": false
+}

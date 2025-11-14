@@ -1,0 +1,12 @@
+{
+    "Variables": [{
+            "Name": "hb_leyenda_compra_bonos_dolares",
+            "Value": ""
+        },
+        {
+            "Name": "hb_leyenda_compra_bonos_pesos",
+            "Value": ""
+        }
+    ],
+    "Redeploy": false
+}

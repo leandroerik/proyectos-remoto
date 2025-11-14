@@ -1,0 +1,9 @@
+{
+    "Variables": [
+		{
+            "Name": "hb_api_url_ventas_windows",
+            "Value": "https://desaventasapi.bh.com.ar/BH.ApiVentas.WS"
+        }
+    ],
+    "Redeploy": false
+}

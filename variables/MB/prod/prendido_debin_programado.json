@@ -1,0 +1,14 @@
+{
+    "Variables": [
+		{
+            "Name": "mb_prendido_debin_programado",
+            "Value": "false"  
+        },{
+            "Name": "mb_doppler_alta_prestamo",
+            "Value": "dd784512-065c-42c8-80d4-cd1f548f79e8"
+        }
+        
+    ],
+    "Redeploy": false
+}
+

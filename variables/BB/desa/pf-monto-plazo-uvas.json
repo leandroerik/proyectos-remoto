@@ -1,0 +1,13 @@
+{
+	"Variables": [
+		{
+			"Name": "buhobank_plazofijoweb_montoMinimoUVAs",
+			"Value": "10000"
+		},
+		{
+			"Name": "buhobank_plazofijoweb_plazoMinimoUVAs",
+			"Value": "180"
+		}
+	],
+	"Redeploy": false
+}

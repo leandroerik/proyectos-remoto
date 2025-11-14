@@ -1,0 +1,38 @@
+{
+    "Variables": [
+        {
+            "Name": "hb_api_url_personas",
+            "Value": "http://api-personas-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_plazosfijos",
+            "Value": "http://api-plazosfijos.microservicios-prod.svc.cluster.local:8080"
+        },{
+            "Name": "hb_api_url_prisma",
+            "Value": "http://api-prisma-op.microservicios-prod.svc.cluster.local:8080"
+        },{
+            "Name": "hb_api_url_procesos",
+            "Value": "http://api-procesos-op.microservicios-prod.svc.cluster.local:8080"
+        },{
+            "Name": "hb_api_url_recaudaciones",
+            "Value": "http://api-recaudaciones-op.microservicios-prod.svc.cluster.local:8080"
+        },{
+            "Name": "hb_api_url_scheduler",
+            "Value": "http://api-scheduler-op.microservicios-prod.svc.cluster.local:8080"
+        },{
+            "Name": "hb_api_url_seguridad",
+            "Value": "http://api-seguridad-op.microservicios-prod.svc.cluster.local:8080"
+        },{
+            "Name": "hb_api_url_simuladores",
+            "Value": "http://api-simuladores-op.microservicios-prod.svc.cluster.local:8080"
+        },{
+            "Name": "hb_api_url_veps",
+            "Value": "http://api-linkpagosvep-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_cvu",
+            "Value": "http://api-cvu-op.microservicios-prod.svc.cluster.local:8080"
+        }
+    ],
+    "Redeploy": false
+}

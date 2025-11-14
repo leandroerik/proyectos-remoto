@@ -1,0 +1,21 @@
+{
+    "Variables": [
+        {
+            "Name": "mb_prendido_omnicanalidad_solicitudes",
+            "Value": "true"
+        }, 
+        {
+            "Name": "mb_prendido_adelanto_bh",
+            "Value": "true"
+        },
+        {
+            "Name": "mb_prendido_alta_prestamos",
+            "Value": "true"
+        },
+        {
+            "Name": "mb_prendido_adelanto_jubilados",
+            "Value": "false"
+        }
+    ],
+    "Redeploy": false
+}

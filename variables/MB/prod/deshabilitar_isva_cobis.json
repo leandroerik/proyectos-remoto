@@ -1,0 +1,10 @@
+{
+    "Variables": [
+		{
+            "Name": "mb_deshabilitar_isva_cobis",
+            "Value": "0"   
+        }
+
+    ],
+    "Redeploy": false
+}

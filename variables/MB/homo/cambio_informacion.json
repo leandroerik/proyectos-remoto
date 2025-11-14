@@ -1,0 +1,10 @@
+{
+    "Variables": [
+		{
+            "Name": "mb_cambio_information_no_permitido",
+            "Value": "\'CAMBIO_CLAVE\', \'CAMBIO_MAIL\', \'CAMBIO_TELEFONO\', \'CAMBIO_USUARIO\'"  
+        }
+
+    ],
+    "Redeploy": false
+}

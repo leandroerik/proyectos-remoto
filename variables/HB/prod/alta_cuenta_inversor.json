@@ -1,0 +1,10 @@
+{
+    "Variables": [{
+            "Name": "hb_prendido_alta_cuenta_inversor",
+            "Value": "true"
+        }
+    ],
+    "Redeploy": true
+}
+
+

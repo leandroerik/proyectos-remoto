@@ -1,0 +1,14 @@
+{
+    "Variables": [{
+            "Name": "hb_dolarMep_horaInicio",
+            "Value": "10:30"
+        },{
+            "Name": "hb_dolarMep_horaFin",
+            "Value": "17:00"
+        },{
+            "Name": "hb_dolarMepFueraHorario_cobis",
+            "Value": "9040759"
+        }
+    ],
+    "Redeploy": false
+}

@@ -1,0 +1,13 @@
+{
+    "Variables": [
+		{
+            "Name": "mb_hora_inicio_cuenta_inversor",
+            "Value": "08:00"
+        },
+		{
+            "Name": "mb_hora_cierre_cuenta_inversor",
+            "Value": "19:00"
+        }
+    ],
+    "Redeploy": true
+}

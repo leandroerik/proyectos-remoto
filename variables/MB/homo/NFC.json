@@ -1,0 +1,18 @@
+{
+    "Variables": [
+		{
+			"Name": "mb_api_url_thales",
+			"Value": "http://api-thales-microservicios-homo.appd.bh.com.ar"
+		},
+		{
+			"Name": "mb_prendido_nuevo_flujo_pp",
+			"Value": "true"
+		},
+		{
+			"Name": "mb_prendido_ob_pay",
+			"Value": "true"
+		}
+    ],
+    "Redeploy": false
+}
+

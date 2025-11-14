@@ -1,0 +1,9 @@
+{
+    "Variables": [{
+
+            "Name": "hb_criterio_seleccion_puntas_cobis",
+            "Value": "7000025_9040760_5433918_420417_4783202"
+        }
+    ],
+    "Redeploy": false
+}

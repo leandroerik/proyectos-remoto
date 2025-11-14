@@ -1,0 +1,169 @@
+{
+    "Variables": [
+        {
+            "Name": "hb_api_url_agendas",
+            "Value": "http://api-agendas-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_auditor",
+            "Value": "http://auditor-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_cajasseguridad",
+            "Value": "http://api-cajasseguridad-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_canales",
+            "Value": "http://api-canales-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_catalogo",
+            "Value": "http://api-catalogo-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_cheques",
+            "Value": "http://api-cheques-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_clientes",
+            "Value": "http://api-clientes-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_comprobantes",
+            "Value": "http://api-comprobantes-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_cuentas",
+            "Value": "http://api-cuentas-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_cuentas_core",
+            "Value": "http://cuentas-op.api-core-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_debin",
+            "Value": "http://api-debin-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_formularios_windows",
+            "Value": "http://api-formularios-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_dictamenes",
+            "Value": "http://api-dictamenes-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_digitalizacion",
+            "Value": "http://api-digitalizacion-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_inversiones",
+            "Value": "http://api-inversiones-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_link",
+            "Value": "http://api-link-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_moras",
+            "Value": "http://api-moras-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_notificaciones",
+            "Value": "http://api-notificaciones-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_originacion",
+            "Value": "http://api-originacion-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_orquestados",
+            "Value": "http://api-servicios-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_paquetes",
+            "Value": "http://api-paquetes-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_personas",
+            "Value": "http://api-personas-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_plazosfijos",
+            "Value": "http://api-plazosfijos-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_prestamos",
+            "Value": "http://api-prestamos-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_prisma",
+            "Value": "http://api-prisma-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_procesos",
+            "Value": "http://api-procesos-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_productos",
+            "Value": "http://api-productos-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_recaudaciones",
+            "Value": "http://api-recaudaciones-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_scheduler",
+            "Value": "http://api-scheduler-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_seguridad",
+            "Value": "http://api-seguridad-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_seguro",
+            "Value": "http://api-seguro-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_simuladores",
+            "Value": "http://api-simuladores-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_tarjetascredito",
+            "Value": "http://api-tarjetascredito-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_tarjetasdebito",
+            "Value": "http://api-tarjetasdebito-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_veps",
+            "Value": "http://api-linkpagosvep-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_cvu",
+            "Value": "http://api-cvu-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_viviendas",
+            "Value": "http://api-viviendas-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_altacuentas",
+            "Value": "http://api-altacuentas-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_inversiones_agenda",
+            "Value": "https://inversiones.api-gateway.bh.com.ar:443"
+        },
+        {
+            "Name": "hb_api_url_rewards",
+            "Value": "http://api-rewards-op.microservicios-prod.svc.cluster.local:8080"
+        },
+		{
+            "Name": "hb_api_url_ventas_windows",
+            "Value": "http://api-ventas-op.microservicios-prod.svc.cluster.local:8080"
+        }
+    ],
+    "Redeploy": false
+}

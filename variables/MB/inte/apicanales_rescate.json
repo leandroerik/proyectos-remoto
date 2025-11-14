@@ -1,0 +1,10 @@
+{
+    "Variables": [
+        {
+            "Name": "mb_apicanales_rescate",
+            "Value": "false"
+        }
+    ],
+    "Redeploy": false
+}
+

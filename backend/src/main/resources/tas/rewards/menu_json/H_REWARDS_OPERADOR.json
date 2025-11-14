@@ -1,0 +1,37 @@
+{
+    "operaciones": [
+        {
+            "name": "Inicio",
+            "icono": "home",
+            "ruta": "home"
+        },
+        {
+            "name": "Cliente",
+            "icono": "user-round-search",
+            "ruta": "buscar-cliente"
+        },
+        {
+            "name": "Campañas",
+            "icono": "square-library",
+            "ruta": "consulta-campanias"
+        },
+        {
+            "name": "Lotes",
+            "icono": "rows-3",
+            "ruta": "consulta-lotes"
+        },
+        {
+            "name": "Rechazos",
+            "icono": "list-x",
+            "ruta": "gestion-rechazos"
+        }
+    ],
+    "permisos": {
+        "solicitar_ajuste": true,
+        "autorizar_ajuste": false,
+        "modificar_campania": false,
+        "corregir_rechazo": true,
+        "aprobar_rechazo": false,
+        "denegar_rechazo": false
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "Variables": [
+        {
+            "Name": "mb_prendido_seccion_modo",
+            "Value": "false"
+        }
+    ],
+    "Redeploy": false
+}
+

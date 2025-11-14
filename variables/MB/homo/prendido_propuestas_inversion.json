@@ -1,0 +1,13 @@
+{
+    "Variables": [
+        {
+            "Name": "mb_mostrar_propuestas_inversion",
+            "Value": "true"
+        },
+        {
+            "Name": "mb_mostrar_propuestas_inversion_cobis",
+            "Value": ""
+        }
+    ],
+    "Redeploy": false
+}

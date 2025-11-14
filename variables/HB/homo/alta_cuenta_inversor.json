@@ -1,0 +1,14 @@
+{
+    "Variables": [{
+            "Name": "hb_prendido_alta_cuenta_inversor",
+            "Value": "true"
+        },
+        {
+            "Name": "prendidoBajaProductosTarjetaCreditoV2",
+            "Value": "true"
+        }
+    ],
+    "Redeploy": false
+}
+
+

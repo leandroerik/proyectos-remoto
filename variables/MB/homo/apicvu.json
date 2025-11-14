@@ -1,0 +1,9 @@
+{
+    "Variables": [
+        {
+            "Name": "mb_api_url_cvu",
+            "Value": "http://api-cvu-microservicios-homo.appd.bh.com.ar"
+        }
+    ],
+    "Redeploy": false
+}

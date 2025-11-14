@@ -1,0 +1,117 @@
+{
+    "Variables": [
+        {
+            "Name": "mb_api_url_formularios_windows",
+            "Value": "https://api-formularios-microservicios-prod.ocpp.bh.com.ar"
+        },
+        {
+            "Name": "mb_monto_maximo_orden_extraccion",
+            "Value": "140000"
+        },
+        {
+            "Name": "mb_monto_minimo_plazo_fijo_0011_80_noesuva",
+            "Value": "1000.0"
+        },
+        {
+            "Name": "mb_dias_minimo_plazo_fijo_0011_80_noesuva",
+            "Value": "30"
+        },
+        {
+            "Name": "mb_monto_minimo_plazo_fijo_0011_2_noesuva",
+            "Value": "1000.0"
+        },
+        {
+            "Name": "mb_dias_minimo_plazo_fijo_0011_2_noesuva",
+            "Value": "30"
+        },
+        {
+            "Name": "mb_monto_minimo_plazo_fijo_0018_80_uva",
+            "Value": "1000.0"
+        },
+        {
+            "Name": "mb_dias_minimo_plazo_fijo_0018_80_uva",
+            "Value": "90"
+        },
+        {
+            "Name": "mb_monto_minimo_plazo_fijo_0042_80_uvaprecancelable",
+            "Value": "1000.0"
+        },
+        {
+            "Name": "mb_monto_maximo_plazo_fijo_0042_80_uvaprecancelable",
+            "Value": "5000000.0"
+        },
+        {
+            "Name": "mb_dias_minimo_plazo_fijo_0042_80_uvaprecancelable",
+            "Value": "90"
+        },
+        {
+            "Name": "mb_dias_maximo_plazo_fijo_0042_80_uvaprecancelable",
+            "Value": "729"
+        },
+        {
+            "Name": "mb_plazo_maximo_prestamo_personal",
+            "Value": "80"
+        },
+        {
+            "Name": "mb_prendido_bloqueo_base_negativa",
+            "Value": "true"
+        },
+        {
+            "Name": "mb_prendido_encriptacion_tc",
+            "Value": "true"
+        },
+        {
+            "Name": "mb_prendido_validacion_impuesto_pais_dolar",
+            "Value": "false"
+        },
+        {
+            "Name": "mb_porcentaje_impuesto_compra_venta_dolares",
+            "Value": "0"
+        },
+        {
+            "Name": "mb_creditcard_payment_dollar_footer",
+            "Value": "El impuesto pa&iacute;s estar&aacute; vigente hasta el 22/12/2024 inclusive (Art.35 Ley 27.541). De conformidad con lo dispuesto en dicha ley y en la Resoluci&oacute;n General ARCA 5617/2024 art&iacute;culo 3&deg; y 4&deg;, la percepci&oacute;n del impuesto PAIS ser&aacute; aplicable en la medida y proporci&oacute;n que se abonen en pesos las operaciones alcanzadas por dicho impuesto. Cabe aclarar que dentro del importe &quot;Pago m&iacute;nimo&quot; se encuentra incluido el monto de dicho impuesto. Si cancel&aacute;s tus consumos en moneda extranjera en dicha moneda, se realizar&aacute; el correspondiente ajuste en el siguiente resumen de tarjeta de cr&eacute;dito, en la proporci&oacute;n del pago efectuado en moneda extranjera."
+        },
+        {
+            "Name": "mb_leyenda_impuesto_compra_venta_dolares_tarjeta_apagado",
+            "Value": "El impuesto pa&iacute;s estar&aacute; vigente hasta el 22/12/2024 inclusive (Art.35 Ley 27.541). De conformidad con lo dispuesto en dicha ley y en la Resoluci&oacute;n General ARCA 5617/2024 art&iacute;culo 3&deg; y 4&deg;, la percepci&oacute;n del impuesto PAIS ser&aacute; aplicable en la medida y proporci&oacute;n que se abonen en pesos las operaciones alcanzadas por dicho impuesto. Cabe aclarar que dentro del importe &quot;Pago m&iacute;nimo&quot; se encuentra incluido el monto de dicho impuesto. Si cancel&aacute;s tus consumos en moneda extranjera en dicha moneda, se realizar&aacute; el correspondiente ajuste en el siguiente resumen de tarjeta de cr&eacute;dito, en la proporci&oacute;n del pago efectuado en moneda extranjera."
+        },
+        {
+            "Name": "mb_prendido_limite_extraccion_v2",
+            "Value": "true"
+        },
+        {
+            "Name": "mb_prendido_libre_deuda",
+            "Value": "true"
+        },
+        {
+            "Name": "mb_prendido_data_valid_otp",
+            "Value": "false"
+        },
+        {
+            "Name": "mb_prendido_data_valid_otp_cobis",
+            "Value": ""
+        },
+        {
+            "Name": "mb_prendido_data_valid_otp_registro",
+            "Value": "true"
+        },
+        {
+            "Name": "mb_horario_compra_venta_dolares_inicio",
+            "Value": "07:00"
+        },
+        {
+            "Name": "mb_prendido_modal_tcv",
+            "Value": "true"
+        },
+        {
+            "Name": "mb_prendido_gestiones_v2",
+            "Value": "true"
+        },
+        {
+            "Name": "mb_prendido_gestiones_v3",
+            "Value": "true"
+        }
+    ],
+    "Redeploy": false
+}

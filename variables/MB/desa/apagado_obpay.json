@@ -1,0 +1,10 @@
+{
+    "Variables": [
+        {
+            "Name": "mb_prendido_ob_pay",
+            "Value": "false"
+        }
+    ],
+    "Redeploy": false
+}
+

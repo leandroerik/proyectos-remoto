@@ -1,0 +1,14 @@
+{
+    "Variables": [
+        {
+            "Name": "mb_prendido_Fci_Rescate",
+            "Value": "true"
+        },
+        {
+            "Name": "mb_prendido_Fci_Rescate_cobis",
+            "Value": "7000025_7000027_7000073_9040760_5433918_4788790_4783202"
+        }
+
+    ],
+    "Redeploy": false
+}

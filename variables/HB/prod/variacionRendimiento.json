@@ -1,0 +1,17 @@
+{
+    "Variables": [
+        {
+            "Name": "hb_FFvariacionRendimiento",
+            "Value": "true"
+        },
+        {
+            "Name": "hb_FFvariacionRendimiento_cobis",
+            "Value": "5189050_6860246_8916702_40500_1597173_3633092_5001188_2179852_312975_5818644_321755_6365107_311767_777913_4766510_8883458_9088535_9044660_9062510_717560_5031029_8938208_642584_5182291_8896685_9054255_9041717_9019545_7843458_8998443"
+        },
+        {
+            "Name": "hb_api_url_servicio-fondos",
+            "Value": "http://fondos-dom.microservicios-prod.svc.cluster.local:8080/"
+        }
+    ],
+    "Redeploy": false
+}

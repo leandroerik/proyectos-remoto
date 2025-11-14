@@ -1,0 +1,54 @@
+openapi: "3.0.0"
+info:
+  title: Office Banking
+  description: Backend de officebanking
+servers:
+  - url: http://localhost:8080
+  - url: https://backend-desa.hipotecario.com.ar
+  - url: https://backend-homo.hipotecario.com.ar
+paths:
+  /ob/api/health:
+    get:
+      summary: Devuelve status UP en caso de que el backend esté levantado 
+      tags:
+        - Aplicación
+      responses:
+        '200':
+          content:
+            application/json:   
+              schema:
+                properties:
+                  status:
+                    type: string
+  /ob/api/login:
+    post:
+      summary: Loguea un usuario
+      tags:
+        - Login
+      requestBody:
+        content:
+          application/json:
+            schema:
+              properties:
+                numeroDocumento:
+                  type: string
+                usuario:
+                  type: string
+                clave:
+                  type: string
+                cuit:
+                  type: string
+                fingerprint:
+                  type: string
+      responses:
+        '200':
+          content:
+            application/json:   
+              schema:
+                properties:
+                  cuit:
+                    type: string
+                  rol:
+                    type: string
+                  razonSocial:
+                    type: string

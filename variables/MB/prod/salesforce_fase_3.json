@@ -1,0 +1,57 @@
+{
+    "Variables": [
+        {
+            "Name": "mb_salesforce_alta_prestamo",
+            "Value": "APIEvent-5ffec8be-2d21-8861x-be91-f87e9d48e6c6"
+        },
+        {
+            "Name": "mb_salesforce_desembolso_adelanto",
+            "Value": "APIEvent-5d3d558d-cfac-dad3-6484-b4b1b9cd8081"
+        },
+        {
+            "Name": "mb_prendido_salesforce_cobis",
+            "Value": "8351078_7334314_6298127_7925090_8824120_1803121_8931202_8964396_7526300_3633092_31338_2179852_8964883_8861680_8964347_4766510_1597173_824085_7327619_6173256_216784_3231_1421879_1597642_3095520_390952_8883472_346446_6433598_8818045_5679638_9032150_9025351_8930097_3630735_8224874_8956748_9041561_8348074_432011_777913_5952082_7327619_5383174_8939812"
+        },
+        {
+            "Name": "mb_salesforce_transferencia_in_out",
+            "Value": "APIEvent-2758616c-dee3-794d-544b-7de7c65b3cda"
+        },
+        {
+            "Name": "mb_salesforce_pago_con_qr_modo",
+            "Value": "APIEvent-511da91e-38fc-5121-5053-21825514d4ec"
+        },
+        {
+            "Name": "mb_salesforce_enviar_y_recibir_dinero_modo",
+            "Value": "APIEvent-67e03d5d-f5b9-c769-542c-e08ab6fdaa8b"
+        },
+        {
+            "Name": "mb_salesforce_suscripcion_y_rescate_fondos",
+            "Value": "APIEvent-de1a6bfc-e129-f9f7-320b-5c56e65e66f0"
+        },
+        {
+            "Name": "mb_salesforce_compra_venta_bonos_acciones",
+            "Value": "APIEvent-15dc353f-4392-c6a4-9c11-7cb139826c13"
+        },
+        {
+            "Name": "mb_salesforce_compra_venta_dolar_mep",
+            "Value": "APIEvent-9993edcd-596f-6722-0d4e-a1e0b4f7fad7"
+        },
+        {
+            "Name": "mb_salesforce_compraventa_dolar_ahorro",
+            "Value": "APIEvent-bba469a1-7c36-e48f-07de-79987c691170"
+        },
+        {
+            "Name": "mb_salesforce_orden_debin",
+            "Value": "APIEvent-dd6aaa5e-2fdd-1a43-5fdc-4c22ff2e3df5"
+        },
+        {
+            "Name": "mb_salesforce_aceptacion_debin",
+            "Value": "APIEvent-45eeafc0-ca0c-42b0-3a19-8636ca8171c7"
+        },
+        {
+            "Name": "mb_salesforce_edicion_datos_personales",
+            "Value": "APIEvent-a7599cb0-8ccd-e909-2cc1-fcc3d9f61a5e"
+        }
+    ],
+    "Redeploy": false
+}

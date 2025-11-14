@@ -1,0 +1,8 @@
+{
+    "Variables": [{
+            "Name": "backend_api_ventas",
+            "Value": "http://api-ventas-op.microservicios-prod.svc.cluster.local:8080"
+        }
+    ],
+    "Redeploy": true
+}

@@ -1,0 +1,13 @@
+{
+    "Variables": [
+        {
+            "Name": "hb_api_url_formularios_windows",
+            "Value": "https://api-formularios-microservicios-homo.appd.bh.com.ar"
+        },
+        {
+            "Name": "hb_monto_maximo_orden_extraccion",
+            "Value": "140000"
+        }
+    ],
+    "Redeploy": false
+}

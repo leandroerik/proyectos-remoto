@@ -1,0 +1,9 @@
+{
+    "Variables": [
+		{
+			"Name": "hb_prendido_adelanto_jubilados",
+			"Value": "false"
+		}
+    ],
+    "Redeploy": false
+}

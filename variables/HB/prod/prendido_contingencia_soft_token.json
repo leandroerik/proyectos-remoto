@@ -1,0 +1,8 @@
+{
+    "Variables": [{
+            "Name": "hb_prendido_contingencia_soft_token",
+            "Value": "false"
+        }
+    ],
+    "Redeploy": false
+}

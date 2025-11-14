@@ -1,0 +1,8 @@
+{
+    "Variables": [{
+            "Name": "mb_leyenda_uva_precancelable",
+            "Value": "Record&aacute; que no se tomar&aacute; como referencia la cotizaci&oacute;n de la UVA y el monto inicial m&aacute;s los intereses a cobrar se calcular&aacute;n en base a la fecha de cancelaci&oacute;n anticipada con una TNA TNA_CANCELACION_ANT_FORMATEADO% y TEA TEACANCELACIONANTFORMATEADO%, deduciendo los impuestos correspondientes y se acreditar&aacute; en tu cuenta el siguiente d&iacute;a h&aacute;bil."
+        }
+    ],
+    "Redeploy": false
+}

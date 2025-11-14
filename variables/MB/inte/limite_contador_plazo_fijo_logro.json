@@ -1,0 +1,8 @@
+{
+    "Variables": [{
+            "Name": "mb_limite_contador_plazo_fijo_logro",
+            "Value": "50"
+        }
+    ],
+    "Redeploy": false
+}

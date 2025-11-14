@@ -1,0 +1,13 @@
+{
+    "Variables": [
+        {
+            "Name": "hb_prendido_agenda_transferencia",
+            "Value": "false"
+        },
+        {
+            "Name": "hb_prendido_agenda_transferencia_cobis",
+            "Value": "1597173_5656719_5620467_824085_4766510_2179852_3633092_8975474_8828141_8959193_8644844_9084582_8745202_8916702_6860246_8239431_8963984_8889446_8984610"
+        }
+    ],
+    "Redeploy": false
+}

@@ -1,0 +1,10 @@
+{
+    "Variables": [
+        {
+            "Name": "mb_prender_super_cache",
+            "Value": "false"
+        }
+    ],
+    "Redeploy": false
+}
+

@@ -1,0 +1,13 @@
+{
+    "Variables": [
+		{
+			"Name": "hb_api_url_canales",
+			"Value": "http://api-canales-canales-homo.appd.bh.com.ar"
+		},
+		{
+			"Name": "hb_web_respuesta_consentimiento",
+			"Value": "https://extranet.hipotecario.com.ar"
+		}
+    ],
+    "Redeploy": false
+}

@@ -1,0 +1,25 @@
+{
+    "Variables": [
+		{
+            "Name": "hb_recaptcha_google_url",
+			"Value": "https://recaptchaenterprise.googleapis.com/v1/projects/{PROJECT_ID}/assessments?key={API_KEY}"  
+        },
+		{
+            "Name": "hb_prendido_recaptcha",
+            "Value": "true"  
+        },
+		{
+            "Name": "hb_recaptcha_score",
+            "Value": "0.3"  
+        },
+		{
+            "Name": "hb_recaptcha_project_id",
+            "Value": "hb-hipotecario-1724265112526"  
+        },
+		{
+            "Name": "hb_recaptcha_key_id",
+            "Value": "AIzaSyC067KY5BAnCIG_2c9NuFDReMZyHOrlP4A"  
+        }		
+    ],
+    "Redeploy": false
+}

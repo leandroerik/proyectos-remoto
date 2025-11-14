@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+		<style>
+			table, th, td {
+				border: 1px solid black;
+				border-collapse: collapse;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container mt-5">
+			<table class="table table-striped">
+				<thead class="table-dark">
+					 <tr>
+						<th scope="col">Fecha</th>
+						<th scope="col">Cuil</th>
+						<th scope="col">Apellido</th>
+						<th scope="col">Nombre</th>
+						<th scope="col">Email</th>
+						<th scope="col">Telefono</th>
+						<th scope="col">Estado</th>
+					</tr>
+				</thead>
+				{{#.}}
+				<tr onclick="redireccion({{cuil}})">
+						<td>{{momento}}</td>
+						<td>{{cuil}}</td>
+						<td>{{apellido}}</td>
+						<td>{{nombre}}</td>
+						<td>{{email}}</td>
+						<td>{{telefono}}</td>
+						<td>{{estado}}</td>
+				</tr>
+				{{/.}}
+			</table>
+		</div>
+		
+		<script type="text/javascript">
+			function redireccion(cuil) {
+				window.location=cuil;
+			}
+		</script>
+	</body>
+</html>

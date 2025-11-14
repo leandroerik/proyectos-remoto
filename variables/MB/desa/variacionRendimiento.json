@@ -1,0 +1,17 @@
+{
+    "Variables": [
+        {
+            "Name": "mb_FFvariacionRendimiento",
+            "Value": "true"
+        },
+        {
+            "Name": "mb_FFvariacionRendimiento_cobis",
+            "Value": "315141"
+        },
+        {
+            "Name": "mb_api_url_servicio-fondos",
+            "Value": "http://fondos-dom.microservicios-desa.svc.cluster.local:8080/"
+        }
+    ],
+    "Redeploy": false
+}

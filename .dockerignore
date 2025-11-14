@@ -1,0 +1,6 @@
+*
+
+!.git/HEAD
+!.git/packed-refs
+!docker/
+!backend/

@@ -1,0 +1,25 @@
+{
+    "Variables": [
+        {
+            "Name": "mb_api_url_modo",
+            "Value": "http://api-play-sistemico-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "mb_api_url_pct_modo",
+            "Value": "http://api-empresas-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "mb_api_url_pfm",
+            "Value": "http://api-pfm-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "mb_api_url_segmentacion_mobile",
+            "Value": "http://segmentacion-mobile-op.canales-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "mb_api_url_thales",
+            "Value": "http://api-thales-op.microservicios-prod.svc.cluster.local:8080"
+        }
+    ],
+    "Redeploy": false
+}

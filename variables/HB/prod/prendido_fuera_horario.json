@@ -1,0 +1,9 @@
+{
+    "Variables": [{
+            "Name": "hb_prendido_fondos_fuera_de_horario",
+            "Value": "true"
+        }
+    ],
+    "Redeploy": false
+}
+

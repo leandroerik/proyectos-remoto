@@ -1,0 +1,9 @@
+{
+    "Variables": [
+		{
+            "Name": "hb_prendido_plazo_fijo_logro_consolidada",
+            "Value": "false"  
+        }
+    ],
+    "Redeploy": true
+}

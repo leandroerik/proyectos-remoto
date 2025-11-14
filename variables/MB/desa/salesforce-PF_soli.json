@@ -1,0 +1,10 @@
+{
+    "Variables": [
+        {
+            "Name": "mb_salesforce_solicitud_cancelacion_anticipada_pf_uva",
+            "Value": "APIEvent-41e2e24f-08f2-c057-7ec5-f0791636eb28"
+        }
+    ],
+    "Redeploy": false
+}
+

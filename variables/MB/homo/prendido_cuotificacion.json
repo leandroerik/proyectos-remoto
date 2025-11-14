@@ -1,0 +1,9 @@
+{
+    "Variables": [
+		{
+            "Name": "mb_prendido_cuotificacion",
+            "Value": "true"  
+        }
+    ],
+    "Redeploy": false
+}

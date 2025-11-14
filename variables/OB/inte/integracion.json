@@ -1,0 +1,9 @@
+{
+	"Variables": [	
+	{
+	"Name":"journeyID_verificacionExistenciaDNI",
+	"Value":"fe16fe52-3a0b-4f40-935d-469c54d9bee4"
+	}
+	], 
+	"Redeploy": false
+}

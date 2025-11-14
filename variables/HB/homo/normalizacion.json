@@ -1,0 +1,12 @@
+{
+    "Variables": [{
+            "Name": "hb_cache_esco_pFondosParaOperar",
+            "Value": "false"
+        },
+		{
+            "Name": "hb_dolarMep_horaFin",
+            "Value": "19:30"
+        }
+    ],
+    "Redeploy": false
+}

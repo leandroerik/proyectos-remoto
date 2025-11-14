@@ -1,0 +1,11 @@
+{
+    "Variables": [
+		{
+            "Name": "backend_api_ventas",
+            "Value": "https://homoventasapi.bh.com.ar/BH.ApiVentas.WS"
+        }
+    ],
+    "Redeploy": false
+}
+
+

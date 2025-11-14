@@ -1,0 +1,18 @@
+{
+    "Variables": [{
+            "Name": "mb_horario_compra_venta_dolares_inicio",
+            "Value": "07:00"
+        },{
+            "Name": "mb_horario_compra_venta_dolares_fin",
+            "Value": "21:00"
+        },{
+            "Name": "mb_dolarFueraHorario_cobis",
+            "Value": "9040759"
+        },
+        {
+            "Name": "mb_dolarSinCotizaciones_cobis",
+            "Value": "298840"
+        }
+    ],
+    "Redeploy": false
+}

@@ -1,0 +1,11 @@
+{
+    "Variables": [{
+            "Name": "mb_leyenda_uva_precancelable_solo_simulacion",
+            "Value": "El monto final informado es estimado con la cotizaci&oacute;n actual de la UVA. Al vencimiento de la inversi&oacute;n a plazo, el monto inicial ser&aacute; actualizado a la cotizaci&oacute;n de la UVA vigente, sobre el que se calcular&aacute;n los intereses a cobrar. Conforme a la Com. A 6889 del y/o las que en el futuro la reemplacen o modifiquen, los certificados de la inversi&oacute;n a plazo ajustados en Unidades de Valor Adquisitivo actualizables por &quot;CER&quot; - Ley 25.827 (&quot;UVA&quot;) podr&aacute;n ser cancelados anticipadamente a partir de transcurridos 30 d&iacute;as corridos de su constituci&oacute;n. En tal sentido, podr&aacute;s solicitar la cancelaci&oacute;n anticipada desde el FECHA_DESDE hasta el FECHA_HASTA. En caso de hacerlo, no se tomar&aacute; como referencia la cotizaci&oacute;n de la UVA sino que el dep&oacute;sito devengar&aacute; intereses por el plazo que efectivamente haya transcurrido, a la tasa fija de precancelaci&oacute;n de TNA de TNA_CANCELACION_ANT_FORMATEADO% y TEA TEACANCELACIONANTFORMATEADO%."
+        },{
+            "Name": "mb_leyenda_uva_precancelable",
+            "Value": "En caso de solicitar la cancelación anticipada Record&aacute; que no se tomar&aacute; como referencia la cotizaci&oacute;n de la UVA y el monto inicial m&aacute;s los intereses a cobrar se calcularan en base a la fecha de cancelaci&oacute;n anticipada con una TNA TNA_CANCELACION_ANT_FORMATEADO% y TEA TEACANCELACIONANTFORMATEADO%, deduciendo los impuestos correspondientes y se acreditar&aacute; en tu cuenta a los cinco (5) d&iacute;as h&aacute;biles desde la fecha de solicitud de cancelaci&oacute;n anticipada."
+        }
+    ],
+    "Redeploy": false
+}

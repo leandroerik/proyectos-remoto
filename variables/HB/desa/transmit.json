@@ -1,0 +1,17 @@
+{
+    "Variables": [
+		{
+            "Name": "hb_migracion_transmit_completa",
+            "Value": "false"   
+        },
+		{
+            "Name": "hb_prendido_migracion_transmit",
+            "Value": "true"   
+        },
+		{
+            "Name": "hb_alta_usuario_transmit",
+            "Value": "true"   
+		}
+    ],
+    "Redeploy": false
+}

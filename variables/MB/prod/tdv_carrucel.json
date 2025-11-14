@@ -1,0 +1,9 @@
+{
+    "Variables": [
+		{
+			"Name": "mb_prendido_tdv_carrusel",
+			"Value": "true"
+		}
+    ],
+    "Redeploy": false
+}

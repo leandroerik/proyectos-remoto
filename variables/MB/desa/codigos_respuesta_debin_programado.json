@@ -1,0 +1,18 @@
+{
+    "Variables": [
+		{
+            "Name": "mb_debin_programado_codigos_exito",
+            "Value": "6300_6321"  
+        },
+		{
+            "Name": "mb_debin_programado_codigos_warning",
+            "Value": "6308_6314_6320"  
+        },
+		{
+            "Name": "mb_debin_programado_codigos_error",
+            "Value": "6301_6302_6303_6304_6305_6306_6309_6310_6311_6312_6313_6315_6316_6317_6318_6319_6398_6399"  
+        }
+    ],
+    "Redeploy": false
+}
+

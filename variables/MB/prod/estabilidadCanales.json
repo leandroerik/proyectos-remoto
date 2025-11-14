@@ -1,0 +1,8 @@
+{
+    "Variables": [{
+            "Name": "mb_checkMoraTempranaCuotas",
+            "Value": "false"
+        }
+    ],
+    "Redeploy": false
+}

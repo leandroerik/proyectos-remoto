@@ -1,0 +1,13 @@
+{
+    "Variables": [
+		{
+            "Name": "hb_rango_start_ip",
+            "Value": "10.99.0.0"  
+        },
+		{
+            "Name": "hb_rango_end_ip",
+            "Value": "10.255.255.254"  
+        }
+    ],
+    "Redeploy": false
+}

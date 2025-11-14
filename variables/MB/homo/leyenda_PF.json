@@ -1,0 +1,9 @@
+{
+    "Variables": [
+         {
+            "Name": "mb_leyenda_montos_superiores_plazofijo",
+            "Value": "Para dep&oacute;sitos a plazo fijo superiores a $1.000.000, declaro bajo juramento que no soy beneficiario de los cr&eacute;ditos otorgados conforme lo dispuesto por la Comunicaci&oacute;n BCRA A 6937 y complementarias (capital de trabajo, pago de sueldos, financiaci&oacute;n prestadores de salud) y punto 3 de la Comunicaci&oacute;n BCRA A 7006 (clientes no informados en la Central de Deudores). En caso de ser beneficiario de los mencionados cr&eacute;ditos, manifiesto conocer y aceptar que no corresponder&aacute; aplicar la tasa de inter&eacute;s m&iacute;nima prevista en el punto 1.11.1 de las normas sobre &quot;Dep&oacute;sitos e inversiones a plazo&quot;."
+        }
+    ],
+    "Redeploy": false
+}

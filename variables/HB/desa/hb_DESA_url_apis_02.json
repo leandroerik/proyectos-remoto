@@ -1,0 +1,45 @@
+{
+    "Variables": [
+        {
+            "Name": "hb_api_url_agendas",
+            "Value": "https://api-agendas-microservicios-desa.apps.aro-desa.bh.com.ar"
+        },
+        {
+            "Name": "hb_api_url_auditor",
+            "Value": "https://auditor-microservicios-desa.apps.aro-desa.bh.com.ar"
+        },
+        {
+            "Name": "hb_api_url_canales",
+            "Value": "https://backend-unificado-bb-canales-desa.apps.aro-desa.bh.com.ar"
+        },
+        {
+            "Name": "hb_api_url_catalogo",
+			"Value": "https://api-catalogo-microservicios-desa.apps.aro-desa.bh.com.ar"
+        },
+        {
+            "Name": "hb_api_url_cheques",
+            "Value": "https://api-cheques-microservicios-desa.apps.aro-desa.bh.com.ar"
+        },
+        {
+            "Name": "hb_api_url_clientes",
+            "Value": "http://api-clientes-microservicios-desa.apps.aro-desa.bh.com.ar"
+        },
+        {
+            "Name": "hb_api_url_comprobantes",
+            "Value": "https://api-comprobantes-microservicios-desa.apps.aro-desa.bh.com.ar"
+        },
+        {
+            "Name": "hb_api_url_cuentas",
+            "Value": "https://api-cuentas-microservicios-desa.apps.aro-desa.bh.com.ar"
+        },
+        {
+            "Name": "hb_api_url_cuentas_core",
+            "Value": "http://cuentas-api-core-desa.apps.aro-desa.bh.com.ar"
+        },
+        {
+            "Name": "hb_api_url_debin",
+            "Value": "https://api-debin-microservicios-desa.apps.aro-desa.bh.com.ar"
+        }
+    ],
+    "Redeploy": false
+}

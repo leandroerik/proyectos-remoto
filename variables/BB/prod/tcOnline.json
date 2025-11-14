@@ -1,0 +1,9 @@
+{
+    "Variables": [
+        {
+            "Name": "backend_api_tarjetasCredito",
+            "Value": "https://api-tarjetascredito-microservicios-prod.ocpp.bh.com.ar"
+        }
+    ],
+    "Redeploy": false
+}

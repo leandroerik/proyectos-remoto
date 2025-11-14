@@ -1,0 +1,13 @@
+{
+    "Variables": [
+		{
+            "Name": "mb_cuotificacion_importe_minimo",
+            "Value": "1000"  
+        },
+		{
+            "Name": "mb_cuotificacion_importe_maximo",
+            "Value": "100000000"  
+        }
+    ],
+    "Redeploy": false
+}

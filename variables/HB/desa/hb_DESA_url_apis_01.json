@@ -1,0 +1,36 @@
+{
+    "Variables": [
+        {
+            "Name": "backend_api_seguridad",
+            "Value": "https://api-seguridad-microservicios-desa.apps.aro-desa.bh.com.ar"
+        },{
+            "Name": "backend_api_personas",
+            "Value": "http://api-personas-microservicios-desa.apps.aro-desa.bh.com.ar"
+        },{
+            "Name": "backend_api_auditor",
+            "Value": "https://auditor-microservicios-desa.apps.aro-desa.bh.com.ar"
+        },{
+            "Name": "hb_api_url_cajasseguridad",
+            "Value": "https://api-cajasseguridad-microservicios-desa.apps.aro-desa.bh.com.ar"
+        },{
+            "Name": "hb_api_url_inversiones",
+            "Value": "https://api-inversiones-microservicios-desa.apps.aro-desa.bh.com.ar"
+        },{
+            "Name": "hb_api_url_prestamos",
+            "Value": "https://api-prestamos-microservicios-desa.apps.aro-desa.bh.com.ar"
+        },{
+            "Name": "hb_api_url_productos",
+            "Value": "https://api-productos-microservicios-desa.apps.aro-desa.bh.com.ar"
+        },{
+            "Name": "hb_api_url_seguro",
+            "Value": "http://api-seguro-microservicios-desa.apps.aro-desa.bh.com.ar"
+        },{
+            "Name": "hb_api_url_tarjetascredito",
+			"Value": "https://api-tarjetascredito-microservicios-desa.apps.aro-desa.bh.com.ar"
+        },{
+            "Name": "hb_api_url_tarjetasdebito",
+            "Value": "https://api-tarjetasdebito-microservicios-desa.apps.aro-desa.bh.com.ar"
+        }
+    ],
+    "Redeploy": false
+}

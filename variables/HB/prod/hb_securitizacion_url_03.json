@@ -1,0 +1,45 @@
+{
+    "Variables": [
+        {
+            "Name": "hb_api_url_formularios_windows",
+            "Value": "http://api-formularios-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_dictamenes",
+            "Value": "http://api-dictamenes-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_digitalizacion",
+            "Value": "http://api-digitalizacion-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_inversiones",
+            "Value": "http://api-inversiones.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_link",
+            "Value": "http://api-link-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_moras",
+            "Value": "http://api-moras-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_notificaciones",
+            "Value": "http://api-notificaciones.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_originacion",
+            "Value": "http://api-originacion-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_orquestados",
+            "Value": "http://api-servicios-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_paquetes",
+            "Value": "http://api-paquetes-op.microservicios-prod.svc.cluster.local:8080"
+        }
+    ],
+    "Redeploy": false
+}

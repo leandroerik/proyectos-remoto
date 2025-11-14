@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+    <configuration>
+        <date-format>dd/MM/yyyy HH:mm:ss</date-format>
+    </configuration>
+
+    <mapping map-id="smbFileToArchivo" map-null="false" wildcard="false">
+
+        <class-a>jcifs.smb.SmbFile</class-a>
+        <class-b>ar.com.hipotecario.canal.homebanking.lib.Archivo</class-b>
+
+        <field>
+            <a>name</a>
+            <b>nombreArchivo</b>
+        </field>
+
+        <field>
+            <a>lastModified</a>
+            <b>fechaAlta</b>
+        </field>
+
+        <field>
+            <a>canonicalPath</a>
+            <b>canonicalPath</b>
+        </field>
+
+        <field>
+            <a>file</a>
+            <b>esArchivo</b>
+        </field>
+
+        <field>
+            <a>directory</a>
+            <b>esDirectorio</b>
+        </field>
+
+    </mapping>
+
+</mappings>

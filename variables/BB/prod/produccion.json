@@ -1,0 +1,25 @@
+{
+	"Variables": [
+		{
+			"Name": "bb_api_url_auditor",
+			"Value": "http://auditor-microservicios-prod.ocpp.bh.com.ar"
+		},
+		{
+			"Name": "buhobank_prendido_modo_escucha",
+			"Value": "false"
+		},
+		{
+			"Name": "backend_api_auditor",
+			"Value": "http://auditor-microservicios-prod.ocpp.bh.com.ar"
+		},
+		{
+			"Name": "buhobank_prendido_val_emulador",
+			"Value": "true"
+		},
+		{
+			"Name": "buhobank_val_bic",
+			"Value": ""
+		}
+	],
+	"Redeploy": false
+}

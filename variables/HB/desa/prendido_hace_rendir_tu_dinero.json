@@ -1,0 +1,10 @@
+{
+    "Variables": [
+        {
+            "Name": "hb_prendido_hace_rendir_tu_dinero",
+            "Value": "true"
+        }
+    ],
+    "Redeploy": false
+}
+

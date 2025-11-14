@@ -1,0 +1,13 @@
+{
+    "Variables": [
+        {
+            "Name": "hb_extracto_comitente_V2",
+            "Value": "true"
+        },
+        {
+            "Name": "hb_extracto_comitente_V2_cobis",
+            "Value": "6727534_4788790_7000021"
+        }
+    ],
+    "Redeploy": false
+}

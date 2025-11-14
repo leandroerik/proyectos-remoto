@@ -1,0 +1,16 @@
+{
+    "Variables": [{
+            "Name": "mb_leyenda_garantia_plazo_fijo",
+            "Value": "<br/><br/>Los dep&oacute;sitos en pesos y en moneda extranjera cuentan con la garant&iacute;a de hasta $ 25.000.000. En las operaciones a nombre de dos o m&aacute;s personas, la garant&iacute;a se prorratear&aacute; entre sus titulares. En ning&uacute;n caso, el total de la garant&iacute;a por persona y por dep&oacute;sito podr&aacute; exceder de $ 25.000.000, cualquiera sea el n&uacute;mero de cuentas y/o dep&oacute;sitos. Ley 24.485, Decreto N&deg; 540/95 y modificatorios y Com. &quot;A&quot; 2337 y sus modificatorias y complementarias. Se encuentran excluidos los captados a tasas superiores a la de referencia conforme a los l&iacute;mites establecidos por el Banco Central, los adquiridos por endoso y los efectuados por personas vinculadas a la entidad financiera."
+        },
+		{
+            "Name": "mb_leyenda_renovacion_plazo_fijo",
+            "Value": "En caso de renovaci&oacute;n autom&aacute;tica la tasa a aplicar ser&aacute; la de pizarra para el plazo, monto y moneda de la imposici&oacute;n, al d&iacute;a de la renovaci&oacute;n. La renovaci&oacute;n autom&aacute;tica podr&aacute; dejarse sin efecto hasta el d&iacute;a del respectivo vencimiento."
+        },
+		{
+            "Name": "mb_leyenda_uva_precancelable_180",
+            "Value": "Seg&uacute;n Comunicaci&oacute;n BCRA A 7585 si la cancelaci&oacute;n anticipada se realiza a partir de los 120 d&iacute;as de activo FECHA_CANCELACION_ANT_120 y el plazo de constituci&oacute;n 180 d&iacute;as o m&aacute;s el monto inicial m&aacute;s los intereses a cobrar se calcular&aacute;n en base a la fecha de cancelaci&oacute;n anticipada con una TNA de TNA_CANCELACION_ANT_FORMATEADO180%."
+        }
+    ],
+    "Redeploy": false
+}

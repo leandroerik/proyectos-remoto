@@ -1,0 +1,8 @@
+{
+    "Variables": [{
+            "Name": "mb_prendido_link_uso_cobis",
+            "Value": ""
+        }
+    ],
+    "Redeploy": false
+}

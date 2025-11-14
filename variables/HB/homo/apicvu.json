@@ -1,0 +1,13 @@
+{
+    "Variables": [
+        {
+            "Name": "hb_api_url_cvu",
+            "Value": "http://api-cvu-microservicios-homo.appd.bh.com.ar"
+        },
+        {
+            "Name": "hb_plazo_maximo_prestamo_personal",
+            "Value": "80"
+        }
+    ],
+    "Redeploy": false
+}

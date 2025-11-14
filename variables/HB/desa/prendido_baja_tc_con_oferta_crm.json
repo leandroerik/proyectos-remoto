@@ -1,0 +1,9 @@
+{
+    "Variables": [
+		{
+            "Name": "hb_prendido_baja_tc_con_oferta_crm",
+            "Value": "true"  
+        }
+    ],
+    "Redeploy": false
+}

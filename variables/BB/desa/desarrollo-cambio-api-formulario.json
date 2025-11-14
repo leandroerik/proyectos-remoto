@@ -1,0 +1,9 @@
+{
+	"Variables": [		
+		{
+			"Name": "backend_api_formularios",
+			"Value": "https://api-formularios-microservicios-desa.appd.bh.com.ar"
+		}
+	],
+	"Redeploy": false
+}

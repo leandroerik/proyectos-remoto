@@ -1,0 +1,10 @@
+{
+    "Variables": [
+		{
+            "Name": "mb_prendido_plan_v",
+            "Value": "true"  
+        }
+
+    ],
+    "Redeploy": false
+}

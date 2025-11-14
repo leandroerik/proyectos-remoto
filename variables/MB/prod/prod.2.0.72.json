@@ -1,0 +1,9 @@
+{
+    "Variables": [
+        {
+            "Name": "mb_prendido_scandni_TDV",
+            "Value": "false"
+        }	
+    ],
+    "Redeploy": false
+}

@@ -1,0 +1,9 @@
+{
+    "Variables": [
+        {
+            "Name": "mb_tenencia_posicion_negociable_V2",
+            "Value": "true"
+        }
+    ],
+    "Redeploy": false
+}

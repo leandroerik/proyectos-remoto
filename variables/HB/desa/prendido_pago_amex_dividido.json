@@ -1,0 +1,16 @@
+{
+    "Variables": [{
+            "Name": "hb_prendido_pago_amex_dividido",
+            "Value": "false"
+        },
+		{
+            "Name": "hb_codigos_amex_pago",
+            "Value": "900_926"
+        },
+		{
+            "Name": "hb_amex_maximo_monto_pago",
+            "Value": "999999.99"
+        }
+    ],
+    "Redeploy": false
+}

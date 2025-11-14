@@ -1,0 +1,16 @@
+{
+    "Variables": [{
+            "Name": "hb_leyenda_uva_precancelable",
+            "Value": "En caso de solicitar la cancelaci&oacute;n anticipada record&aacute; que no se tomar&aacute; como referencia la cotizaci&oacute;n de la UVA y el monto inicial m&aacute;s los intereses a cobrar se calcular&aacute;n en base a la fecha de cancelaci&oacute;n anticipada con una TNA TNA_CANCELACION_ANT_FORMATEADO&#37 y TEA TEACANCELACIONANTFORMATEADO&#37, deduciendo los impuestos correspondientes y se acreditar&aacute; en tu cuenta el siguiente d&iacute;a h&aacute;bil."
+        },
+		{
+            "Name": "hb_leyenda_uva_precancelable_180",
+            "Value": " Seg&uacute;n Comunicaci&oacute;n BCRA A 7585 si la cancelaci&oacute;n anticipada se realiza a partir de los 120 d&iacute;as de activo FECHA_CANCELACION_ANT_120 y el plazo de constituci&oacute;n 180 d&iacute;as o m&aacute;s el monto inicial m&aacute;s los intereses a cobrar se calcular&aacute;n en base a la fecha de cancelaci&oacute;n anticipada con una TNA de TNA_CANCELACION_ANT_FORMATEADO180%."
+        },
+		{
+            "Name": "hb_leyenda_uva_precancelable_solo_simulacion",
+            "Value": "El monto final informado es estimado con la cotizaci&oacute;n actual de la UVA. Al vencimiento de la inversi&oacute;n a plazo, el monto inicial ser&aacute; actualizado a la cotizaci&oacute;n de la UVA vigente, sobre el que se calcular&aacute;n los intereses a cobrar. Conforme a la Com. A 6889 del y/o las que en el futuro la reemplacen o modifiquen, los certificados de la inversi&oacute;n a plazo ajustados en Unidades de Valor Adquisitivo actualizables por &quot;CER&quot; - Ley 25.827 (&quot;UVA&quot;) podr&aacute;n ser cancelados anticipadamente a partir de transcurridos 30 d&iacute;as corridos de su constituci&oacute;n. En tal sentido, podr&aacute;s solicitar la cancelaci&oacute;n anticipada desde el FECHA_DESDE hasta el FECHA_HASTA. En caso de hacerlo, no se tomar&aacute; como referencia la cotizaci&oacute;n de la UVA sino que el dep&oacute;sito devengar&aacute; intereses por el plazo que efectivamente haya transcurrido, a la tasa fija de precancelaci&oacute;n de TNA de TNA_CANCELACION_ANT_FORMATEADO&#37 y TEA TEACANCELACIONANTFORMATEADO&#37."
+        }
+    ],
+    "Redeploy": false
+}

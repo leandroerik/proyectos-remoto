@@ -1,0 +1,9 @@
+{
+    "Variables": [
+        {
+            "Name": "mb_deshabilitar_alta_inversor_cobis",
+            "Value": "6699746"
+        }
+    ],
+    "Redeploy": false
+}

@@ -1,0 +1,8 @@
+{
+    "Variables": [{
+            "Name": "JVM_PARAMS",
+            "Value": "-javaagent:/app/opentelemetry-javaagent.jar -Dotel.resource.attributes=service.name=hb-desa -Dotel.exporter.otlp.endpoint=http://bhhpocbuer81:4317 -Dotel.exporter.otlp.protocol=grpc"
+        }
+    ],
+    "Redeploy": false
+}

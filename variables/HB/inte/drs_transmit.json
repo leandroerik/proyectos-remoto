@@ -1,0 +1,9 @@
+{
+  "Variables": [
+    {
+      "Name": "hb_app_drs",
+      "Value": "false"
+    }
+  ],
+  "Redeploy": false
+}

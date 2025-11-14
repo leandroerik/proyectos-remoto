@@ -1,0 +1,8 @@
+{
+    "Variables": [{
+            "Name": "hb_prendido_recupero_email",
+            "Value": "true"
+        }
+    ],
+    "Redeploy": false
+}

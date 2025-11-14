@@ -1,0 +1,45 @@
+{
+    "Variables": [
+        {
+            "Name": "hb_api_url_agendas",
+            "Value": "http://api-agendas-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_auditor",
+            "Value": "http://auditor-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_canales",
+            "Value": "http://api-canales-op.canales-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_catalogo",
+			"Value": "http://api-catalogo-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_cheques",
+            "Value": "http://api-cheques-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_clientes",
+            "Value": "http://api-clientes-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_comprobantes",
+            "Value": "http://api-comprobantes.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_cuentas",
+            "Value": "http://api-cuentas.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_cuentas_core",
+            "Value": "http://cuentas-op.api-core-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "hb_api_url_debin",
+            "Value": "http://api-debin-op.microservicios-prod.svc.cluster.local:8080"
+        }
+    ],
+    "Redeploy": false
+}

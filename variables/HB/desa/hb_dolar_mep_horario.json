@@ -1,0 +1,13 @@
+{
+    "Variables": [
+		{
+            "Name": "hb_dolarMepFueraHorario_cobis",
+            "Value": "9040759"
+        },
+		{
+            "Name": "hb_dolarMepNuevaLeyenda_cobis",
+            "Value": "7000025"
+        }
+    ],
+    "Redeploy": false
+}

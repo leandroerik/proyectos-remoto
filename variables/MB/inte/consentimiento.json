@@ -1,0 +1,9 @@
+{
+    "Variables": [
+		{
+			"Name": "mb_prendidoConsentimiento",
+			"Value": "true"
+		}
+    ],
+    "Redeploy": true
+}

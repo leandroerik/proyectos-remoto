@@ -1,0 +1,17 @@
+{
+    "Variables": [
+        {
+            "Name": "mb_prendido_espera_procesos_byma",
+            "Value": "true"
+        },
+        {
+            "Name": "mb_prendido_espera_procesos_byma_cobis",
+            "Value": "2179852_3633092_8348074_4766510_1597173_981879"
+        },
+        {
+            "Name": "mb_delay_espera_ms_procesos_byma",
+            "Value": "5000"
+        }
+    ],
+    "Redeploy": false
+}

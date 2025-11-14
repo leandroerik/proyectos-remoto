@@ -1,0 +1,41 @@
+{
+    "Variables": [
+        {
+            "Name": "backend_api_prestamos",
+            "Value": "http://api-prestamos.microservicios-prod.svc.cluster.local:8080"
+        },{
+            "Name": "backend_api_prisma",
+            "Value": "http://api-prisma.microservicios-prod.svc.cluster.local:8080"
+        },{
+            "Name": "backend_api_procesos",
+            "Value": "http://api-procesos.microservicios-prod.svc.cluster.local:8080"
+        },{
+            "Name": "backend_api_productos",
+            "Value": "http://api-productos.microservicios-prod.svc.cluster.local:8080"
+        },{
+            "Name": "backend_api_recaudaciones",
+            "Value": "http://api-recaudaciones.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "backend_api_rewards",
+            "Value": "http://api-rewards.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "backend_api_scheduler",
+            "Value": "http://api-scheduler.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "backend_api_seguridad",
+            "Value": "http://api-seguridad.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "backend_api_seguro",
+            "Value": "http://api-seguro.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "backend_api_servicios",
+            "Value": "http://api-servicios.microservicios-prod.svc.cluster.local:8080"
+        }
+    ],
+    "Redeploy": false
+}

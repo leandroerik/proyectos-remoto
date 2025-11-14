@@ -1,0 +1,32 @@
+SELECT DISTINCT
+	ti.Nemonico,
+	vit.CodClienteCobis AS idCobis,
+	vit.CUIL AS CUIT,
+	vit.Nombre AS NombreTitular,
+	vit.Apellido AS ApellidoTitular,
+	vic.CodClienteCobis AS IdCobisConyuge,
+	vic.Nombre AS NombreConyuge,
+	vic.Apellido AS ApellidoConyuge,
+	vic.CUIL AS NumeroIdentificacionTributariaConyuge,
+	'SO' AS Estado,
+	o.CodOferta,
+	o.Nombre AS NombreOferta,
+	o.Descripcion,
+	o.Plazo,
+	o.Tasa,
+	o.ValorOferta,
+	o.ValorCuota,
+	o.ValorCFT
+FROM           [esales].[dbo].[MC_ValidacionSolicitud]        vs
+	INNER JOIN [esales].[dbo].[MC_ValidacionInteresado]      vit ON (vs.CodValidacionSolicitud = vit.CodValidacionSolicitud AND vit.TipoInteresado = 'T')
+	INNER JOIN [esales].[dbo].[MC_TipoInteresado]             ti ON (vit.CodTipoInteresado = ti.CodTipoInteresado)
+	LEFT  JOIN [esales].[dbo].[MC_ValidacionInteresado]      vic ON (vs.CodValidacionSolicitud = vic.CodValidacionSolicitud AND vic.TipoInteresado = 'C')
+	INNER JOIN [esales].[dbo].[MC_TipoSolicitud]              ts ON (vs.CodTipoSolicitud = ts.CodTipoSolicitud)
+	INNER JOIN [esales].[dbo].[MC_OfertaTipoSolicitud]       ots ON (ots.CodTipoSolicitud = ts.CodTipoSolicitud)
+	INNER JOIN [esales].[dbo].[MC_Oferta]                      o ON (o.CodOferta = ots.CodOferta)
+	INNER JOIN [esales].[dbo].[MC_BeneficiarioGanadorSorteo] bgs ON (vs.CodValidacionSolicitud = bgs.CodValidacionSolicitud)
+WHERE
+	vs.CodTipoSolicitud IN (4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14)
+	AND bgs.HabilitadoOriginacion = 1
+	AND bgs.FechaGeneroPP IS NULL
+ORDER BY ti.Nemonico

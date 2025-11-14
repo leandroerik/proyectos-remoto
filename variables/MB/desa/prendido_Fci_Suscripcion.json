@@ -1,0 +1,14 @@
+{
+    "Variables": [
+        {
+            "Name": "mb_prendido_Fci_Suscripcion",
+            "Value": "true"
+        },
+        {
+            "Name": "mb_prendido_Fci_Suscripcion_cobis",
+            "Value": "7000021_7000027_420417_9040760_5433918_4788790_4783202"
+        }
+    ],
+    "Redeploy": false
+}
+

@@ -1,0 +1,10 @@
+{
+    "Variables": [
+		{
+			"Name": "mb_sdk_pago_modo",
+			"Value": "true"
+		}
+    ],
+    "Redeploy": false
+}
+

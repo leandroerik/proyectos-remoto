@@ -1,0 +1,8 @@
+{
+    "Variables": [{
+            "Name": "hb_api_url_canales",
+            "Value": "http://api-canales-canales-prod.ocpp.bh.com.ar"
+        }
+    ],
+    "Redeploy": false
+}

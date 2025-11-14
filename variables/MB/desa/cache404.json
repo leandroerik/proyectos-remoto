@@ -1,0 +1,8 @@
+{
+    "Variables": [{
+            "Name": "mb_cache404",
+            "Value": "Cuotapartista,PosicionCuotapartista"
+        }
+    ],
+    "Redeploy": false
+}

@@ -1,0 +1,10 @@
+{
+    "Variables": [
+        {
+            "Name": "mb_prendido_cotizacion_mep_v3",
+            "Value": "true"
+        }
+    ],
+    "Redeploy": false
+}
+

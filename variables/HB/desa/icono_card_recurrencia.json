@@ -1,0 +1,9 @@
+{
+    "Variables": [
+		{
+            "Name": "hb_icono_card_recurrencia",
+            "Value": "assets/img/watch-naranja.svg"  
+        }
+    ],
+    "Redeploy": false
+}

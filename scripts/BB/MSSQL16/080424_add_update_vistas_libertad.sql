@@ -1,0 +1,980 @@
+USE buhobank
+GO
+
+DELETE bb_vistas
+WHERE id_plantilla_flujo = 2 OR id_plantilla_flujo = 1 OR id_plantilla_flujo = 3 OR id_plantilla_flujo = 11
+GO
+
+INSERT INTO	[dbo].[bb_vistas]
+(
+	[id_plantilla_flujo],
+	[orden_vista],
+	[codigo_vista],
+	[retoma_sesion],
+	[evento],
+	[contenido],
+	[habilitado],
+	[fecha_ultima_modificacion]
+)
+VALUES
+
+--FLUJO_LIBERTAD
+(
+	2,
+	1,
+	'V_BIENVENIDA_02',
+	0,
+	'9r1x1r',
+	'beneficiobh',
+	1,
+	GETDATE()
+),
+(
+	2,
+	2,
+	'V_GUARDAR_CONTACTO_02',
+	0,
+	'ff1h5h',
+	'',
+	1,
+	GETDATE()
+),
+(
+	2,
+	3,
+	'V_VALIDACION_SMS_00',
+	1,
+	NULL,
+	'',
+	1,
+	GETDATE()
+),
+(
+	2,
+	4,
+	'V_VALIDACION_SMS_OK_00',
+	1,
+	'i03bcn',
+	'',
+	1,
+	GETDATE()
+),
+(
+	2,
+	5,
+	'V_VALIDACION_EMAIL_00',
+	1,
+	'',
+	'',
+	1,
+	GETDATE()
+),
+(
+	2,
+	6,
+	'V_TYC_00',
+	1,
+	'kwl6jm',
+	'',
+	1,
+	GETDATE()
+),
+(
+	2,
+	7,
+	'V_FLUJO_VU_00',
+	1,
+	'c342cp',
+	'',
+	1,
+	GETDATE()
+),
+(
+	2,
+	8,
+	'V_SCANNER_DNI_00',
+	1,
+	'xfnx2y',
+	'',
+	1,
+	GETDATE()
+),
+(
+	2,
+	9,
+	'V_GUARDAR_NACIONALIDAD_00',
+	1,
+	'm2vww6',
+	'',
+	1,
+	GETDATE()
+),
+(
+	2,
+	10,
+	'V_VALIDAR_DATOS_00',
+	0,
+	'bcjao2',
+	'',
+	1,
+	GETDATE()
+),
+(
+	2,
+	11,
+	'V_OFERTA_00',
+	0,
+	'ij3mp3',
+	'',
+	1,
+	GETDATE()
+),
+(
+	2,
+	12,
+	'V_TIPO_TARJETA_00',
+	0,
+	'ij3mp3',
+	'tipo_tarjeta',
+	1,
+	GETDATE()
+),
+
+(
+	2,
+	13,
+	'V_COMPLETAR_DOM_LEGAL_00',
+	0,
+	'5l8lnj',
+	'',
+	1,
+	GETDATE()
+),
+(
+	2,
+	14,
+	'V_ELEGIR_DOM_ENVIO_00',
+	0,
+	'tvk1bt',
+	'',
+	1,
+	GETDATE()
+),
+(
+	2,
+	15,
+	'V_COMPLETAR_DOM_POSTAL_00',
+	0,
+	'3t7erl',
+	'',
+	1,
+	GETDATE()
+),
+(
+	2,
+	16,
+	'V_GUARDAR_ADICIONALES_00',
+	0,
+	'vxzwnl',
+	'',
+	1,
+	GETDATE()
+),
+(
+	2,
+	17,
+	'V_GUARDAR_CONYUGE_00',
+	0,
+	'akwhw7',
+	'',
+	1,
+	GETDATE()
+),
+(
+	2,
+	18,
+	'V_ELEGIR_CATEGORIAS_00',
+	0,
+	'njc9pd',
+	'',
+	1,
+	GETDATE()
+),
+(
+	2,
+	19,
+	'V_FELICITACIONES_00',
+	0,
+	'gt1shc',
+	'',
+	1,
+	GETDATE()
+),
+(
+	2,
+	20,
+	'V_CREAR_CLAVE_00',
+	0,
+	'20saqr',
+	'',
+	1,
+	GETDATE()
+),
+(
+	2,
+	21,
+	'V_LOGIN_00',
+	0,
+	'gk3rfh',
+	'',
+	1,
+	GETDATE()
+)
+GO
+
+--FLUJO_ONBOARDING
+INSERT INTO	[dbo].[bb_vistas]
+(
+	[id_plantilla_flujo],
+	[orden_vista],
+	[codigo_vista],
+	[retoma_sesion],
+	[evento],
+	[contenido],
+	[habilitado],
+	[fecha_ultima_modificacion]
+)
+VALUES
+(
+	1,
+	1,
+	'V_INICIO_DNI_01',
+	0,
+	'voulyz',
+	'',
+	1,
+	GETDATE()
+),
+(
+	1,
+	2,
+	'V_BIENVENIDA_01',
+	1,
+	'9r1x1r',
+	'beneficiobh',
+	1,
+	GETDATE()
+),
+(
+	1,
+	3,
+	'V_GUARDAR_CONTACTO_01',
+	1,
+	'ff1h5h',
+	'',
+	1,
+	GETDATE()
+),
+(
+	1,
+	4,
+	'V_VALIDACION_SMS_00',
+	1,
+	'',
+	'',
+	1,
+	GETDATE()
+),
+(
+	1,
+	5,
+	'V_VALIDACION_SMS_OK_00',
+	1,
+	'i03bcn',
+	'',
+	1,
+	GETDATE()
+),
+(
+	1,
+	6,
+	'V_VALIDACION_EMAIL_00',
+	1,
+	'',
+	'',
+	1,
+	GETDATE()
+),
+(
+	1,
+	7,
+	'V_TYC_00',
+	1,
+	'kwl6jm',
+	'',
+	1,
+	GETDATE()
+),
+(
+	1,
+	8,
+	'V_FLUJO_VU_00',
+	1,
+	'c342cp',
+	'',
+	1,
+	GETDATE()
+),
+(
+	1,
+	9,
+	'V_SCANNER_DNI_00',
+	1,
+	'xfnx2y',
+	'',
+	1,
+	GETDATE()
+),
+(
+	1,
+	10,
+	'V_GUARDAR_NACIONALIDAD_00',
+	1,
+	'm2vww6',
+	'',
+	1,
+	GETDATE()
+),
+(
+	1,
+	11,
+	'V_VALIDAR_DATOS_00',
+	0,
+	'bcjao2',
+	'',
+	1,
+	GETDATE()
+),
+(
+	1,
+	12,
+	'V_OFERTA_00',
+	0,
+	'ij3mp3',
+	'',
+	1,
+	GETDATE()
+),
+(
+	1,
+	13,
+	'V_TIPO_TARJETA_00',
+	0,
+	'',
+	'tipo_tarjeta',
+	1,
+	GETDATE()
+),
+(
+	1,
+	14,
+	'V_COMPLETAR_DOM_LEGAL_00',
+	0,
+	'5l8lnj',
+	'',
+	1,
+	GETDATE()
+),
+(
+	1,
+	15,
+	'V_ELEGIR_DOM_ENVIO_00',
+	0,
+	'tvk1bt',
+	'',
+	1,
+	GETDATE()
+),
+(
+	1,
+	16,
+	'V_COMPLETAR_DOM_POSTAL_00',
+	0,
+	'3t7erl',
+	'',
+	1,
+	GETDATE()
+),
+(
+	1,
+	17,
+	'V_GUARDAR_ADICIONALES_00',
+	0,
+	'vxzwnl',
+	'',
+	1,
+	GETDATE()
+),
+(
+	1,
+	18,
+	'V_GUARDAR_CONYUGE_00',
+	0,
+	'akwhw7',
+	'',
+	1,
+	GETDATE()
+),
+(
+	1,
+	19,
+	'V_ELEGIR_CUENTA_SUELDO_00',
+	0,
+	'',
+	'promos_cuenta_sueldo|tyc_cuenta_sueldo',
+	1,
+	GETDATE()
+),
+(
+	1,
+	20,
+	'V_ELEGIR_CATEGORIAS_00',
+	0,
+	'njc9pd',
+	'',
+	1,
+	GETDATE()
+),
+(
+	1,
+	21,
+	'V_FELICITACIONES_00',
+	0,
+	'gt1shc',
+	'',
+	1,
+	GETDATE()
+),
+(
+	1,
+	22,
+	'V_CREAR_CLAVE_00',
+	0,
+	'20saqr',
+	'',
+	1,
+	GETDATE()
+),
+(
+	1,
+	23,
+	'V_LOGIN_00',
+	0,
+	'gk3rfh',
+	'',
+	1,
+	GETDATE()
+)
+GO
+
+--FLUJO_INVERSIONES
+IF @@SERVERNAME LIKE '%HOMOMSSQL16'
+BEGIN
+DELETE bb_vistas
+	WHERE id_plantilla_flujo = 3
+
+	INSERT INTO	[dbo].[bb_vistas]
+	(
+		[id_plantilla_flujo],
+		[orden_vista],
+		[codigo_vista],
+		[retoma_sesion],
+		[evento],
+		[contenido],
+		[habilitado],
+		[fecha_ultima_modificacion]
+	)
+	VALUES
+	(
+		11,
+		1,
+		'V_INICIO_DNI_01',
+		0,
+		'voulyz',
+		'',
+		1,
+		GETDATE()
+	),
+	(
+		11,
+		2,
+		'V_BIENVENIDA_GENERICO',
+		1,
+		'9r1x1r',
+		'beneficiobhv2',
+		1,
+		GETDATE()
+	),
+	(
+		11,
+		3,
+		'V_GUARDAR_CONTACTO_01',
+		1,
+		'ff1h5h',
+		'',
+		1,
+		GETDATE()
+	),
+	(
+		11,
+		4,
+		'V_VALIDACION_SMS_00',
+		1,
+		'',
+		'',
+		1,
+		GETDATE()
+	),
+	(
+		11,
+		5,
+		'V_VALIDACION_SMS_OK_00',
+		1,
+		'i03bcn',
+		'',
+		1,
+		GETDATE()
+	),
+	(
+		11,
+		6,
+		'V_VALIDACION_EMAIL_00',
+		1,
+		'',
+		'',
+		1,
+		GETDATE()
+	),
+	(
+		11,
+		7,
+		'V_TYC_00',
+		1,
+		'kwl6jm',
+		'',
+		1,
+		GETDATE()
+	),
+	(
+		11,
+		8,
+		'V_FLUJO_VU_00',
+		1,
+		'c342cp',
+		'',
+		1,
+		GETDATE()
+	),
+	(
+		11,
+		9,
+		'V_SCANNER_DNI_00',
+		1,
+		'xfnx2y',
+		'',
+		1,
+		GETDATE()
+	),
+	(
+		11,
+		10,
+		'V_GUARDAR_NACIONALIDAD_00',
+		1,
+		'm2vww6',
+		'',
+		1,
+		GETDATE()
+	),
+	(
+		11,
+		11,
+		'V_VALIDAR_DATOS_00',
+		0,
+		'bcjao2',
+		'',
+		1,
+		GETDATE()
+	),
+	(
+		11,
+		12,
+		'V_OFERTA_00',
+		0,
+		'ij3mp3',
+		'',
+		1,
+		GETDATE()
+	),
+	(
+		11,
+		13,
+		'V_TIPO_TARJETA_00',
+		0,
+		'',
+		'tipo_tarjeta',
+		1,
+		GETDATE()
+	),
+	(
+		11,
+		14,
+		'V_COMPLETAR_DOM_LEGAL_00',
+		0,
+		'5l8lnj',
+		'',
+		1,
+		GETDATE()
+	),
+	(
+		11,
+		15,
+		'V_ELEGIR_DOM_ENVIO_00',
+		0,
+		'tvk1bt',
+		'',
+		1,
+		GETDATE()
+	),
+	(
+		11,
+		16,
+		'V_COMPLETAR_DOM_POSTAL_00',
+		0,
+		'3t7erl',
+		'',
+		1,
+		GETDATE()
+	),
+	(
+		11,
+		17,
+		'V_GUARDAR_ADICIONALES_00',
+		0,
+		'vxzwnl',
+		'',
+		1,
+		GETDATE()
+	),
+	(
+		11,
+		18,
+		'V_GUARDAR_CONYUGE_00',
+		0,
+		'akwhw7',
+		'',
+		1,
+		GETDATE()
+	),
+	(
+		11,
+		19,
+		'V_ELEGIR_CUENTA_SUELDO_00',
+		0,
+		'',
+		'promos_cuenta_sueldo|tyc_cuenta_sueldo',
+		1,
+		GETDATE()
+	),
+	(
+		11,
+		20,
+		'V_ELEGIR_CATEGORIAS_00',
+		0,
+		'njc9pd',
+		'',
+		1,
+		GETDATE()
+	),
+	(
+		11,
+		21,
+		'V_FELICITACIONES_00',
+		0,
+		'gt1shc',
+		'',
+		1,
+		GETDATE()
+	),
+	(
+		11,
+		22,
+		'V_CREAR_CLAVE_00',
+		0,
+		'20saqr',
+		'',
+		1,
+		GETDATE()
+	),
+	(
+		11,
+		23,
+		'V_LOGIN_00',
+		0,
+		'gk3rfh',
+		'',
+		1,
+		GETDATE()
+	)
+END
+GO
+
+--FLUJO_INVERSIONES
+IF @@SERVERNAME LIKE '%PRODMSSQL16'
+BEGIN
+	DELETE bb_vistas
+	WHERE id_plantilla_flujo = 3
+
+	INSERT INTO	[dbo].[bb_vistas]
+	(
+		[id_plantilla_flujo],
+		[orden_vista],
+		[codigo_vista],
+		[retoma_sesion],
+		[evento],
+		[contenido],
+		[habilitado],
+		[fecha_ultima_modificacion]
+	)
+	VALUES
+	(
+		3,
+		1,
+		'V_INICIO_DNI_01',
+		0,
+		'voulyz',
+		'',
+		1,
+		GETDATE()
+	),
+	(
+		3,
+		2,
+		'V_BIENVENIDA_GENERICO',
+		1,
+		'9r1x1r',
+		'beneficiobhv2',
+		1,
+		GETDATE()
+	),
+	(
+		3,
+		3,
+		'V_GUARDAR_CONTACTO_01',
+		1,
+		'ff1h5h',
+		'',
+		1,
+		GETDATE()
+	),
+	(
+		3,
+		4,
+		'V_VALIDACION_SMS_00',
+		1,
+		'',
+		'',
+		1,
+		GETDATE()
+	),
+	(
+		3,
+		5,
+		'V_VALIDACION_SMS_OK_00',
+		1,
+		'i03bcn',
+		'',
+		1,
+		GETDATE()
+	),
+	(
+		3,
+		6,
+		'V_VALIDACION_EMAIL_00',
+		1,
+		'',
+		'',
+		1,
+		GETDATE()
+	),
+	(
+		3,
+		7,
+		'V_TYC_00',
+		1,
+		'kwl6jm',
+		'',
+		1,
+		GETDATE()
+	),
+	(
+		3,
+		8,
+		'V_FLUJO_VU_00',
+		1,
+		'c342cp',
+		'',
+		1,
+		GETDATE()
+	),
+	(
+		3,
+		9,
+		'V_SCANNER_DNI_00',
+		1,
+		'xfnx2y',
+		'',
+		1,
+		GETDATE()
+	),
+	(
+		3,
+		10,
+		'V_GUARDAR_NACIONALIDAD_00',
+		1,
+		'm2vww6',
+		'',
+		1,
+		GETDATE()
+	),
+	(
+		3,
+		11,
+		'V_VALIDAR_DATOS_00',
+		0,
+		'bcjao2',
+		'',
+		1,
+		GETDATE()
+	),
+	(
+		3,
+		12,
+		'V_OFERTA_00',
+		0,
+		'ij3mp3',
+		'',
+		1,
+		GETDATE()
+	),
+	(
+		3,
+		13,
+		'V_TIPO_TARJETA_00',
+		0,
+		'',
+		'tipo_tarjeta',
+		1,
+		GETDATE()
+	),
+	(
+		3,
+		14,
+		'V_COMPLETAR_DOM_LEGAL_00',
+		0,
+		'5l8lnj',
+		'',
+		1,
+		GETDATE()
+	),
+	(
+		3,
+		15,
+		'V_ELEGIR_DOM_ENVIO_00',
+		0,
+		'tvk1bt',
+		'',
+		1,
+		GETDATE()
+	),
+	(
+		3,
+		16,
+		'V_COMPLETAR_DOM_POSTAL_00',
+		0,
+		'3t7erl',
+		'',
+		1,
+		GETDATE()
+	),
+	(
+		3,
+		17,
+		'V_GUARDAR_ADICIONALES_00',
+		0,
+		'vxzwnl',
+		'',
+		1,
+		GETDATE()
+	),
+	(
+		3,
+		18,
+		'V_GUARDAR_CONYUGE_00',
+		0,
+		'akwhw7',
+		'',
+		1,
+		GETDATE()
+	),
+	(
+		3,
+		19,
+		'V_ELEGIR_CUENTA_SUELDO_00',
+		0,
+		'',
+		'promos_cuenta_sueldo|tyc_cuenta_sueldo',
+		1,
+		GETDATE()
+	),
+	(
+		3,
+		20,
+		'V_ELEGIR_CATEGORIAS_00',
+		0,
+		'njc9pd',
+		'',
+		1,
+		GETDATE()
+	),
+	(
+		3,
+		21,
+		'V_FELICITACIONES_00',
+		0,
+		'gt1shc',
+		'',
+		1,
+		GETDATE()
+	),
+	(
+		3,
+		22,
+		'V_CREAR_CLAVE_00',
+		0,
+		'20saqr',
+		'',
+		1,
+		GETDATE()
+	),
+	(
+		3,
+		23,
+		'V_LOGIN_00',
+		0,
+		'gk3rfh',
+		'',
+		1,
+		GETDATE()
+	)
+END
+GO

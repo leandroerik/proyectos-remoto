@@ -1,0 +1,9 @@
+{
+    "Variables": [
+		{
+            "Name": "hb_prendido_paginado_movimientos_cuenta",
+            "Value": "true"  
+        }
+    ],
+    "Redeploy": false
+}

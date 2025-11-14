@@ -1,0 +1,59 @@
+{
+  "Variables": [
+    {
+      "Name": "hb_prendido_seguro_combo_bm",
+      "Value": "true"
+    }
+  ,{
+      "Name": "hb_prendido_seguro_combo",
+      "Value": "true"
+    }
+  ,
+    {
+      "Name": "hb_prendido_seguro_auto",
+      "Value": "true"
+    }
+  ,
+    {
+      "Name": "hb_prendido_seguro_auto",
+      "Value": "true"
+    },
+    {
+      "Name": "hb_prendido_seguro_mascotas",
+      "Value": "true"
+    },
+    {
+      "Name": "hb_prendido_seguro_movilidad",
+      "Value": "true"
+    },
+    {
+      "Name": "hb_prendido_seguro_ap_mayores",
+      "Value": "true"
+    },
+    {
+      "Name": "hb_apagar_ofertas_mascotas",
+      "Value": "false"
+    },
+    {
+      "Name": "hb_formato_precio",
+      "Value": "#,###.##"
+    },
+    {
+      "Name": "hb_prendido_seguro_salud_senior",
+      "Value": "false"
+    },
+    {
+      "Name": "hb_prendido_seguro_caucion",
+      "Value": "true"
+    },
+    {
+      "Name": "hb_cantidad_cuotas_seguro_caucion",
+      "Value": "15"
+    },
+    {
+      "Name": "hb_porcetaje_descuento_seguro_caucion",
+      "Value": "15"
+    }
+  ],
+  "Redeploy": false
+}

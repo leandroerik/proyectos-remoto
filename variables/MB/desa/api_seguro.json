@@ -1,0 +1,9 @@
+{
+    "Variables": [
+        {
+            "Name": "mb_api_url_seguro",
+            "Value": "http://api-seguro-microservicios-desa.appd.bh.com.ar"
+        }
+    ],
+    "Redeploy": false
+}

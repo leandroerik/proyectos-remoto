@@ -1,0 +1,10 @@
+{
+    "Variables": [
+		{
+            "Name": "mb_prendido_obtener_cvv_tc",
+            "Value": "false"   
+        }
+
+    ],
+    "Redeploy": false
+}

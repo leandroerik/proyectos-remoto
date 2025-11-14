@@ -1,0 +1,13 @@
+{
+	"Variables": [
+		{
+			"Name": "JAVA_XMS",
+			"Value": "64m"
+		},
+		{
+			"Name": "JAVA_XMX",
+			"Value": "1024m"
+		}
+	],
+	"Redeploy": false
+}

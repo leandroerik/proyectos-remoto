@@ -1,0 +1,14 @@
+{
+    "Variables": [
+        {
+            "Name": "mb_prendido_hace_rendir_tu_dinero",
+            "Value": "true"
+        },
+        {
+            "Name": "mb_prendido_hace_rendir_tu_dinero_cobis",
+            "Value": "7000021_7000025_9040759_9040760_5433918_4788790_4783202"
+        }
+    ],
+    "Redeploy": false
+}
+

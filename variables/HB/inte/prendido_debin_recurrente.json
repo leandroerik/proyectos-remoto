@@ -1,0 +1,9 @@
+{
+    "Variables": [
+		{
+            "Name": "hb_prendido_debin_recurrente",
+            "Value": "true"  
+        }
+    ],
+    "Redeploy": false
+}

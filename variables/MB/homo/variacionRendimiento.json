@@ -1,0 +1,17 @@
+{
+    "Variables": [
+        {
+            "Name": "mb_FFvariacionRendimiento",
+            "Value": "true"
+        },
+        {
+            "Name": "mb_FFvariacionRendimiento_cobis",
+            "Value": "6727534_7000021_5222916_7000029_5433918_4788790_8963984_7000089"
+        },
+        {
+            "Name": "mb_api_url_servicio-fondos",
+            "Value": "http://fondos-dom.microservicios-homo.svc.cluster.local:8080/"
+        }
+    ],
+    "Redeploy": false
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE xml>
+
+<configuration>
+
+	<!-- APPENDER -->
+	<appender name="consola-full"
+		class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>[%d{HH:mm:ss}] %-5level %class{36}.%M %L - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<appender name="consola"
+		class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>[%d{HH:mm:ss}] %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<appender name="consola-simple"
+		class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<!-- LOGGER -->
+	<root level="info">
+		<appender-ref ref="consola-full" />
+	</root>
+
+	<logger name="spark" level="warn" additivity="false">
+		<appender-ref ref="consola" />
+	</logger>
+
+	<logger name="org.eclipse.jetty" level="info" additivity="false">
+		<appender-ref ref="consola" />
+	</logger>
+
+	<logger name="com.zaxxer.hikari" level="warn" additivity="false">
+		<appender-ref ref="consola" />
+	</logger>
+
+	<logger name="org.hibernate" level="error" additivity="false">
+		<appender-ref ref="consola-full" />
+	</logger>
+
+	<logger name="ar.com.hipotecario.backend.Servidor" level="info"
+		additivity="false">
+		<appender-ref ref="consola-simple" />
+	</logger>
+
+	<logger name="ar.com.hipotecario.backend.conector.api"
+		level="info" additivity="false">
+		<appender-ref ref="consola-simple" />
+	</logger>
+
+	<logger name="com.microsoft.sqlserver.jdbc.TDSChannel"
+		level="error" additivity="false">
+		<appender-ref ref="consola-simple" />
+	</logger>
+
+</configuration>

@@ -1,0 +1,9 @@
+{
+    "Variables": [
+        {
+            "Name": "hb_salesforce_prendido_transferencia_in_out",
+            "Value": "true"
+        }
+    ],
+    "Redeploy": false
+}

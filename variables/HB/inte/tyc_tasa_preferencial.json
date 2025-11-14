@@ -1,0 +1,9 @@
+{
+    "Variables": [
+        {
+            "Name": "hb_tyc_tasa_preferencial",
+            "Value": "Oferta v&aacute;lida en la Rep&uacute;blica Argentina hasta el <strong>$FECHA_VIGENCIA</strong> inclusive para la constituci&oacute;n de nuevos dep&oacute;sitos a plazo fijo EN PESOS de hasta <strong>$PLAZO</strong> d&iacute;as en este Banco a trav&eacute;s de los canales digitales habilitados a tal fin. Tasa Nominal Anual: <strong>$TASA_FORMATEADA&#37</strong>. Tasa Efectiva Anual: <strong>$TASA_EFECTIVA_ANUAL_FORMATEADA&#37</strong> Monto M&iacute;nimo <strong>&dollar;$MONTO_DESDE_FORMATEADO</strong>/ Monto M&aacute;ximo <strong>&dollar;$MONTO_HASTA_FORMATEADO</strong>. Los dep&oacute;sitos en pesos y en moneda extranjera cuentan con la garant&iacute;a de hasta $25.000.000. En las operaciones a nombre de dos o m&aacute;s personas, la garant&iacute;a se prorratear&aacute; entre sus titulares. En ning&uacute;n caso, el total de la garant&iacute;a por persona y por dep&oacute;sito podr&aacute; exceder los $25.000.000, cualquiera sea el n&uacute;mero de cuentas y/o dep&oacute;sitos. Ley 24.485, Decreto N&deg; 540/95 y modificatorias y Com. &quot;A&quot; 2337 y sus modificatorias y complementarias. Se encuentran excluidos los captados a tasas superiores a la de referencia conforme a los l&iacute;mites establecidos por el Banco Central, los adquiridos por endoso y los efectuados por personas vinculadas a la entidad financiera."
+        }
+    ],
+    "Redeploy": false
+}

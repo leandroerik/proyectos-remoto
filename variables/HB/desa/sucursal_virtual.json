@@ -1,0 +1,13 @@
+{
+    "Variables": [
+        {
+            "Name": "hb_api_url_CRM_Windows",
+            "Value": "https://bhhdwwbuec64:501"
+        },
+		{
+            "Name": "hb_prendido_insert_sucursalvirtual",
+            "Value": "true"
+        }
+    ],
+    "Redeploy": false
+}

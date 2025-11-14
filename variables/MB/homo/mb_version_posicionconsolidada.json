@@ -1,0 +1,8 @@
+{
+    "Variables": [{
+            "Name": "mb_version_posicionconsolidada",
+            "Value": "/v1"
+        }
+    ],
+    "Redeploy": false
+}

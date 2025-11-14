@@ -1,0 +1,13 @@
+{
+    "Variables": [
+        {
+            "Name": "mb_prendido_beneficios_cobis",
+            "Value": "1208787992_8471000_5943052_8649931_1297127_5885789_23693_350413_8782991_853_3255158"
+        },
+        {
+            "Name": "mb_prendido_beneficios",
+            "Value": "true"
+        }
+    ],
+    "Redeploy": false
+}

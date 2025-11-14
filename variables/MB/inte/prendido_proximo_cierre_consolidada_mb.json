@@ -1,0 +1,9 @@
+{
+    "Variables": [
+		{
+            "Name": "mb_prendido_proximo_cierre_consolidada",
+            "Value": "false"  
+        }
+    ],
+    "Redeploy": false
+}

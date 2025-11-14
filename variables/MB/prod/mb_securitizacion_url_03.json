@@ -1,0 +1,45 @@
+{
+    "Variables": [
+        {
+            "Name": "mb_api_url_originacion",
+            "Value": "http://api-originacion-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "mb_api_url_orquestados",
+            "Value": "http://api-servicios-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "mb_api_url_paquetes",
+            "Value": "http://api-paquetes-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "mb_api_url_personas",
+            "Value": "http://api-personas-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "mb_api_url_plazosfijos",
+            "Value": "http://api-plazosfijos-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "mb_api_url_prestamos",
+            "Value": "http://api-prestamos.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "mb_api_url_prisma",
+            "Value": "http://api-prisma-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "mb_api_url_procesos",
+            "Value": "http://api-procesos-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "mb_api_url_productos",
+            "Value": "http://api-productos.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "mb_api_url_recaudaciones",
+            "Value": "http://api-recaudaciones-op.microservicios-prod.svc.cluster.local:8080"
+        }
+    ],
+    "Redeploy": false
+}

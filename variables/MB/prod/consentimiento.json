@@ -1,0 +1,21 @@
+{
+    "Variables": [
+		{
+			"Name": "mb_api_url_canales",
+			"Value": "http://api-canales-canales-prod.ocpp.bh.com.ar"
+		},
+		{
+			"Name": "mb_prendidoConsentimiento",
+			"Value": "true"
+		},
+		{
+			"Name": "mb_prendidoConsentimiento_cobis",
+			"Value": "8743612_8975474_6860246_8965574_3633092_6291854_8963984_1744079"
+		},
+		{
+			"Name": "mb_api_url_consentimiento",
+			"Value": "https://connections.modo.com.ar/"
+		}
+    ],
+    "Redeploy": true
+}

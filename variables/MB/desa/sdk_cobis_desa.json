@@ -1,0 +1,13 @@
+{
+    "Variables": [
+        {
+            "Name": "mb_prendido_sdk_cobis",
+            "Value": "5943620_4172914_853_3255158"
+        },
+        {
+            "Name": "mb_prendido_sdk",
+            "Value": "true"
+        }
+    ],
+    "Redeploy": false
+}

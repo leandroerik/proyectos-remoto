@@ -1,0 +1,13 @@
+{
+    "Variables": [  
+		{
+            "Name": "hb_mitigante_no_permitido_pp",
+            "Value": "\'CAMBIO_CLAVE\', \'CAMBIO_MAIL\', \'CAMBIO_TELEFONO\', \'CAMBIO_USUARIO\'"
+        },
+		{
+            "Name": "hb_mitigante_dias_no_permitido_pp",
+            "Value": "2"
+        }
+    ],
+    "Redeploy": false
+}

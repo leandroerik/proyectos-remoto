@@ -1,0 +1,25 @@
+{
+    "Variables": [
+		{
+            "Name": "hb_rango_start_ip",
+            "Value": "10.99.0.0"  
+        },
+		{
+            "Name": "hb_rango_end_ip",
+            "Value": "10.99.255.254"  
+        },
+		{
+            "Name": "hb_rango_start_vpn_ip",
+            "Value": "10.253.8.0"  
+        },
+		{
+            "Name": "hb_rango_end_vpn_ip",
+            "Value": "10.253.255.254"  
+        },
+		{
+            "Name": "hb_prendido_recaptcha",
+            "Value": "true"  
+        }
+    ],
+    "Redeploy": false
+}

@@ -1,0 +1,45 @@
+{
+    "Variables": [
+        {
+            "Name": "hb_api_url_formularios_windows",
+            "Value": "https://api-formularios-microservicios-desa.apps.aro-desa.bh.com.ar"
+        },
+        {
+            "Name": "hb_api_url_dictamenes",
+            "Value": "http://api-dictamenes-microservicios-desa.apps.aro-desa.bh.com.ar"
+        },
+        {
+            "Name": "hb_api_url_digitalizacion",
+            "Value": "http://api-digitalizacion-microservicios-desa.apps.aro-desa.bh.com.ar"
+        },
+        {
+            "Name": "hb_api_url_inversiones",
+            "Value": "https://api-inversiones-microservicios-desa.apps.aro-desa.bh.com.ar"
+        },
+        {
+            "Name": "hb_api_url_link",
+            "Value": "https://api-link-microservicios-desa.apps.aro-desa.bh.com.ar"
+        },
+        {
+            "Name": "hb_api_url_moras",
+            "Value": "https://api-moras-microservicios-desa.apps.aro-desa.bh.com.ar"
+        },
+        {
+            "Name": "hb_api_url_notificaciones",
+            "Value": "https://api-notificaciones-microservicios-desa.apps.aro-desa.bh.com.ar"
+        },
+        {
+            "Name": "hb_api_url_originacion",
+            "Value": "http://api-originacion-microservicios-desa.apps.aro-desa.bh.com.ar"
+        },
+        {
+            "Name": "hb_api_url_orquestados",
+            "Value": "http://api-orquestado-microservicios-desa.apps.aro-desa.bh.com.ar"
+        },
+        {
+            "Name": "hb_api_url_paquetes",
+            "Value": "https://api-paquetes-microservicios-desa.apps.aro-desa.bh.com.ar"
+        }
+    ],
+    "Redeploy": false
+}

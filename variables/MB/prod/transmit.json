@@ -1,0 +1,33 @@
+{
+    "Variables": [
+		{
+            "Name": "mb_migracion_transmit_completa",
+            "Value": "false"   
+        },
+		{
+            "Name": "mb_prendido_migracion_transmit",
+            "Value": "true"   
+        },
+		{
+            "Name": "mb_cantidad_dias_reintento_transmit",
+            "Value": "3"   
+        },
+		{
+            "Name": "backend_api_seguridad",
+            "Value": "https://api-seguridad-microservicios-prod.ocpp.bh.com.ar"   
+        },
+		{
+            "Name": "backend_api_personas",
+            "Value": "https://api-personas-microservicios-prod.ocpp.bh.com.ar"   
+        },
+		{
+            "Name": "backend_api_auditor",
+            "Value": "http://auditor-microservicios-prod.ocpp.bh.com.ar"   
+        },
+		{
+            "Name": "backend_sql_homebanking",
+            "Value": "jdbc:sqlserver://prodmssql16.bh.com.ar:1201;databaseName=homebanking;sendStringParametersAsUnicode=false; ENC(P70nk3aRwAhBVgd9J5PT/ETd6VIGpd9A) ENC(F/sZKnF/6cNWzhPnviTfmclhMWvcHXkl)"   
+        }
+    ],
+    "Redeploy": false
+}

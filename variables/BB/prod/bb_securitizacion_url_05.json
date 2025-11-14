@@ -1,0 +1,21 @@
+{
+   "Variables":[
+      {
+         "Name":"backend_api_Modo",
+         "Value":"http://api-play-sistemico.microservicios-prod.svc.cluster.local:8080"
+      },
+      {
+         "Name":"bb_api_url_auditor",
+         "Value":"http://auditor.microservicios-prod.svc.cluster.local:8080"
+      },
+      {
+         "Name":"backend_api_auditor",
+         "Value":"http://auditor.microservicios-prod.svc.cluster.local:8080"
+      },
+      {
+         "Name":"backend_api_tarjetasCredito",
+         "Value":"http://api-tarjetascredito.microservicios-prod.svc.cluster.local:8080"
+      }
+   ],
+   "Redeploy":false
+}

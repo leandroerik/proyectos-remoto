@@ -1,0 +1,9 @@
+{
+    "Variables": [
+        {
+            "Name": "backend_api_mobile",
+            "Value": "http://backend-unificado-mb-canales-homo.apps.aro-np.bh.com.ar/mb"
+        }
+    ],
+    "Redeploy": false
+}

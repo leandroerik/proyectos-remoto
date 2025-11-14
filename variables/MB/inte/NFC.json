@@ -1,0 +1,10 @@
+{
+    "Variables": [
+		{
+			"Name": "mb_api_url_thales",
+			"Value": "http://api-thales-microservicios-desa.appd.bh.com.ar"
+		}
+    ],
+    "Redeploy": false
+}
+

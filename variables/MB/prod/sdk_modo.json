@@ -1,0 +1,14 @@
+{
+    "Variables": [
+		{
+			"Name": "mb_sdk_pago_modo",
+			"Value": "true"
+		},
+		{
+			"Name": "mb_sdk_pago_modo_cobis",
+			"Value": "8975474_8745202_8990905_3633092_4766510_5001188_8348074_3653533_2179852_6860246_8963984"
+		}
+    ],
+    "Redeploy": true
+}
+

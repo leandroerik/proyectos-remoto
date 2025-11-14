@@ -1,0 +1,9 @@
+{
+    "Variables": [
+         {
+            "Name": "hb_leyendaMepFueraHorario",
+            "Value": "Te recordamos que el horario para operar es de lunes a viernes de 10:30 a 17:00 hs."
+        }
+    ],
+    "Redeploy": false
+}

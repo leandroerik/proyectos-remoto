@@ -1,0 +1,9 @@
+{
+    "Variables": [
+        {
+            "Name": "backend_api_tarjetasCredito",
+            "Value": "http://api-tarjetascredito.microservicios-homo.svc.cluster.local:8080"
+        }
+    ],
+    "Redeploy": false
+}

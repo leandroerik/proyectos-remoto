@@ -1,0 +1,8 @@
+{
+    "Variables": [{
+            "Name": "hb_prendido_pausado_td",
+            "Value": "true"
+        }
+    ],
+    "Redeploy": false
+}

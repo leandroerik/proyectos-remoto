@@ -1,0 +1,13 @@
+{
+    "Variables": [
+        {
+            "Name": "mb_prendido_agenda_transferencia_cobis",
+            "Value": "9040571_151004_5841097_6090851_6041602_133366_9041483_9041492"
+        },
+        {
+            "Name": "mb_prendido_agenda_transferencia",
+            "Value": "false"
+        }
+    ],
+    "Redeploy": false
+}

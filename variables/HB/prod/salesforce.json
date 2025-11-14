@@ -1,0 +1,26 @@
+{
+    "Variables": [
+        {
+            "Name": "hb_salesforce_agenda_beneficiario",
+            "Value": "APIEvent-d138b155-76d5-a354-174f-731b2b9388fa"
+        },
+        {
+            "Name": "hb_salesforce_login",
+            "Value": "APIEvent-d15fafe8-fdad-1030-2a3a-d20935feb950"
+        },
+        {
+            "Name": "hb_salesforce_aumento_limite",
+            "Value": "APIEvent-67c8bd28-80fa-c48b-283c-d10512dcafaf"
+        },
+        {
+            "Name": "hb_prendido_salesforce_cobis",
+            "Value": "8351078_7334314_6298127_7925090_8824120_1803121_8931202_8964396_7526300_3633092_31338_2179852_8348074_8964883_8861680_8964347_432011_4766510_1597173_824085_7327619_6173256"
+        },
+        {
+            "Name": "hb_prendido_salesforce",
+            "Value": "false"
+        }
+    ],
+    "Redeploy": false
+}
+

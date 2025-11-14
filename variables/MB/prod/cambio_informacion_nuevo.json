@@ -1,0 +1,8 @@
+{
+    "Variables": [{
+            "Name": "mb_cambio_information_no_permitido_nuevo",
+            "Value": "\'CAMBIO_MAIL\', \'CAMBIO_TELEFONO\'"
+        }
+    ],
+    "Redeploy": false
+}

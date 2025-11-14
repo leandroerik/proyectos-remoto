@@ -1,0 +1,13 @@
+{
+    "Variables": [
+		{
+			"Name": "hb_prendido_fondos_fuera_de_horario_v2",
+			"Value": "true"
+		},
+		{
+			"Name": "hb_api_url_inversiones_agenda",
+			"Value": "http://api-inversiones-microservicios-desa.appd.bh.com.ar"
+		}
+    ],
+    "Redeploy": false
+}

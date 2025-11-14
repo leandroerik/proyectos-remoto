@@ -1,0 +1,8 @@
+{
+    "Variables": [{
+            "Name": "mb_validar_onboarding_registro_dispositivo",
+            "Value": "true"
+        }
+    ],
+    "Redeploy": false
+}

@@ -1,0 +1,19 @@
+{
+    "Variables": [{
+            "Name": "hb_escalar_precio_mercado_compra_acciones_bonos",
+            "Value": "0.01"
+        },{
+            "Name": "hb_escalar_precio_mercado_venta_acciones_bonos",
+            "Value": "-0.01"
+        },{
+            "Name": "hb_inv_comision_mercado_venta",
+            "Value": "0.01"
+        },{
+            "Name": "hb_inv_comision_mercado_compra",
+            "Value": "0.01"
+        }
+    ],
+    "Redeploy": false
+}
+
+

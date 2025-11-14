@@ -1,0 +1,9 @@
+{
+    "Variables": [
+        {
+            "Name": "mb_api_url_formularios_windows",
+            "Value": "https://api-formularios-microservicios-homo.appd.bh.com.ar"
+        }
+    ],
+    "Redeploy": false
+}

@@ -1,0 +1,9 @@
+{
+    "Variables": [
+        {
+            "Name": "hb_version_posicionconsolidada",
+            "Value": "/v3"
+        }
+    ],
+    "Redeploy": false
+}

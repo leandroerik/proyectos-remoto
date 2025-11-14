@@ -1,0 +1,37 @@
+{
+    "Variables": [
+		{
+            "Name": "hb_migracion_transmit_completa",
+            "Value": "false"   
+        },
+		{
+            "Name": "hb_prendido_migracion_transmit",
+            "Value": "true"   
+        },
+		{
+            "Name": "hb_alta_usuario_transmit",
+            "Value": "false"   
+		},
+		{
+            "Name": "backend_api_seguridad",
+            "Value": "https://api-seguridad-microservicios-prod.ocpp.bh.com.ar"   
+        },
+		{
+            "Name": "backend_api_personas",
+            "Value": "https://api-personas-microservicios-prod.ocpp.bh.com.ar"   
+        },
+		{
+            "Name": "backend_api_auditor",
+            "Value": "http://auditor-microservicios-prod.ocpp.bh.com.ar"   
+        },
+		{
+            "Name": "backend_sql_homebanking",
+            "Value": "jdbc:sqlserver://prodmssql16.bh.com.ar:1201;databaseName=homebanking;sendStringParametersAsUnicode=false; ENC(P70nk3aRwAhBVgd9J5PT/ETd6VIGpd9A) ENC(F/sZKnF/6cNWzhPnviTfmclhMWvcHXkl)"   
+        },
+		{
+            "Name": "drs_bd_url",
+            "Value": "jdbc:sqlserver://sqlmi-prodazsql97.d17a783e4f85.database.windows.net;authentication=ActiveDirectoryPassword;trustServerCertificate=false;encrypt=true;loginTimeout=30"
+        }
+    ],
+    "Redeploy": false
+}

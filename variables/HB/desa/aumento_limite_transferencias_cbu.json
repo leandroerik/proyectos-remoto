@@ -1,0 +1,8 @@
+{
+    "Variables": [{
+            "Name": "hb_configuracion_limite_transferencia_pesos",
+            "Value": "5000000"
+        }
+    ],
+    "Redeploy": false
+}

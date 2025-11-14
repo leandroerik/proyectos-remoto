@@ -1,0 +1,20 @@
+{
+    "Variables": [{
+            "Name": "hb_horario_compra_venta_dolares_inicio",
+            "Value": "07:00"
+        },{
+            "Name": "hb_horario_compra_venta_dolares_fin",
+            "Value": "21:00"
+        },{
+            "Name": "hb_dolarFueraHorario_cobis",
+            "Value": "9040759"
+        },
+        {
+            "Name": "hb_dolarSinCotizaciones_cobis",
+            "Value": "298840"
+        }
+    ],
+    "Redeploy": false
+}
+
+

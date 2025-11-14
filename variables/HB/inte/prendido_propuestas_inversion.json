@@ -1,0 +1,8 @@
+{
+    "Variables": [{
+            "Name": "hb_mostrar_propuestas_inversion",
+            "Value": "true"
+        }
+    ],
+    "Redeploy": true
+}

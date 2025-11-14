@@ -1,0 +1,13 @@
+**/.apt_generated/
+**/.apt_generated_tests/
+**/.classpath
+**/.factorypath
+**/.gradle/
+**/.idea/
+**/.project
+**/.settings/
+**/ambiente.produccion.properties
+**/backend.iml
+**/bin/
+**/build/
+**/target/

@@ -1,0 +1,9 @@
+{
+    "Variables": [
+        {
+            "Name": "hb_deshabilitar_alta_inversor_cobis",
+            "Value": "http://api-cvu-microservicios-desa.appd.bh.com.ar"
+        }
+    ],
+    "Redeploy": false
+}

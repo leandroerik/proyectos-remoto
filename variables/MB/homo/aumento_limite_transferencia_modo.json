@@ -1,0 +1,8 @@
+{
+    "Variables": [{
+            "Name": "mb_configuracion_limite_transferencia_modo",
+            "Value": "2000000"
+        }
+    ],
+    "Redeploy": false
+}

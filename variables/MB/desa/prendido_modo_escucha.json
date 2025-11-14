@@ -1,0 +1,41 @@
+{
+    "Variables": [
+        {
+            "Name": "mb_prendido_modo_escucha_login",
+            "Value": "false"
+        },
+		{
+            "Name": "mb_prendido_modo_escucha_nuevo_beneficiario",
+            "Value": "false"
+        },
+		{
+            "Name": "mb_prendido_modo_escucha_debin",
+            "Value": "false"
+        },
+		{
+            "Name": "mb_prendido_modo_escucha_venta_dolares",
+            "Value": "false"
+        },
+		{
+            "Name": "mb_prendido_modo_escucha_rescate_fondos",
+            "Value": "false"
+        },
+		{
+            "Name": "mb_prendido_modo_escucha_datos_personales",
+            "Value": "false"
+        },
+		{
+            "Name": "mb_prendido_modo_escucha_alta_producto",
+            "Value": "false"
+        },
+		{
+            "Name": "mb_prendido_modo_escucha_alta_segundo_factor",
+            "Value": "false"
+        },
+		{
+            "Name": "mb_prendido_modo_escucha_alta_nuevo_dispositivo",
+            "Value": "false"
+        }
+   ],
+    "Redeploy": false
+}

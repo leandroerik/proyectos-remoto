@@ -1,0 +1,42 @@
+{
+    "Variables": [
+        {
+            "Name": "hb_prendido_cashback_cobis",
+            "Value": "784_853_174978_3255158_8824120_7526300"
+        },
+        {
+            "Name": "hb_prendido_cashback",
+            "Value": "false"
+        },
+        {
+            "Name": "hb_cashback_premio_20230001",
+            "Value": "20230001_Tarjeta Visa Credito_1000_TC_1000_136262403"
+        },
+        {
+            "Name": "hb_cashback_premio_20230002",
+            "Value": "20230002_Tarjeta Visa Credito_2000_TC_2000_136275107"
+        },
+        {
+            "Name": "hb_cashback_premio_20230003",
+            "Value": "20230003_Tarjeta Visa Credito_3000_TC_3000_136275108"
+        },
+        {
+            "Name": "hb_cashback_premio_20230004",
+            "Value": "20230004_Caja de ahorro_1000_CA_1000_136275109"
+        },
+        {
+            "Name": "hb_cashback_premio_20230005",
+            "Value": "20230005_Caja de ahorro_2000_CA_2000_136275110"
+        },
+        {
+            "Name": "hb_cashback_premio_20230006",
+            "Value": "20230006_Caja de ahorro_3000_CA_3000_136275111"
+        },
+        {
+            "Name": "hb_cashback_observaciones",
+            "Value": "Canje con entrega virtual"
+        }
+    ],
+    "Redeploy": false
+}
+

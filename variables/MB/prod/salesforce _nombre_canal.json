@@ -1,0 +1,9 @@
+{
+    "Variables": [
+        {
+            "Name": "mb_salesforce_nombre_canal",
+            "Value": "App BH"
+        }
+    ],
+    "Redeploy": false
+}

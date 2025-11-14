@@ -1,0 +1,21 @@
+{
+    "Variables": [
+        {
+            "Name": "mb_salesforce_alta_prestamo",
+            "Value": "APIEvent-5ffec8be-2d21-8861-be91-f87e9d48e6c6"
+        },
+        {
+            "Name": "mb_salesforce_desembolso_adelanto",
+            "Value": "APIEvent-5d3d558d-cfac-dad3-6484-b4b1b9cd8081"
+        },
+        {
+            "Name": "mb_salesforce_prendido_alta_prestamo",
+            "Value": "true"
+        },
+        {
+            "Name": "mb_salesforce_keys_cartera_general",
+            "Value": "APIEvent-0e3fe9eb-4757-3f05-7742-e3cb1fc08865"
+        }
+   ],
+    "Redeploy": false
+}

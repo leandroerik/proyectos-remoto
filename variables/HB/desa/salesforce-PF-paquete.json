@@ -1,0 +1,14 @@
+{
+    "Variables": [
+        {
+            "Name": "hb_salesforce_solicitud_cancelacion_anticipada_pf_uva",
+            "Value": "APIEvent-41e2e24f-08f2-c057-7ec5-f0791636eb28"
+        },
+        {
+            "Name": "hb_salesforce_alta_paquete",
+            "Value": "APIEvent-cb1b0d3e-4fde-b840-5cfa-8c947c168218"
+        }
+    ],
+    "Redeploy": false
+}
+

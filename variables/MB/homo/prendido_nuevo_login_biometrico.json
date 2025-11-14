@@ -1,0 +1,9 @@
+{
+    "Variables": [
+		{
+            "Name": "mb_prendido_nuevo_login_biometrico",
+            "Value": "false"  
+        }
+    ],
+    "Redeploy": false
+}

@@ -1,0 +1,4460 @@
+{
+	"info": {
+		"_postman_id": "b5946e09-ea30-4822-afe5-ff773761691f",
+		"name": "05-OB-ADMINISTRACION",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Modificaciones de Operador",
+			"item": [
+				{
+					"name": "/ob/api/enviar-invitacion",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"mceschi@hipotecario.com.ar\",\r\n    \"numeroDocumento\": \"34545678\",\r\n    \"nombre\": \"Diego\",\r\n    \"apellido\": \"Perez\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto}}/ob/api/enviar-invitacion",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto}}",
+							"path": [
+								"ob",
+								"api",
+								"enviar-invitacion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ob/api/invitacion",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\": \"ENC(8pXDcb3O/M05WM/9znux+1BsWo88zcRwOTlQTsZqs7GkK4jwK1ne4HHat9OwSx0qnKEOnqF8rDmq1j88UZjqJg==)\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto}}/ob/api/invitacion",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto}}",
+							"path": [
+								"ob",
+								"api",
+								"invitacion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ob/api/validar-dni-operador",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"ENC(8pXDcb3O/M05WM/9znux+1BsWo88zcRwOTlQTsZqs7GkK4jwK1ne4HHat9OwSx0qnKEOnqF8rDmq1j88UZjqJg==)\",\r\n    \"numeroDocumento\": \"34545678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto}}/ob/api/validar-dni-operador",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto}}",
+							"path": [
+								"ob",
+								"api",
+								"validar-dni-operador"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ob/api/login-oi",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"numeroDocumento\": \"25260141\",\r\n\"usuario\": \"0\",\r\n\"clave\": \"0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto}}/ob/api/login",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto}}",
+							"path": [
+								"ob",
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ob/api/login-oi Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"numeroDocumento\": \"25260141\",\r\n\"usuario\": \"0\",\r\n\"clave\": \"0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto}}/ob/api/login",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto}}",
+							"path": [
+								"ob",
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ob/api/operadores",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto}}/ob/api/operadores",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto}}",
+							"path": [
+								"ob",
+								"api",
+								"operadores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ob/api/permisos-operador",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroDocumento\": \"28846321\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto}}/ob/api/permisos-operador",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto}}",
+							"path": [
+								"ob",
+								"api",
+								"permisos-operador"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ob/api/editar-permisos-operador",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"permisos\": \"2,3\",\r\n\t\"numeroDocumento\": \"28846321\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto}}/ob/api/editar-permisos-operador",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto}}",
+							"path": [
+								"ob",
+								"api",
+								"editar-permisos-operador"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ob/api/permisos-operador",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroDocumento\": \"28846321\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto}}/ob/api/permisos-operador",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto}}",
+							"path": [
+								"ob",
+								"api",
+								"permisos-operador"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ob/api/cuentas-operador",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroDocumento\": \"28846321\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto}}/ob/api/cuentas-operador",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto}}",
+							"path": [
+								"ob",
+								"api",
+								"cuentas-operador"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ob/api/cuentas",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto}}/ob/api/cuentas",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto}}",
+							"path": [
+								"ob",
+								"api",
+								"cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ob/api/editar-cuentas-operador",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"cuentas\": \"300000000367220\",\r\n\t\"numeroDocumento\": \"28846321\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto}}/ob/api/editar-cuentas-operador",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto}}",
+							"path": [
+								"ob",
+								"api",
+								"editar-cuentas-operador"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ob/api/cuentas-operador",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroDocumento\": \"50355946\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto}}/ob/api/cuentas-operador",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto}}",
+							"path": [
+								"ob",
+								"api",
+								"cuentas-operador"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ob/api/login-op",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"numeroDocumento\": \"29985059\",\r\n\"usuario\": \"0\",\r\n\"cuit\": 30617280406,\r\n\"clave\": \"0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto}}/ob/api/login",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto}}",
+							"path": [
+								"ob",
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ob/api/nuevo-operador",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroDocumento\": \"34545678\",\r\n   \"token\": \"ENC(8pXDcb3O/M05WM/9znux+1BsWo88zcRwOTlQTsZqs7GkK4jwK1ne4HHat9OwSx0qnKEOnqF8rDmq1j88UZjqJg==)\",\r\n    \"usuario\": \"Pepe2022\",\r\n    \"nombre\": \"DIEGO\",\r\n    \"apellido\": \"POGGI\",\r\n    \"clave\": \"Pepe2022\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto}}/ob/api/nuevo-operador",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto}}",
+							"path": [
+								"ob",
+								"api",
+								"nuevo-operador"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ob/api/baja-operador",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"numeroDocumento\": \"28846321\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto}}/ob/api/baja-operador",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto}}",
+							"path": [
+								"ob",
+								"api",
+								"baja-operador"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ob/api/logout",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto}}/ob/api/logout",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto}}",
+							"path": [
+								"ob",
+								"api",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Migracion de usuarios",
+			"item": [
+				{
+					"name": "01. Migrar usuario",
+					"item": [
+						{
+							"name": "/oba/api/login",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    const jsonData = pm.response.json();\r",
+											"    var dni = jsonData.datos.cuil.substring(2, 10);\r",
+											"    pm.collectionVariables.set(\"dni\", dni);\r",
+											"\r",
+											"    console.log (dni); \r",
+											"\r",
+											"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"numeroDocumento\": \"23593556\", \r\n    \"usuario\": \"0\",\r\n    \"clave\": \"0\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/oba/api/login",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"oba",
+										"api",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/oba/api/validar-dni",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"dni\" : \"{{dni}}\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/oba/api/validar-dni",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"oba",
+										"api",
+										"validar-dni"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/oba/api/enviar-token-correo",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    const jsonData = pm.response.json();\r",
+											"    pm.collectionVariables.set(\"token\", jsonData.datos.token);\r",
+											"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"email\": \"correo{{$timestamp}}@hipotecario.com.ar\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/oba/api/enviar-token-correo",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"oba",
+										"api",
+										"enviar-token-correo"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/oba/api/validar-token-correo",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"token\": \"{{token}}\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/oba/api/validar-token-correo",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"oba",
+										"api",
+										"validar-token-correo"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/oba/api/validadores",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/oba/api/validadores",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"oba",
+										"api",
+										"validadores"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/oba/api/enviar-token",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    const jsonData = pm.response.json();\r",
+											"    pm.collectionVariables.set(\"token\", jsonData.datos.token);\r",
+											"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"validador\": \"{{validador}}\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/oba/api/enviar-token",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"oba",
+										"api",
+										"enviar-token"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/oba/api/validar-token",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"validador\": \"{{validador}}\",\r\n\t\"token\": \"0\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/oba/api/validar-token",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"oba",
+										"api",
+										"validar-token"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/oba/api/migrar-usuario",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    var req = JSON.parse(pm.request.body.raw);\r",
+											"    pm.collectionVariables.set(\"usuarioMigrado\", req.usuario);\r",
+											"    pm.collectionVariables.set(\"claveMigrada\", req.clave); \r",
+											"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{  \r\n\t\"usuario\" : \"Um{{$timestamp}}\",\r\n\t\"clave\" : \"Cm{{$timestamp}}\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/oba/api/migrar-usuario",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"oba",
+										"api",
+										"migrar-usuario"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/ob/api/login",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"numeroDocumento\": \"{{dni}}\",\r\n\t\"usuario\" : \"{{usuarioMigrado}}\",\r\n\t\"clave\" : \"{{claveMigrada}}\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/ob/api/login",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"ob",
+										"api",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/ob/api/datos-personales",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/ob/api/datos-personales",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"ob",
+										"api",
+										"datos-personales"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/ob/api/logout",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/ob/api/logout",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"ob",
+										"api",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Recupero y modificación de usuarios",
+			"item": [
+				{
+					"name": "01. Recupero y login",
+					"item": [
+						{
+							"name": "00. Configuración",
+							"item": [
+								{
+									"name": "/ob/api/health",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Successful GET request\", function () {\r",
+													"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+													"});\r",
+													"\r",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://{{servidor}}:{{puerto}}/ob/api/health",
+											"protocol": "http",
+											"host": [
+												"{{servidor}}"
+											],
+											"port": "{{puerto}}",
+											"path": [
+												"ob",
+												"api",
+												"health"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ob/api/config",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Successful POST request\", function () {\r",
+													"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "http://{{servidor}}:{{puerto}}/ob/api/config",
+											"protocol": "http",
+											"host": [
+												"{{servidor}}"
+											],
+											"port": "{{puerto}}",
+											"path": [
+												"ob",
+												"api",
+												"config"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "01. Recupero de usuario",
+							"item": [
+								{
+									"name": "/ob/api/logout",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Successful POST request\", function () {\r",
+													"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\t\"numeroDocumento\" : \"64547134\",\r\n    \"usuario\" : \"Emiliano1\",\r\n\t\"captcha\": \"0\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{servidor}}:{{puerto}}/ob/api/logout",
+											"protocol": "http",
+											"host": [
+												"{{servidor}}"
+											],
+											"port": "{{puerto}}",
+											"path": [
+												"ob",
+												"api",
+												"logout"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ob/api/captcha",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Successful GET request\", function () {\r",
+													"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+													"});\r",
+													"\r",
+													"pm.test(\"Body matches string\", function () {\r",
+													"   const jsonData = pm.response.headers;\r",
+													"    pm.collectionVariables.set(\"captcha\", jsonData.get(\"captcha\"));\r",
+													"});\r",
+													"\r",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://{{servidor}}:{{puerto}}/ob/api/captcha",
+											"protocol": "http",
+											"host": [
+												"{{servidor}}"
+											],
+											"port": "{{puerto}}",
+											"path": [
+												"ob",
+												"api",
+												"captcha"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ob/api/recuperar-usuario",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Successful POST request\", function () {\r",
+													"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+													"});\r",
+													"\r",
+													"pm.test(\"Body matches string\", function () {\r",
+													"    const jsonData = pm.response.json();\r",
+													"    pm.collectionVariables.set(\"usuarioRecuperado\", jsonData.datos.usuario);\r",
+													"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\t\"numeroDocumento\": \"{{dni}}\",\r\n\t\"captcha\": \"{{captcha}}\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{servidor}}:{{puerto}}/ob/api/recuperar-usuario",
+											"protocol": "http",
+											"host": [
+												"{{servidor}}"
+											],
+											"port": "{{puerto}}",
+											"path": [
+												"ob",
+												"api",
+												"recuperar-usuario"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ob/api/logout",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Successful POST request\", function () {\r",
+													"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\t\"numeroDocumento\" : \"64547134\",\r\n    \"usuario\" : \"Emiliano1\",\r\n\t\"captcha\": \"0\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{servidor}}:{{puerto}}/ob/api/logout",
+											"protocol": "http",
+											"host": [
+												"{{servidor}}"
+											],
+											"port": "{{puerto}}",
+											"path": [
+												"ob",
+												"api",
+												"logout"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "02. Recupero de clave",
+							"item": [
+								{
+									"name": "/ob/api/logout",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Successful POST request\", function () {\r",
+													"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\t\"numeroDocumento\" : \"64547134\",\r\n    \"usuario\" : \"Emiliano1\",\r\n\t\"captcha\": \"0\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{servidor}}:{{puerto}}/ob/api/logout",
+											"protocol": "http",
+											"host": [
+												"{{servidor}}"
+											],
+											"port": "{{puerto}}",
+											"path": [
+												"ob",
+												"api",
+												"logout"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ob/api/pseudo-login",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Successful POST request\", function () {\r",
+													"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+													"});\r",
+													"\r",
+													"pm.test(\"Body matches string\", function () {\r",
+													"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\t\"numeroDocumento\": \"{{dni}}\",\r\n\t\"usuario\" :  \"{{usuarioRecuperado}}\",\r\n\t\"captcha\": \"0\"\r\n}\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{servidor}}:{{puerto}}/ob/api/pseudo-login",
+											"protocol": "http",
+											"host": [
+												"{{servidor}}"
+											],
+											"port": "{{puerto}}",
+											"path": [
+												"ob",
+												"api",
+												"pseudo-login"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ob/api/validadores",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Successful POST request\", function () {\r",
+													"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+													"});\r",
+													"\r",
+													"pm.test(\"Body matches string\", function () {\r",
+													"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\t\"numeroDocumento\" : \"64547134\",\r\n    \"usuario\" : \"Emiliano1\",\r\n\t\"captcha\": \"0\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{servidor}}:{{puerto}}/ob/api/validadores",
+											"protocol": "http",
+											"host": [
+												"{{servidor}}"
+											],
+											"port": "{{puerto}}",
+											"path": [
+												"ob",
+												"api",
+												"validadores"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ob/api/enviar-token",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Successful POST request\", function () {\r",
+													"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+													"});\r",
+													"\r",
+													"pm.test(\"Body matches string\", function () {\r",
+													"    const jsonData = pm.response.json();\r",
+													"    pm.collectionVariables.set(\"token\", jsonData.datos.token);\r",
+													"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\t\"validador\": \"{{validador}}\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{servidor}}:{{puerto}}/ob/api/enviar-token",
+											"protocol": "http",
+											"host": [
+												"{{servidor}}"
+											],
+											"port": "{{puerto}}",
+											"path": [
+												"ob",
+												"api",
+												"enviar-token"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ob/api/validar-token",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Successful POST request\", function () {\r",
+													"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+													"});\r",
+													"\r",
+													"pm.test(\"Body matches string\", function () {\r",
+													"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\t\"validador\": \"{{validador}}\",\r\n\t\"token\": \"0\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{servidor}}:{{puerto}}/ob/api/validar-token",
+											"protocol": "http",
+											"host": [
+												"{{servidor}}"
+											],
+											"port": "{{puerto}}",
+											"path": [
+												"ob",
+												"api",
+												"validar-token"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ob/api/recuperar-clave",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Successful POST request\", function () {\r",
+													"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+													"});\r",
+													"\r",
+													"pm.test(\"Body matches string\", function () {\r",
+													"    var req = JSON.parse(pm.request.body.raw);\r",
+													"    pm.collectionVariables.set(\"claveRecuperada\", req.clave);\r",
+													"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\t\"clave\": \"Ob{{$timestamp}}\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{servidor}}:{{puerto}}/ob/api/recuperar-clave",
+											"protocol": "http",
+											"host": [
+												"{{servidor}}"
+											],
+											"port": "{{puerto}}",
+											"path": [
+												"ob",
+												"api",
+												"recuperar-clave"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ob/api/logout",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Successful POST request\", function () {\r",
+													"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\t\"numeroDocumento\" : \"64547134\",\r\n    \"usuario\" : \"Emiliano1\",\r\n\t\"captcha\": \"0\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{servidor}}:{{puerto}}/ob/api/logout",
+											"protocol": "http",
+											"host": [
+												"{{servidor}}"
+											],
+											"port": "{{puerto}}",
+											"path": [
+												"ob",
+												"api",
+												"logout"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "03. Login",
+							"item": [
+								{
+									"name": "/ob/api/logout",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Successful POST request\", function () {\r",
+													"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{servidor}}:{{puerto}}/ob/api/logout",
+											"protocol": "http",
+											"host": [
+												"{{servidor}}"
+											],
+											"port": "{{puerto}}",
+											"path": [
+												"ob",
+												"api",
+												"logout"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ob/api/login",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Successful POST request\", function () {\r",
+													"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+													"});\r",
+													"\r",
+													"pm.test(\"Body matches string\", function () {\r",
+													"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\t\"numeroDocumento\": \"{{dni}}\",\r\n\t\"usuario\" : \"{{usuarioRecuperado}}\",\r\n\t\"clave\" : \"{{claveRecuperada}}\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{servidor}}:{{puerto}}/ob/api/login",
+											"protocol": "http",
+											"host": [
+												"{{servidor}}"
+											],
+											"port": "{{puerto}}",
+											"path": [
+												"ob",
+												"api",
+												"login"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ob/api/usuario",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Successful POST request\", function () {\r",
+													"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+													"});\r",
+													"\r",
+													"pm.test(\"Body matches string\", function () {\r",
+													"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{servidor}}:{{puerto}}/ob/api/usuario",
+											"protocol": "http",
+											"host": [
+												"{{servidor}}"
+											],
+											"port": "{{puerto}}",
+											"path": [
+												"ob",
+												"api",
+												"usuario"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ob/api/datos-personales",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Successful POST request\", function () {\r",
+													"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+													"});\r",
+													"\r",
+													"pm.test(\"Body matches string\", function () {\r",
+													"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{servidor}}:{{puerto}}/ob/api/datos-personales",
+											"protocol": "http",
+											"host": [
+												"{{servidor}}"
+											],
+											"port": "{{puerto}}",
+											"path": [
+												"ob",
+												"api",
+												"datos-personales"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ob/api/validadores",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Successful POST request\", function () {\r",
+													"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+													"});\r",
+													"\r",
+													"pm.test(\"Body matches string\", function () {\r",
+													"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{servidor}}:{{puerto}}/ob/api/validadores",
+											"protocol": "http",
+											"host": [
+												"{{servidor}}"
+											],
+											"port": "{{puerto}}",
+											"path": [
+												"ob",
+												"api",
+												"validadores"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ob/api/logout",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Successful POST request\", function () {\r",
+													"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{servidor}}:{{puerto}}/ob/api/logout",
+											"protocol": "http",
+											"host": [
+												"{{servidor}}"
+											],
+											"port": "{{puerto}}",
+											"path": [
+												"ob",
+												"api",
+												"logout"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "02. Modificar datos personales",
+					"item": [
+						{
+							"name": "01. Modificar nombre",
+							"item": [
+								{
+									"name": "/ob/api/login",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Successful POST request\", function () {\r",
+													"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+													"});\r",
+													"\r",
+													"pm.test(\"Body matches string\", function () {\r",
+													"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\t\"numeroDocumento\": \"{{dni}}\",\r\n\t\"usuario\" : \"{{usuarioRecuperado}}\",\r\n\t\"clave\" : \"{{claveRecuperada}}\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{servidor}}:{{puerto}}/ob/api/login",
+											"protocol": "http",
+											"host": [
+												"{{servidor}}"
+											],
+											"port": "{{puerto}}",
+											"path": [
+												"ob",
+												"api",
+												"login"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ob/api/modificar-nombre",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Successful POST request\", function () {\r",
+													"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+													"});\r",
+													"\r",
+													"pm.test(\"Body matches string\", function () {\r",
+													"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\t\"nombre\": \"Emiliano\",\r\n\t\"apellido\" : \"Kalujerovich\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{servidor}}:{{puerto}}/ob/api/modificar-nombre",
+											"protocol": "http",
+											"host": [
+												"{{servidor}}"
+											],
+											"port": "{{puerto}}",
+											"path": [
+												"ob",
+												"api",
+												"modificar-nombre"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ob/api/logout",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Successful POST request\", function () {\r",
+													"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\t\"numeroDocumento\" : \"64547134\",\r\n    \"usuario\" : \"Emiliano1\",\r\n\t\"captcha\": \"0\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{servidor}}:{{puerto}}/ob/api/logout",
+											"protocol": "http",
+											"host": [
+												"{{servidor}}"
+											],
+											"port": "{{puerto}}",
+											"path": [
+												"ob",
+												"api",
+												"logout"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "02. Modificar datos personales",
+							"item": [
+								{
+									"name": "/ob/api/login",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Successful POST request\", function () {\r",
+													"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+													"});\r",
+													"\r",
+													"pm.test(\"Body matches string\", function () {\r",
+													"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\t\"numeroDocumento\": \"{{dni}}\",\r\n\t\"usuario\" : \"{{usuarioRecuperado}}\",\r\n\t\"clave\" : \"{{claveRecuperada}}\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{servidor}}:{{puerto}}/ob/api/login",
+											"protocol": "http",
+											"host": [
+												"{{servidor}}"
+											],
+											"port": "{{puerto}}",
+											"path": [
+												"ob",
+												"api",
+												"login"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ob/api/enviar-token-correo",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Successful POST request\", function () {\r",
+													"    const jsonData = pm.response.json();\r",
+													"    pm.collectionVariables.set(\"token\", jsonData.datos.token);\r",
+													"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\t\"email\": \"{{$timestamp}}@hipotecario.com\"\r\n}\r\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{servidor}}:{{puerto}}/ob/api/enviar-token-correo",
+											"protocol": "http",
+											"host": [
+												"{{servidor}}"
+											],
+											"port": "{{puerto}}",
+											"path": [
+												"ob",
+												"api",
+												"enviar-token-correo"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ob/api/validar-token-correo",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Successful POST request\", function () {\r",
+													"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\t\"token\": \"{{token}}\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{servidor}}:{{puerto}}/ob/api/validar-token-correo",
+											"protocol": "http",
+											"host": [
+												"{{servidor}}"
+											],
+											"port": "{{puerto}}",
+											"path": [
+												"ob",
+												"api",
+												"validar-token-correo"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ob/api/validadores",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Successful POST request\", function () {\r",
+													"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+													"});\r",
+													"\r",
+													"pm.test(\"Body matches string\", function () {\r",
+													"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{servidor}}:{{puerto}}/ob/api/validadores",
+											"protocol": "http",
+											"host": [
+												"{{servidor}}"
+											],
+											"port": "{{puerto}}",
+											"path": [
+												"ob",
+												"api",
+												"validadores"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ob/api/enviar-token",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Successful POST request\", function () {\r",
+													"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+													"});\r",
+													"\r",
+													"pm.test(\"Body matches string\", function () {\r",
+													"    const jsonData = pm.response.json();\r",
+													"    pm.collectionVariables.set(\"token\", jsonData.datos.token);\r",
+													"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\t\"validador\": \"{{validador}}\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{servidor}}:{{puerto}}/ob/api/enviar-token",
+											"protocol": "http",
+											"host": [
+												"{{servidor}}"
+											],
+											"port": "{{puerto}}",
+											"path": [
+												"ob",
+												"api",
+												"enviar-token"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ob/api/validar-token",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Successful POST request\", function () {\r",
+													"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+													"});\r",
+													"\r",
+													"pm.test(\"Body matches string\", function () {\r",
+													"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\t\"validador\": \"{{validador}}\",\r\n\t\"token\": \"0\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{servidor}}:{{puerto}}/ob/api/validar-token",
+											"protocol": "http",
+											"host": [
+												"{{servidor}}"
+											],
+											"port": "{{puerto}}",
+											"path": [
+												"ob",
+												"api",
+												"validar-token"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ob/api/modificar-datos-personales",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Successful POST request\", function () {\r",
+													"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+													"});\r",
+													"\r",
+													"pm.test(\"Body matches string\", function () {\r",
+													"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n\t\"telefonoLaboral\" : \"43533212\",\r\n\t\"telefonoMovil\" : \"1169435378\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{servidor}}:{{puerto}}/ob/api/modificar-datos-personales",
+											"protocol": "http",
+											"host": [
+												"{{servidor}}"
+											],
+											"port": "{{puerto}}",
+											"path": [
+												"ob",
+												"api",
+												"modificar-datos-personales"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ob/api/datos-personales",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Successful POST request\", function () {\r",
+													"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+													"});\r",
+													"\r",
+													"pm.test(\"Body matches string\", function () {\r",
+													"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{servidor}}:{{puerto}}/ob/api/datos-personales",
+											"protocol": "http",
+											"host": [
+												"{{servidor}}"
+											],
+											"port": "{{puerto}}",
+											"path": [
+												"ob",
+												"api",
+												"datos-personales"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/ob/api/logout",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"pm.test(\"Successful POST request\", function () {\r",
+													"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://{{servidor}}:{{puerto}}/ob/api/logout",
+											"protocol": "http",
+											"host": [
+												"{{servidor}}"
+											],
+											"port": "{{puerto}}",
+											"path": [
+												"ob",
+												"api",
+												"logout"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "03. Modificar usuario",
+					"item": [
+						{
+							"name": "/ob/api/login",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"numeroDocumento\": \"{{dni}}\",\r\n\t\"usuario\" : \"{{usuarioRecuperado}}\",\r\n\t\"clave\" : \"{{claveRecuperada}}\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/ob/api/login",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"ob",
+										"api",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/ob/api/validadores",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/ob/api/validadores",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"ob",
+										"api",
+										"validadores"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/ob/api/enviar-token",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    const jsonData = pm.response.json();\r",
+											"    pm.collectionVariables.set(\"token\", jsonData.datos.token);\r",
+											"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"validador\": \"{{validador}}\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/ob/api/enviar-token",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"ob",
+										"api",
+										"enviar-token"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/ob/api/validar-token",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"validador\": \"{{validador}}\",\r\n\t\"token\": \"0\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/ob/api/validar-token",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"ob",
+										"api",
+										"validar-token"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/ob/api/modificar-usuario",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    var req = JSON.parse(pm.request.body.raw);\r",
+											"    pm.collectionVariables.set(\"usuarioModificado\", req.nuevoUsuario);\r",
+											"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"usuario\": \"{{usuarioRecuperado}}\",\r\n    \"nuevoUsuario\": \"Ob{{$timestamp}}\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/ob/api/modificar-usuario",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"ob",
+										"api",
+										"modificar-usuario"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/ob/api/datos-personales",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/ob/api/datos-personales",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"ob",
+										"api",
+										"datos-personales"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/ob/api/logout",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"numeroDocumento\" : \"64547134\",\r\n    \"usuario\" : \"Emiliano1\",\r\n\t\"captcha\": \"0\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/ob/api/logout",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"ob",
+										"api",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Administración",
+			"item": [
+				{
+					"name": "01. Validar operador",
+					"item": [
+						{
+							"name": "/ob/api/login",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"numeroDocumento\": \"64311665\",\r\n\t\"usuario\" : \"Um1650393689\",\r\n\t\"clave\" : \"Cm1650393689\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/ob/api/login",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"ob",
+										"api",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/ob/api/validar-operador",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"dni\": \"29985059\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/ob/api/validar-operador",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"ob",
+										"api",
+										"validar-operador"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/ob/api/logout",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"numeroDocumento\" : \"64547134\",\r\n    \"usuario\" : \"Emiliano1\",\r\n\t\"captcha\": \"0\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/ob/api/logout",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"ob",
+										"api",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "02. Alta de operador",
+					"item": [
+						{
+							"name": "/ob/api/login",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"numeroDocumento\": \"12969683\",\r\n\t\"usuario\" : \"0\",\r\n\t\"clave\" : \"0\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/ob/api/login",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"ob",
+										"api",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "solicitarPermisos",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"idsPermisos\" : [1,2,3,33]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/ob/api/solicitar-nuevo-permiso",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"ob",
+										"api",
+										"solicitar-nuevo-permiso"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/ob/api/cuentas",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/ob/api/cuentas",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"ob",
+										"api",
+										"cuentas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/ob/api/validar-operador",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"dni\": \"29985059\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/ob/api/validar-operador",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"ob",
+										"api",
+										"validar-operador"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/ob/api/alta-operador",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"numeroDocumento\": \"29985059\",\r\n\t\"cuentas\" : \"\",\r\n\t\"permisos\" : \"2,3\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/ob/api/alta-operador",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"ob",
+										"api",
+										"alta-operador"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/ob/api/logout",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"numeroDocumento\" : \"64547134\",\r\n    \"usuario\" : \"Emiliano1\",\r\n\t\"captcha\": \"0\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/ob/api/logout",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"ob",
+										"api",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "03. Obtener operadores",
+					"item": [
+						{
+							"name": "/ob/api/login",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"numeroDocumento\": \"64311665\",\r\n\t\"usuario\" : \"Um1650393689\",\r\n\t\"clave\" : \"Cm1650393689\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/ob/api/login",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"ob",
+										"api",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/ob/api/operadores",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/ob/api/operadores",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"ob",
+										"api",
+										"operadores"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/ob/api/logout",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"numeroDocumento\" : \"64547134\",\r\n    \"usuario\" : \"Emiliano1\",\r\n\t\"captcha\": \"0\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/ob/api/logout",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"ob",
+										"api",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "04. Obtener permisos operador",
+					"item": [
+						{
+							"name": "/ob/api/login",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"numeroDocumento\": \"64311665\",\r\n\t\"usuario\" : \"Um1650393689\",\r\n\t\"clave\" : \"Cm1650393689\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/ob/api/login",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"ob",
+										"api",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/ob/api/permisos-operador",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"numeroDocumento\": \"12670942\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/ob/api/permisos-operador",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"ob",
+										"api",
+										"permisos-operador"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/ob/api/logout",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"numeroDocumento\" : \"64547134\",\r\n    \"usuario\" : \"Emiliano1\",\r\n\t\"captcha\": \"0\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/ob/api/logout",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"ob",
+										"api",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "05. Obtener cuentas operador",
+					"item": [
+						{
+							"name": "/ob/api/login",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"numeroDocumento\": \"64311665\",\r\n\t\"usuario\" : \"Um1650393689\",\r\n\t\"clave\" : \"Cm1650393689\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/ob/api/login",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"ob",
+										"api",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/ob/api/cuentas-operador",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"numeroDocumento\": \"12670942\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/ob/api/cuentas-operador",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"ob",
+										"api",
+										"cuentas-operador"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/ob/api/logout",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"numeroDocumento\" : \"64547134\",\r\n    \"usuario\" : \"Emiliano1\",\r\n\t\"captcha\": \"0\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/ob/api/logout",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"ob",
+										"api",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "06. Editar permisos operador",
+					"item": [
+						{
+							"name": "/ob/api/login",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"numeroDocumento\": \"64547134\",\r\n\t\"usuario\" : \"Ob1643725421\",\r\n\t\"clave\" : \"Banco1234\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/ob/api/login",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"ob",
+										"api",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/ob/api/editar-permisos-operador",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"permisos\": \"1,2\",\r\n\t\"numeroDocumento\": \"12670942\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/ob/api/editar-permisos-operador",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"ob",
+										"api",
+										"editar-permisos-operador"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/ob/api/logout",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"numeroDocumento\" : \"64547134\",\r\n    \"usuario\" : \"Emiliano1\",\r\n\t\"captcha\": \"0\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/ob/api/logout",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"ob",
+										"api",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "07. Editar cuentas operador",
+					"item": [
+						{
+							"name": "/ob/api/login",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"numeroDocumento\": \"12670942\",\r\n\t\"usuario\" : \"Emiliano1234\",\r\n\t\"clave\" : \"Emiliano1234\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/ob/api/login",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"ob",
+										"api",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/ob/api/editar-cuentas-operador",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"cuentas\": \"12345\",\r\n\t\"numeroDocumento\": \"12670942\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/ob/api/editar-cuentas-operador",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"ob",
+										"api",
+										"editar-cuentas-operador"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/ob/api/logout",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"numeroDocumento\" : \"64547134\",\r\n    \"usuario\" : \"Emiliano1\",\r\n\t\"captcha\": \"0\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/ob/api/logout",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"ob",
+										"api",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/ob/api/login Copy",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"numeroDocumento\": \"29698692\",\r\n\t\"usuario\" : \"Altamasiva1\",\r\n\t\"clave\" : \"EmilianoOI1234\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/ob/api/login",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"ob",
+										"api",
+										"login"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "08. Baja operador",
+					"item": [
+						{
+							"name": "/ob/api/login",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"numeroDocumento\": \"64547134\",\r\n\t\"usuario\" : \"Ob1643725421\",\r\n\t\"clave\" : \"Banco1234\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/ob/api/login",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"ob",
+										"api",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/ob/api/baja-operador",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Body matches string\", function () {\r",
+											"    pm.expect(pm.response.text()).to.include('\"estado\": \"0\"');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"numeroDocumento\": \"12670942\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/ob/api/baja-operador",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"ob",
+										"api",
+										"baja-operador"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/ob/api/logout",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Successful POST request\", function () {\r",
+											"    pm.expect(pm.response.code).to.be.oneOf([200]);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"numeroDocumento\" : \"64547134\",\r\n    \"usuario\" : \"Emiliano1\",\r\n\t\"captcha\": \"0\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://{{servidor}}:{{puerto}}/ob/api/logout",
+									"protocol": "http",
+									"host": [
+										"{{servidor}}"
+									],
+									"port": "{{puerto}}",
+									"path": [
+										"ob",
+										"api",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "dni",
+			"value": ""
+		},
+		{
+			"key": "token",
+			"value": ""
+		},
+		{
+			"key": "usuarioMigrado",
+			"value": ""
+		},
+		{
+			"key": "claveMigrada",
+			"value": ""
+		}
+	]
+}

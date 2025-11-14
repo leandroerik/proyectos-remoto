@@ -1,0 +1,25 @@
+{
+    "Variables": [ 
+		{
+            "Name": "mb_recarga_rubro_celulares",
+            "Value": "TP"
+        },
+		{
+            "Name": "mb_recarga_codigo_personal",
+            "Value": "602"
+        },
+		{
+            "Name": "mb_recarga_descripcion_personal",
+            "Value": "Personal"
+        },
+		{
+            "Name": "mb_recarga_rubro_billeteras",
+            "Value": "BI"
+        },
+		{
+            "Name": "mb_recarga_codigos_billeteras",
+            "Value": "631,"
+        }
+    ],
+    "Redeploy": false
+}

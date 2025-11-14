@@ -1,0 +1,9 @@
+{
+    "Variables": [
+        {
+            "Name": "hb_mercadosecundario_email",
+            "Value": "gfperez@hipotecario.com.ar"
+        }
+   ],
+    "Redeploy": false
+}

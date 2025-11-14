@@ -1,0 +1,9 @@
+{
+    "Variables": [{
+            "Name": "hb_prendido_liberacion_hipoteca",
+            "Value": "true"
+        }
+    ],
+    "Redeploy": false
+}
+

@@ -1,0 +1,8 @@
+{
+    "Variables": [{
+            "Name": "mb_dolarMep_horaFin",
+            "Value": "16:30"
+        }
+    ],
+    "Redeploy": false
+}

@@ -1,0 +1,45 @@
+{
+    "Variables": [
+        {
+            "Name": "mb_api_url_clientes",
+            "Value": "http://api-clientes-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "mb_api_url_comprobantes",
+            "Value": "http://api-comprobantes-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "mb_api_url_cuentas",
+            "Value": "http://api-cuentas.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "mb_api_url_debin",
+            "Value": "http://api-debin-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "mb_api_url_dictamenes",
+            "Value": "http://api-dictamenes-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "mb_api_url_digitalizacion",
+            "Value": "http://api-digitalizacion-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "mb_api_url_inversiones",
+            "Value": "http://api-inversiones-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "mb_api_url_link",
+            "Value": "http://api-link-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "mb_api_url_moras",
+            "Value": "http://api-moras-op.microservicios-prod.svc.cluster.local:8080"
+        },
+        {
+            "Name": "mb_api_url_notificaciones",
+            "Value": "http://api-notificaciones-op.microservicios-prod.svc.cluster.local:8080"
+        }
+    ],
+    "Redeploy": false
+}

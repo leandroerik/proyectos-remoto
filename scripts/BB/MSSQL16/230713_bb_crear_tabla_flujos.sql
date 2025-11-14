@@ -1,0 +1,12 @@
+/*SQL_SERVER*/
+USE buhobank
+GO 
+
+
+IF NOT EXISTS (
+SELECT 1 FROM INFORMATION_SCHEMA.COLUMNS
+WHERE COLUMN_NAME = 'consulta_motor' AND TABLE_NAME = 'bb_flujos')
+BEGIN
+  ALTER TABLE [dbo].[bb_flujos] ADD consulta_motor BIT NOT NULL DEFAULT(1)
+END
+GO

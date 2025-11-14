@@ -1,0 +1,10 @@
+{
+    "Variables": [{
+            "Name": "mb_configuracion_limite_transferencia_dolares",
+            "Value": "9500"
+        }
+    ],
+    "Redeploy": false
+}
+
+

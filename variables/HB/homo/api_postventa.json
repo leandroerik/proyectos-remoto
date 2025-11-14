@@ -1,0 +1,8 @@
+{
+    "Variables": [{
+            "Name": "hb_api_url_postventa",
+            "Value": "https://bhhqwwbuec67.bh.com.ar:452"
+        }
+    ],
+    "Redeploy": false
+}

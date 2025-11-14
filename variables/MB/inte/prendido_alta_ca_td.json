@@ -1,0 +1,10 @@
+{
+    "Variables": [
+		{
+            "Name": "mb_prendido_alta_ca_td_online",
+            "Value": "true"  
+        }
+
+    ],
+    "Redeploy": false
+}

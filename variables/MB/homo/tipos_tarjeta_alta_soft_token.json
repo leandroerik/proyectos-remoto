@@ -1,0 +1,8 @@
+{
+    "Variables": [{
+            "Name": "mb_tipo_tarjeta_alta_soft_token",
+            "Value": "P_DP_PU_PZ_DU"
+        }
+    ],
+    "Redeploy": false
+}

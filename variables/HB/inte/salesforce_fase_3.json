@@ -1,0 +1,49 @@
+{
+    "Variables": [
+        {
+            "Name": "hb_prendido_salesforce_cobis",
+            "Value": "8824120_7526300_420417_1803121_8861680_8964883_8965662_8351078"
+        },
+        {
+            "Name": "hb_salesforce_alta_prestamo",
+            "Value": "APIEvent-5ffec8be-2d21-8861x-be91-f87e9d48e6c6"
+        },
+        {
+            "Name": "hb_salesforce_desembolso_adelanto",
+            "Value": "APIEvent-5d3d558d-cfac-dad3-6484-b4b1b9cd8081"
+        },
+        {
+            "Name": "hb_salesforce_transferencia_in_out",
+            "Value": "APIEvent-2758616c-dee3-794d-544b-7de7c65b3cda"
+        },
+        {
+            "Name": "hb_salesforce_suscripcion_y_rescate_fondos",
+            "Value": "APIEvent-de1a6bfc-e129-f9f7-320b-5c56e65e66f0"
+        },
+        {
+            "Name": "hb_salesforce_compra_venta_bonos_acciones",
+            "Value": "APIEvent-15dc353f-4392-c6a4-9c11-7cb139826c13"
+        },
+        {
+            "Name": "hb_salesforce_compra_venta_dolar_mep",
+            "Value": "APIEvent-9993edcd-596f-6722-0d4e-a1e0b4f7fad7"
+        },
+        {
+            "Name": "hb_salesforce_compraventa_dolar_ahorro",
+            "Value": "APIEvent-bba469a1-7c36-e48f-07de-79987c691170"
+        },
+        {
+            "Name": "hb_salesforce_orden_debin",
+            "Value": "APIEvent-dd6aaa5e-2fdd-1a43-5fdc-4c22ff2e3df5"
+        },
+        {
+            "Name": "hb_salesforce_aceptacion_debin",
+            "Value": "APIEvent-45eeafc0-ca0c-42b0-3a19-8636ca8171c7"
+        },
+        {
+            "Name": "hb_salesforce_edicion_datos_personales",
+            "Value": "APIEvent-a7599cb0-8ccd-e909-2cc1-fcc3d9f61a5e"
+        }
+    ],
+    "Redeploy": false
+}

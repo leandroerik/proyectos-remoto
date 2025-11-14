@@ -1,0 +1,8 @@
+{
+    "Variables": [{
+            "Name": "hb_prendido_beneficiario_bh_nombre_apellido",
+            "Value": "true"
+        }
+    ],
+    "Redeploy": false
+}

@@ -1,0 +1,21 @@
+{
+    "Variables": [
+		{
+			"Name": "mb_api_url_canales",
+			"Value": "http://api-canales-canales-desa.appd.bh.com.ar"
+		},
+		{
+			"Name": "mb_prendidoConsentimiento_cobis",
+			"Value": ""
+		},
+		{
+			"Name": "mb_prendidoConsentimiento",
+			"Value": "true"
+		},
+		{
+			"Name": "mb_api_url_consentimiento",
+			"Value": "https://connections.preprod.modo.com.ar/"
+		}
+    ],
+    "Redeploy": true
+}

@@ -1,0 +1,65 @@
+{
+  "Variables": [
+    {
+      "Name": "hb_prendido_modo_transaccional_nuevo_beneficiario",
+      "Value": "false"
+    },
+    {
+      "Name": "hb_prendido_modo_transaccional_nuevo_beneficiario_cobis",
+      "Value": "9040626_1983992_4373070_4605085_133366_151004"
+    },
+    {
+      "Name": "hb_prendido_modo_transaccional_venta_dolares",
+      "Value": "false"
+    },
+    {
+      "Name": "hb_prendido_modo_transaccional_venta_dolares_cobis",
+      "Value": "5329126_4373070"
+    },
+    {
+      "Name": "hb_prendido_modo_transaccional_debin",
+      "Value": "false"
+    },
+    {
+      "Name": "hb_prendido_modo_transaccional_debin_cobis",
+      "Value": "133366_1983992_1003165"
+    },
+    {
+      "Name": "hb_prendido_modo_transaccional_alta_producto",
+      "Value": "false"
+    },
+    {
+      "Name": "hb_prendido_modo_transaccional_alta_producto_cobis",
+      "Value": "9040626_3516849_3102541"
+    },
+    {
+      "Name": "hb_prendido_modo_transaccional_rescate_fondos",
+      "Value": "false"
+    },
+    {
+      "Name": "hb_prendido_modo_transaccional_rescate_fondos_cobis",
+      "Value": "9040626_3516849_298840_6727534_4373070_9040760"
+    },
+    {
+      "Name": "hb_prendido_modo_transaccional_datos_personales",
+      "Value": "false"
+    },
+    {
+      "Name": "hb_prendido_modo_transaccional_datos_personales_cobis",
+      "Value": "9040626_3516849_8119023_967477_220016_4373070"
+    },
+    {
+      "Name": "hb_prendido_modo_transaccional_cambio_usuario_clave",
+      "Value": "false"
+    },
+    {
+      "Name": "hb_prendido_modo_transaccional_cambio_usuario_clave_cobis",
+      "Value": "4373070_1983992_8778665_1003165_4707959"
+    },
+    {
+      "Name": "url_transmit",
+      "Value": "https://api.transmitsecurity.io"
+    }
+  ],
+  "Redeploy": false
+}

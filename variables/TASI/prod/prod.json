@@ -1,0 +1,86 @@
+{
+	"Variables": [
+     {
+		"Name": "tas_kiosco_id",
+		"Value": "TODOS"	
+	},
+	{ 
+		"Name": "backend_api_ventas_old",
+		"Accion" : "BORRAR"
+	},
+	{ 
+		"Name": "backend_api_personas_old",
+		"Accion" : "BORRAR"
+	},
+	{ 
+		"Name": "backend_api_productos_old",
+		"Accion" : "BORRAR"
+	},
+	{ 
+		"Name": "backend_api_seguridad_old",
+		"Accion" : "BORRAR"
+	},
+	{ 
+		"Name": "backend_api_tarjetascredito_old",
+		"Accion" : "BORRAR"
+	},
+	{ 
+		"Name": "backend_api_plazosfijos_old",
+		"Accion" : "BORRAR"
+	},
+	{ 
+		"Name": "backend_api_prestamos_old",
+		"Accion" : "BORRAR"
+	},
+	{ 
+		"Name": "backend_api_cuentas_old",
+		"Accion" : "BORRAR"
+	},
+	{ 
+		"Name": "backend_api_inversiones_old",
+		"Accion" : "BORRAR"
+	},
+	{ 
+		"Name": "backend_api_notificaciones_old",
+		"Accion" : "BORRAR"
+	},
+	{ 
+		"Name": "backend_api_tas_old",
+		"Accion" : "BORRAR"
+	},
+	{ 
+		"Name": "backend_api_servicios_old",
+		"Accion" : "BORRAR"
+	},
+	{ 
+		"Name": "backend_api_scheduler_old",
+		"Accion" : "BORRAR"
+	},
+	{ 
+		"Name": "backend_api_cheques_old",
+		"Accion" : "BORRAR"
+	},
+	{ 
+		"Name": "backend_api_tarjetasdebito_old",
+		"Accion" : "BORRAR"
+	},
+	{ 
+		"Name": "backend_api_simuladores_old",
+		"Accion" : "BORRAR"
+	},
+	{ 
+		"Name": "backend_api_paquetes_old",
+		"Accion" : "BORRAR"
+	},
+	{ 
+		"Name": "backend_api_catalogo_old",
+		"Accion" : "BORRAR"
+	},
+	{ 
+		"Name": "backend_api_cajasseguridad_old",
+		"Accion" : "BORRAR"
+	}
+  ],
+  "Redeploy": false
+}
+

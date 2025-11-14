@@ -1,0 +1,8 @@
+{
+    "Variables": [{
+            "Name": "mb_validar_sesion_duplicada",
+            "Value": "true" 
+        }
+    ],
+    "Redeploy": false
+}

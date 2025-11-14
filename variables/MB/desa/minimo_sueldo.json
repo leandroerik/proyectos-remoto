@@ -1,0 +1,8 @@
+{
+    "Variables": [{
+            "Name": "mb_minimo_sueldo",
+            "Value": "3866400"
+        }
+    ],
+    "Redeploy": false
+}

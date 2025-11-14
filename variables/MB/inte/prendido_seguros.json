@@ -1,0 +1,116 @@
+{
+  "Variables": [
+    {
+      "Name": "mb_prendido_seguro_bienes_moviles_ios",
+      "Value": "true"
+    }
+  ,
+    {
+      "Name": "mb_prendido_seguro_bienes_moviles_android",
+      "Value": "true"
+    }
+  ,
+    {
+      "Name": "mb_prendido_seguro_movilidad_ios",
+      "Value": "true"
+    }
+  ,
+    {
+      "Name": "mb_prendido_seguro_movilidad_android",
+      "Value": "true"
+    }
+  ,
+    {
+      "Name": "mb_prendido_seguro_auto",
+      "Value": "true"
+    }
+  ,
+    {
+      "Name": "mb_prendido_seguro_auto_android",
+      "Value": "true"
+    }
+  ,
+    {
+      "Name": "mb_prendido_seguros",
+      "Value": "true"
+    }
+  ,
+    {
+      "Name": "mb_prendido_seguros_android",
+      "Value": "true"
+    }
+  ,
+    {
+      "Name": "mb_prendido_seguros_mascotas",
+      "Value": "true"
+    },
+    {
+      "Name": "mb_prendido_seguros_mascotas_android",
+      "Value": "true"
+    },
+    {
+      "Name": "mb_prendido_seguro_hogar_ios",
+      "Value": "true"
+    }
+  ,
+    {
+      "Name": "mb_prendido_seguro_hogar_android",
+      "Value": "true"
+    }
+  ,
+    {
+      "Name": "mb_prendido_seguro_hogar_mascotas_android",
+      "Value": "true"
+    }
+  ,
+    {
+      "Name": "mb_prendido_seguro_hogar_mascotas_ios",
+      "Value": "true"
+    }
+  ,
+    {
+      "Name": "mb_prendido_seguro_ap_ios",
+      "Value": "false"
+    }
+  ,
+    {
+      "Name": "mb_prendido_seguro_ap_android",
+      "Value": "true"
+    },
+    {
+      "Name": "mb_prendido_seguro_salud_senior_android",
+      "Value": "true"
+    }
+  ,
+    {
+      "Name": "mb_prendido_seguro_salud_senior_ios",
+      "Value": "false"
+    }
+  ,
+    {
+      "Name": "mb_prendido_seguro_caucion_android",
+      "Value": "true"
+    },
+    {
+      "Name": "mb_prendido_seguro_caucion_ios",
+      "Value": "true"
+    },
+    {
+      "Name": "mb_prendido_seguro_ap_senior_android",
+      "Value": "false"
+    },
+    {
+      "Name": "mb_prendido_seguro_ap_senior_ios",
+      "Value": "false"
+    },
+    {
+      "Name": "mb_cantidad_cuotas_seguro_caucion",
+      "Value": "15"
+    },
+    {
+      "Name": "mb_porcetaje_descuento_seguro_caucion",
+      "Value": "15"
+    }
+  ],
+  "Redeploy": false
+}

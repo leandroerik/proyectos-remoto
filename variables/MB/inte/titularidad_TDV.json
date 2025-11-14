@@ -1,0 +1,13 @@
+{
+    "Variables": [
+         {
+            "Name": "mb_prendido_evolutivo_titularidad",
+            "Value": "true"
+        },
+		{
+            "Name": "mb_prendido_tdv_mensaje_batch",
+            "Value": "No podemos procesar tu solicitud de Tarjeta de D&eacute;bito f&iacute;sica"
+        }
+    ],
+    "Redeploy": false
+}

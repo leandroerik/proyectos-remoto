@@ -1,0 +1,4392 @@
+{
+	"info": {
+		"_postman_id": "55f4a201-17e5-48aa-8a0f-bc5fca3358fe",
+		"name": "BUHOBANK",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28405197",
+		"_collection_link": "https://buhobank.postman.co/workspace/Team-Workspace~881c2775-c71b-4d93-8835-54656b1a2d3c/collection/28405197-55f4a201-17e5-48aa-8a0f-bc5fca3358fe?action=share&creator=28405197&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "00. Aplicacion",
+			"item": [
+				{
+					"name": "/bb/api/health",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{serv-homo}}/bb/api/health",
+							"host": [
+								"{{serv-homo}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"health"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/version",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{serv-prod}}/bb/api/version",
+							"host": [
+								"{{serv-prod}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"version"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/config",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{serv-homo}}/bb/api/config",
+							"host": [
+								"{{serv-homo}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"config"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/config/vista",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{servidor}}/bb/api/config/vista?flujo=FLUJO_ONBOARDING&vista_actual=V_ELEGIR_DOM_ENVIO_00",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"config",
+								"vista"
+							],
+							"query": [
+								{
+									"key": "flujo",
+									"value": "FLUJO_ONBOARDING"
+								},
+								{
+									"key": "vista_actual",
+									"value": "V_ELEGIR_DOM_ENVIO_00"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "01. Login",
+			"item": [
+				{
+					"name": "/bb/api/sesion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idCobis\": \"-1\",\r\n\t\"cuil\": \"20392207733\",\r\n\t\"numeroDocumento\": \"39220773\",\r\n    \"secret\": \"ci38r5dsCLDKzMBYoCK2sL+foB1FdnSiziBk8gBuFyKuZ5fJvhgIM3L3BxlEtFc2NQ7y7UnXwpg2R4RpcINToA=\",\r\n    \"tokenFirebase\": \"c1_AWnYsQR2dbkziKOfMt1:APA91bHGCWXjKp72L-_yZFB6PMaqh1dh0fG-hYHzIoEJNKF0k_PBkicj4ymYybe47Dsztw6_SY--BNOBqtAf0ZSuBqhjcnLgMLYZpr44pyCM-krXEhhFqsfDTai0kxB-xbdi8_psbQP7\",\r\n    \"plataforma\": \"android\",\r\n    \"idDispositivo\": \"1234\",\r\n    \"sucursalOnboarding\": \"\",\r\n    \"latitud\": \"-34.633209228515625\",\r\n    \"longitud\": \"-58.37478969308881\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/sesion",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"sesion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/retomar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"usuarioLibertad\":false,\"cuil\":\"23000000019\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/retomarSesion",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"retomarSesion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/sesion",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "modo",
+								"value": "offline",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idCobis\": \"-1\",\r\n    \"cuil\": \"20350035053\",\r\n    \"dni\": \"35003505\",\r\n    \"idOperacionVU\": \"0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{serv-prod}}/bb/api/sesion",
+							"host": [
+								"{{serv-prod}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"sesion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/sesion/salir",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{serv-prod}}/bb/api/sesion/salir",
+							"host": [
+								"{{serv-prod}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"sesion",
+								"salir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/claveactiva",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/claveactiva",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"claveactiva"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/crearclave",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"usuario\": \"pruebaB4\",\r\n    \"clave\": \"8344\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/crearclave",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"crearclave"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroDocumento\": \"28759201\",\r\n    \"usuario\": \"pruebaB4\",\r\n    \"clave\": \"8344\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/login",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "02. Validacion",
+			"item": [
+				{
+					"name": "/bb/api/enviarotpmail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mail\": \"agbarua@hipotecariox.com.ar\",\r\n    \"codArea\": \"358\",\r\n    \"celular\": \"5146639\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/enviarotpmail",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"enviarotpmail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/guardarcontacto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"celular\":\"698318\",\"codArea\":\"2964\",\"mail\":\"vecosim@gmail.com\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/guardarcontacto",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"guardarcontacto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/validarotpmail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"otp\": \"44355\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/validarotpmail",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"validarotpmail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/enviarotpsms",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/enviarotpsms",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"enviarotpsms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/aceptartyc",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{servidor}}/bb/api/aceptartyc",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"aceptartyc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/validarotpsms",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"otp\": \"66879\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/validarotpsms",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"validarotpsms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/operacionotp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{servidor}}/bb/api/operacionotp",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"operacionotp"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "03. Persona",
+			"item": [
+				{
+					"name": "/bb/api/obtenercuil",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroDocumento\": \"29403805\",\r\n    \"sexo\": \"F\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/obtenercuil",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"obtenercuil"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/escliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cuil\": \"20392207733\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/escliente",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"escliente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/noconfirmardatos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/noconfirmardatos",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"noconfirmardatos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/guardarvucompleto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"estado\": \"0\",\r\n    \"idOperacion\": \"4470\",\r\n    \"confidence\": 0.91,\r\n    \"confidenceTotal\": 0.91887057,\r\n    \"ocr\": {\r\n        \"lastNames\": \"BARUA\",\r\n        \"gender\": \"M\",\r\n        \"birthdate\": \"1983-07-02\",\r\n        \"names\": \"ALEJANDRO GABRIEL\",\r\n        \"number\": \"39220773\",\r\n        \"extra\": {\r\n            \"additional\": \"{\\\"ExpiryDate\\\":\\\"2032-03-07\\\",\\\"BirthPlace\\\":\\\"SANTA FE\\\",\\\"Address\\\":\\\"LOS ANDES - BAHIA BLANCA - BAHIA BLANCA - BUENOS AIRES\\\",\\\"DETECTED_COUNTRY\\\":\\\"argentina\\\",\\\"OfIdent\\\":\\\"8028\\\",\\\"IssueDate\\\":\\\"2017-03-07\\\",\\\"CUIL\\\":\\\"20-39220773-3\\\",\\\"TramitNumber\\\":\\\"00482648695\\\",\\\"Nationality\\\":\\\"ARGENTINA\\\"}\",\r\n            \"mrz\": \"{\\\"ExpiryDate\\\":\\\"2032-03-07\\\",\\\"Gender\\\":\\\"M\\\",\\\"DocumentNumber\\\":\\\"39220773\\\",\\\"FullName\\\":\\\"BARUA ALEJANDRO GABRIEL\\\",\\\"BirthDate\\\":\\\"1983-07-02\\\"}\"\r\n        },\r\n        \"anomalies\": {\r\n            \"textValidationsDocumentData\": \"{\\\"BarcodeOcr\\\":\\\"0.24375\\\",\\\"BarcodeMrz\\\":\\\"0.234375\\\",\\\"DataGovernmentBarcode\\\":\\\"0.4875\\\"}\",\r\n            \"areaValidationsDocumentAnomalies\": null,\r\n            \"textValidationsTotal\": \"{\\\"Document\\\":\\\"0.46387056291103357\\\",\\\"Biometry\\\":\\\"0.45500001311302185\\\"}\",\r\n            \"areaValidations\": \"{\\\"Front_Shield\\\":\\\"0.8306459784507751\\\",\\\"Reverse_Country\\\":\\\"0.8523945808410645\\\"}\",\r\n            \"textValidationsBarcodeOcr\": null,\r\n            \"textValidationsDataGovernmentBarcode\": null,\r\n            \"textValidationsBarcodeMrz\": null,\r\n            \"textValidationsDocument\": null\r\n        }\r\n    },\r\n    \"barcode\": null,\r\n    \"confidenceDocument\": 0.9277411,\r\n    \"information\": {\r\n        \"person\": \"{\\\"person\\\":{\\\"number\\\":\\\"39220773\\\",\\\"names\\\":\\\"ALEJANDRO GABRIEL\\\",\\\"nationality\\\":\\\"ARGENTINA\\\",\\\"data\\\":{\\\"zipCode\\\":\\\"8000\\\",\\\"country\\\":\\\"ARGENTINA\\\",\\\"gender\\\":\\\"M\\\",\\\"numberStreet\\\":\\\"2345\\\",\\\"city\\\":\\\"BAHIA BLANCA\\\",\\\"municipality\\\":\\\"BAHIA BLANCA\\\",\\\"creationDate\\\":\\\"07/03/2017\\\",\\\"valid\\\":\\\"true\\\",\\\"messageOfDeath\\\":\\\"Sin Aviso de Fallecimiento\\\",\\\"province\\\":\\\"BUENOS AIRES\\\",\\\"streetAddress\\\":\\\"LOS ANDES\\\",\\\"countryBirth\\\":\\\"ARGENTINA\\\",\\\"copy\\\":\\\"B\\\",\\\"cuil\\\":\\\"20392207733\\\",\\\"floor\\\":\\\"2\\\",\\\"department\\\":\\\"A\\\",\\\"expirationDate\\\":\\\"07/03/2032\\\"},\\\"lastNames\\\":\\\"BARUA\\\",\\\"birthDate\\\":\\\"02/07/1983\\\"}}\"\r\n    },\r\n    \"identical\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/guardarvucompleto",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"guardarvucompleto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/validardatospersonales",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/validardatospersonales",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"validardatospersonales"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/validarpersona",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"scanner\":\"00255426924@BARUA@ALEJANDRO GABRIEL@M@39220773@B@30/10/1995@27/03/2029\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/validarpersona",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"validarpersona"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/guardarnacionalidad",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idNacionalidad\": \"80\",\r\n    \"idPaisNacimiento\": \"80\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/guardarnacionalidad",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"guardarnacionalidad"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/guardaradicionales",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"tipoSituacionLaboral\":\"\",\"idEstadoCivil\":\"S\",\"idSituacionLaboral\":\"1\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{serv-prod}}/bb/api/guardaradicionales",
+							"host": [
+								"{{serv-prod}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"guardaradicionales"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/guardarconyuge",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"apellido\":\"cuellar Gonzalez\",\"fechaNacimiento\":\"12/12/1977\",\"genero\":\"M\",\"nacionalidad\":\"ARMENIA\",\"nombres\":\"Carlos oscar\",\"numeroDocumento\":\"26345001\",\"paisResidencia\":\"ARGENTINA\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/guardarconyuge",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"guardarconyuge"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/guardarcobis",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/guardarcobis",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"guardarcobis"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/localizacion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"latitud\": \"\",\r\n    \"longitud\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/localizacion",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"localizacion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/sesion",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"operation_id\": \"1\",\r\n    \"operation_guid\": \"2\",\r\n    \"latitud\": \"1\",\r\n    \"longitud\": \"2\",\r\n    \"es_expuesta_politica\": false,\r\n    \"es_sujeto_obligado\": false,\r\n    \"es_fatca_ocde\": false,\r\n    \"lavado_dinero\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/sesion",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"sesion"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "04. Paquetes",
+			"item": [
+				{
+					"name": "/bb/api/ofertasNuevo",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{serv-prod}}/bb/api/ofertasNuevo",
+							"host": [
+								"{{serv-prod}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"ofertasNuevo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/standaloneVirtual",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{servidor}}/bb/api/standaloneVirtual",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"standaloneVirtual"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/elegiroferta",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ofertaElegida\": \"0\",\r\n    \"bbInversor\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{serv-prod}}/bb/api/elegiroferta",
+							"host": [
+								"{{serv-prod}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"elegiroferta"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/bbinversor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"bbinversor\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/bbinversor",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"bbinversor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/paquetes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{servidor}}/bb/api/paquetes",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"paquetes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/productos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{servidor}}/bb/api/productos",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"productos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "05. Forma de Entrega",
+			"item": [
+				{
+					"name": "/bb/api/validarformaentrega",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/validarformaentrega",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"validarformaentrega"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/guardardomlegal",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"domicilioLegal\": {\r\n        \"calle\": \"MADRID J. A\",\r\n        \"numeroCalle\": \"0000\",\r\n        \"piso\": \"00\",\r\n        \"dpto\": \"000\",\r\n        \"cp\": \"1416\",\r\n        \"ciudad\": \"FLORES\",\r\n        \"localidad\": \"CIUDAD DE BUENOS AIRES\",\r\n        \"provincia\": \"CIUDAD DE BUENOS AIRES\",\r\n        \"pais\": \"ARGENTINA\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/guardardomlegal",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"guardardomlegal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/guardarpostalalt",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"domicilioLegal\": {\r\n        \"calle\": \"MADRID J. A\",\r\n        \"numeroCalle\": \"0000\",\r\n        \"piso\": \"00\",\r\n        \"dpto\": \"000\",\r\n        \"cp\": \"1416\",\r\n        \"ciudad\": \"FLORES\",\r\n        \"localidad\": \"CIUDAD DE BUENOS AIRES\",\r\n        \"provincia\": \"CIUDAD DE BUENOS AIRES\",\r\n        \"pais\": \"ARGENTINA\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/guardarpostalalt",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"guardarpostalalt"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/formaentrega",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"idSucursal\":0,\"tipo\":\"DP\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/formaentrega",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"formaentrega"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/catalogo/provincias",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/catalogo/provincias",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"catalogo",
+								"provincias"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/catalogo/localidad",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{serv-homo}}/bb/api/catalogo/localidad?codigoPostal=1824",
+							"host": [
+								"{{serv-homo}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"catalogo",
+								"localidad"
+							],
+							"query": [
+								{
+									"key": "codigoPostal",
+									"value": "1824"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/catalogo/sucursal",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/catalogo/sucursal?idProvincia=2",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"catalogo",
+								"sucursal"
+							],
+							"query": [
+								{
+									"key": "idProvincia",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/catalogo/sucursal Copy",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/codigosareas/codigo?codigo=234",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"codigosareas",
+								"codigo"
+							],
+							"query": [
+								{
+									"key": "codigo",
+									"value": "234"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "06. Landing",
+			"item": [
+				{
+					"name": "/bb/api/landing/:numeropaquete",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/landing/ofertas/:numeropaquete",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"landing",
+								"ofertas",
+								":numeropaquete"
+							],
+							"variable": [
+								{
+									"key": "numeropaquete",
+									"value": "43"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/landing",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/landing",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"landing"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/landing/ofertas",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/landing/ofertas",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"landing",
+								"ofertas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/promos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{serv-homo}}/bb/api/promos",
+							"host": [
+								"{{serv-homo}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"promos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "07. Alta",
+			"item": [
+				{
+					"name": "/bb/api/finalizar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{serv-prod}}/bb/api/finalizar",
+							"host": [
+								"{{serv-prod}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"finalizar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/otrosProductos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/otrosProductos",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"otrosProductos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "08. Reporte",
+			"item": [
+				{
+					"name": "/bb/api/eventos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{servidor}}/bb/api/logs",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"logs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/logs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{servidor}}/bb/api/logs",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"logs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/logs/:params",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{servidor}}/bb/api/logs/:params",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"logs",
+								":params"
+							],
+							"variable": [
+								{
+									"key": "params",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/registrarevento",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"evento\": \"FRONT_ANDROID\",\r\n    \"datos\": \"selfie\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/registrarevento",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"registrarevento"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/registrareventoexterno",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"evento\": \"evento_prueba\",\r\n    \"datos\": \"datos_prueba\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/registrareventoexterno",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"registrareventoexterno"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "09. Plazo Fijo Web",
+			"item": [
+				{
+					"name": "/api/plazoFijo/configuracionBackendUnificado",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{servidor}}/api/plazoFijo/configuracionBackendUnificado",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"api",
+								"plazoFijo",
+								"configuracionBackendUnificado"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/plazoFijo/diasFeriados",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{servidor}}/api/plazoFijo/diasFeriados",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"api",
+								"plazoFijo",
+								"diasFeriados"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/plazoFijo/parametria",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{servidor}}/api/plazoFijo/parametria",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"api",
+								"plazoFijo",
+								"parametria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/plazoFijo/inicializarDatosBasicos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{servidor}}/api/plazoFijo/inicializarDatosBasicos",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"api",
+								"plazoFijo",
+								"inicializarDatosBasicos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/plazoFijo/obtenerCuil",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{servidor}}/api/plazoFijo/obtenerCuil",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"api",
+								"plazoFijo",
+								"obtenerCuil"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/plazoFijo/iniciar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"apellido\": \"MAIDANA\",\r\n    \"dni\": \"28557524\",\r\n    \"idTributario\": \"27285575244\",\r\n    \"tipo\": \"08\",\r\n    \"genero\": \"F\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/api/plazoFijo/iniciar",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"api",
+								"plazoFijo",
+								"iniciar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/plazoFijo/catalogo/pais",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{servidor}}/api/plazoFijo/catalogo/pais",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"api",
+								"plazoFijo",
+								"catalogo",
+								"pais"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/plazoFijo/catalogo/provincias",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{servidor}}/api/plazoFijo/catalogo/provincias",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"api",
+								"plazoFijo",
+								"catalogo",
+								"provincias"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/plazoFijo/situacionLaboral",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{servidor}}/api/plazoFijo/situacionLaboral",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"api",
+								"plazoFijo",
+								"situacionLaboral"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/plazoFijo/catalogo/estadosCiviles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{servidor}}/api/plazoFijo/catalogo/estadosCiviles",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"api",
+								"plazoFijo",
+								"catalogo",
+								"estadosCiviles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/plazoFijo/localidad",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{servidor}}/api/plazoFijo/localidad",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"api",
+								"plazoFijo",
+								"localidad"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/plazoFijo/verificarCBU",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{servidor}}/api/plazoFijo/verificarCBU",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"api",
+								"plazoFijo",
+								"verificarCBU"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/plazoFijo/simular",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"monto\": 1234.58,\r\n    \"plazo\": 3,\r\n    \"tipo\": \"PESOS\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/api/plazoFijo/simular",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"api",
+								"plazoFijo",
+								"simular"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/plazoFijo/constituir",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"plazoFijo\": {\r\n        \"monto\": 1234.50,\r\n        \"plazo\": 3\r\n    },\r\n    \"tipo\": \"PESOS\",\r\n    \"cuenta\": {\r\n        \"cbu\": \"123454678\"\r\n    },\r\n    \"persona\": {\r\n        \"nombre\": \"MARIA\",\r\n        \"apellido\": \"MAIDANA\",\r\n        \"sexo\": \"F\",\r\n        \"tipoIdTributario\": \"08\",\r\n        \"ejemplarDocumento\": \"A\",\r\n        \"idTributario\": \"27285575244\",\r\n        \"idSituacionLaboral\": \"1\",\r\n        \"idPaisNacimiento\": \"80\",\r\n        \"idNacionalidad\": \"80\",\r\n        \"ciudadNacimiento\": \"CIUDAD DE BUENOS AIRES\",\r\n        \"fechaNacimiento\": \"08/08/1987\",\r\n        \"estadoCivil\": \"S\",\r\n        \"cantidadNupcias\": 0,\r\n        \"email\": \"menavarro@hipotecario.com.ar\",\r\n        \"direccion\": [\r\n            {\r\n                \"calle\": \"LAMADRID\",\r\n                \"numero\": \"1234\",\r\n                \"depto\": \"1\",\r\n                \"piso\": \"PB\",\r\n                \"provinciaId\": \"1\",\r\n                \"localidadId\": \"1\",\r\n                \"codigoPostal\": \"1017\"\r\n            }\r\n        ],\r\n        \"telefono\": [\r\n            {\r\n                \"telCelCarac\": \"6259\",\r\n                \"telCelDdn\": \"011\",\r\n                \"telCelNumero\": \"7835\"\r\n            }\r\n        ],\r\n        \"datosConyugue\": {\r\n            \"nombre\": \"\",\r\n            \"apellido\": \"\",\r\n            \"sexo\": \"\",\r\n            \"tipoIdTributario\": \"\",\r\n            \"ejemplarDocumento\": \"\",\r\n            \"idTributario\": \"\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/api/plazoFijo/constituir",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"api",
+								"plazoFijo",
+								"constituir"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "10. Archivos",
+			"item": [
+				{
+					"name": "/bb/api/guardarDocumentacion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"\",\r\n    \"cuil\": \"\",\r\n    \"typeFile\": \"\",\r\n    \"file\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/guardarDocumentacion",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"guardarDocumentacion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/consultarDocumentacion",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"\",\r\n    \"cuil\": \"\",\r\n    \"typeFile\": \"\",\r\n    \"file\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/consultarDocumentacion?idDocumentacion",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"consultarDocumentacion"
+							],
+							"query": [
+								{
+									"key": "idDocumentacion",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "11. Test EPs",
+			"item": [
+				{
+					"name": "/bb/api/esInformado",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dni\": \"10050096\",\r\n    \"apellido\": \"HEREDIA\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{serv-homo}}/bb/api/esInformado",
+							"host": [
+								"{{serv-homo}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"esInformado"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/esPasibleDeCredito",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dni\": \"42000998\",\r\n    \"idTributario\": \"20420009985\",\r\n    \"tipoTributario\": \"08\",\r\n    \"genero\": \"M\",\r\n    \"tipoDocumento\": \"01\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/esPasibleDeCredito",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"esPasibleDeCredito"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/estaEnHorario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{serv-homo}}/bb/api/estaEnHorario",
+							"host": [
+								"{{serv-homo}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"estaEnHorario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/finalizar2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{servidor}}/bb/api/finalizar2",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"finalizar2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "12. Contenido",
+			"item": [
+				{
+					"name": "/bb/api/promos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tipo\": \"promolanding\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{serv-homo}}/bb/api/promos",
+							"host": [
+								"{{serv-homo}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"promos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/contenido/dinamico",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{serv-prod}}/bb/api/contenido/dinamico?tipo=landing_promociones&flujo=FLUJO_ONBOARDING&cache=false",
+							"host": [
+								"{{serv-prod}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"contenido",
+								"dinamico"
+							],
+							"query": [
+								{
+									"key": "tipo",
+									"value": "landing_promociones"
+								},
+								{
+									"key": "flujo",
+									"value": "FLUJO_ONBOARDING"
+								},
+								{
+									"key": "cache",
+									"value": "false"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/contenidofinalizar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{servidor}}/bb/api/contenidofinalizar",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"contenidofinalizar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "13. Test y QA",
+			"item": [
+				{
+					"name": "/bb/api/qa/test",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/qa/test",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"qa",
+								"test"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/obtenerguardarvucompleto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cuil\": \"20392207733\",\r\n    \"address\": {\r\n        \"zipCode\": \"8000\",\r\n        \"country\": \"ARGENTINA\",\r\n        \"numberStreet\": \"2345\",\r\n        \"city\": \"BAHIA BLANCA\",\r\n        \"municipality\": \"BAHIA BLANCA\",\r\n        \"province\": \"BUENOS AIRES\",\r\n        \"streetAddress\": \"LOS ANDES\",\r\n        \"floor\": \"2\",\r\n        \"department\": \"A\"\r\n    },\r\n    \"birthdate\": \"1983-07-02\",\r\n    \"birthPlace\": \"SANTA FE\",\r\n    \"nationality\": \"ARGENTINA\",\r\n    \"identical\": true,\r\n    \"ocr\": true,\r\n    \"information\": true,\r\n    \"informationCuil\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/obtenerguardarvucompleto",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"obtenerguardarvucompleto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/testobteneroferta",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"cuil\": \"27359086828\",\r\n    \"finalizar\": true,\r\n    \"cerrarSesion\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/testobtenerOferta",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"testobtenerOferta"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/simularVU",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cuil\": \"23347485314\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/simularVU",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"simularVU"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/qa/limpiar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{servidor}}/bb/api/qa/limpiar?cuil=20392207733",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"qa",
+								"limpiar"
+							],
+							"query": [
+								{
+									"key": "cuil",
+									"value": "20392207733"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/qa/limpiar/usuario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{servidor}}/bb/api/qa/limpiar/usuario?cuil=27313297476",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"qa",
+								"limpiar",
+								"usuario"
+							],
+							"query": [
+								{
+									"key": "cuil",
+									"value": "27313297476"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/qa/limpiar/retomarsesion",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{servidor}}/bb/api/qa/limpiar/retomarsesion?cuil=27313297476",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"qa",
+								"limpiar",
+								"retomarsesion"
+							],
+							"query": [
+								{
+									"key": "cuil",
+									"value": "27313297476"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/qa/limpiar/otp",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{servidor}}/bb/api/qa/limpiar/otp?cuil=27313297476",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"qa",
+								"limpiar",
+								"otp"
+							],
+							"query": [
+								{
+									"key": "cuil",
+									"value": "27313297476"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/qa/limpiar/tyc",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{servidor}}/bb/api/qa/limpiar/tyc?cuil=27313297476",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"qa",
+								"limpiar",
+								"tyc"
+							],
+							"query": [
+								{
+									"key": "cuil",
+									"value": "27313297476"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/qa/limpiar/clave",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{servidor}}/bb/api/qa/limpiar/clave?cuil=27261215506",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"qa",
+								"limpiar",
+								"clave"
+							],
+							"query": [
+								{
+									"key": "cuil",
+									"value": "27261215506"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/qa/cambiaroferta",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{servidor}}/bb/api/qa/cambiaroferta?cuil=20392207733&nro_paquete=41",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"qa",
+								"cambiaroferta"
+							],
+							"query": [
+								{
+									"key": "cuil",
+									"value": "20392207733"
+								},
+								{
+									"key": "nro_paquete",
+									"value": "41"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/qa/persona",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{servidor}}/bb/api/qa/persona?cuil=20392207733",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"qa",
+								"persona"
+							],
+							"query": [
+								{
+									"key": "cuil",
+									"value": "20392207733"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/qa/sesion",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{servidor}}/bb/api/qa/sesion?cuil=20392207733",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"qa",
+								"sesion"
+							],
+							"query": [
+								{
+									"key": "cuil",
+									"value": "20392207733"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/qa/usuario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{servidor}}/bb/api/qa/usuario?cuil=20392207733",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"qa",
+								"usuario"
+							],
+							"query": [
+								{
+									"key": "cuil",
+									"value": "20392207733"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/qa/info/paquetes",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Token-JWT",
+								"value": "{{token_jwt}}",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{serv-prod}}/bb/api/qa/info/paquetes?numero_paquete=41",
+							"host": [
+								"{{serv-prod}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"qa",
+								"info",
+								"paquetes"
+							],
+							"query": [
+								{
+									"key": "numero_paquete",
+									"value": "41"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/qa/usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cuil\": \"20392207733\",\r\n    \"ejecutar_motor\": false,\r\n    \"oferta_motor\": \"0\",\r\n    \"es_virtual\": false,\r\n    \"finalizar\": false,\r\n    \"habilitado\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/qa/usuario",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"qa",
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/qa/usuario",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/qa/usuario?id=2",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"qa",
+								"usuario"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "14. Renaper",
+			"item": [
+				{
+					"name": "/bb/api/serviciorenaper",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"scanner\": \"00602062262@MORUA@NANCY NOEMI@F@29403805@B@25/10/1975@02/08/2019@277\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{serv-desa}}/bb/api/serviciorenaper",
+							"host": [
+								"{{serv-desa}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"serviciorenaper"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/renaper",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cuil\": \"27317510271\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{serv-desa}}/bb/api/renaper",
+							"host": [
+								"{{serv-desa}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"renaper"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "16. Remarketing Manual",
+			"item": [
+				{
+					"name": "/bb/api/batch",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Token-JWT",
+								"value": "{{token_jwt}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{serv-prod}}/bb/api/batch",
+							"host": [
+								"{{serv-prod}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"batch"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/sesiones",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Token-JWT",
+								"value": "{{token_jwt}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{serv-prod}}/bb/api/sesiones?cuil=27241845384&full=true",
+							"host": [
+								"{{serv-prod}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"sesiones"
+							],
+							"query": [
+								{
+									"key": "cuil",
+									"value": "27241845384"
+								},
+								{
+									"key": "full",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/rm/retomarsesion",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token-JWT",
+								"value": "{{token_jwt}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token_sesion\": \"4a95e1a5-75f1-4120-b668-4831495b19fe\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{serv-prod}}/bb/api/rm/retomarsesion",
+							"host": [
+								"{{serv-prod}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"rm",
+								"retomarsesion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/registros",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Token-JWT",
+								"value": "{{token_jwt}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{serv-desa}}/bb/api/registros?cuil=20392207733&fechaDesde=2023-03-15&fechaHasta&evento=BB_ERROR_PROCESO_BATCH",
+							"host": [
+								"{{serv-desa}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"registros"
+							],
+							"query": [
+								{
+									"key": "cuil",
+									"value": "20392207733"
+								},
+								{
+									"key": "fechaDesde",
+									"value": "2023-03-15"
+								},
+								{
+									"key": "fechaHasta",
+									"value": null
+								},
+								{
+									"key": "evento",
+									"value": "BB_ERROR_PROCESO_BATCH"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/registros/reporte",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Token-JWT",
+								"value": "{{token_jwt}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{serv-desa}}/bb/api/registros/reporte?fechaDesde=2023-03-15&fechaHasta",
+							"host": [
+								"{{serv-desa}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"registros",
+								"reporte"
+							],
+							"query": [
+								{
+									"key": "fechaDesde",
+									"value": "2023-03-15"
+								},
+								{
+									"key": "fechaHasta",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/registros/reporte/periodico",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Token-JWT",
+								"value": "{{token_jwt}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/registros/reporte/periodico?fechaDesde=2023-04-01&evento=BB_FINALIZAR_OK",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"registros",
+								"reporte",
+								"periodico"
+							],
+							"query": [
+								{
+									"key": "fechaDesde",
+									"value": "2023-04-01"
+								},
+								{
+									"key": "fechaHasta",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "evento",
+									"value": "BB_FINALIZAR_OK"
+								},
+								{
+									"key": "esBatch",
+									"value": "false",
+									"disabled": true
+								},
+								{
+									"key": "filtrarAltas",
+									"value": "true",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/sesiones/standby",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Token-JWT",
+								"value": "{{token_jwt}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{serv-prod}}/bb/api/sesiones/standby?fechaDesde=2023-04-01",
+							"host": [
+								"{{serv-prod}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"sesiones",
+								"standby"
+							],
+							"query": [
+								{
+									"key": "estado",
+									"value": "CONTROLAR",
+									"disabled": true
+								},
+								{
+									"key": "fechaDesde",
+									"value": "2023-04-01"
+								},
+								{
+									"key": "fechaHasta",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/sesiones/standby/reporte",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Token-JWT",
+								"value": "{{token_jwt}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{serv-prod}}/bb/api/sesiones/standby/reporte?fechaDesde=2023-04-01&fechaHasta=2023-06-18",
+							"host": [
+								"{{serv-prod}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"sesiones",
+								"standby",
+								"reporte"
+							],
+							"query": [
+								{
+									"key": "fechaDesde",
+									"value": "2023-04-01"
+								},
+								{
+									"key": "fechaHasta",
+									"value": "2023-06-18"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/sesiones/standby/estados",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Token-JWT",
+								"value": "{{token_jwt}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/sesiones/standby/estados",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"sesiones",
+								"standby",
+								"estados"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/marcarbatch",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token-JWT",
+								"value": "{{token_jwt}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token_sesion\": \"8671a13e-a1f0-46a9-921f-d8b53a8ae3b\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{serv-prod}}/bb/api/marcarbatch",
+							"host": [
+								"{{serv-prod}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"marcarbatch"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/standby",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token-JWT",
+								"value": "{{token_jwt}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cuil\": \"20454086229\",\r\n    \"estado\": \"BORRAR_CONTROL\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{serv-prod}}/bb/api/standby",
+							"host": [
+								"{{serv-prod}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"standby"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/push",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token-JWT",
+								"value": "{{token_jwt}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cuil\": \"27278110821\",\r\n    \"codigoAlerta\": \"FVUPRIMER\",\r\n    \"titulo\": \"\",\r\n    \"texto\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{serv-homo}}/bb/api/push",
+							"host": [
+								"{{serv-homo}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"push"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/finalizarmanual",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token-JWT",
+								"value": "{{token_jwt}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"tokenSesion\": \"qtKaRMTja1a80JZJdcUfAfY11STXWgIog81YDEC66xKiSx4TIDKUXLneuHTxJvRCzTw9Kb9Aws1CoIPEIPU7pQ==\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{serv-prod}}/bb/api/finalizarmanual",
+							"host": [
+								"{{serv-prod}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"finalizarmanual"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/saltarvu",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token-JWT",
+								"value": "{{token_jwt}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"usuarioVU\": \"20073729646\",\r\n   \"numeroTramite\": \"00354284431\",\r\n   \"sexo\": \"M\",\r\n   \"enviarAlerta\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{serv-prod}}/bb/api/saltarvu",
+							"host": [
+								"{{serv-prod}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"saltarvu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/datosvu",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Token-JWT",
+								"value": "{{token_jwt}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/datosvu?cuil=27278110821",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"datosvu"
+							],
+							"query": [
+								{
+									"key": "cuil",
+									"value": "27278110821"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/altaSoftToken",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Token-JWT",
+								"value": "{{token_jwt}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{serv-desa}}/bb/api/altaSoftToken?token",
+							"host": [
+								"{{serv-desa}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"altaSoftToken"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/rm/ejecutarmotor",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token-JWT",
+								"value": "{{token_jwt}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cuil\": \"20392207733\",\r\n    \"ejemplar\": \"B\",\r\n    \"genero\": \"M\",\r\n    \"apellido\": \"BARUA\",\r\n    \"nombres\": \"ALEJANDRO GABRIEL\",\r\n    \"tipo_id_tributario\": \"08\",\r\n    \"fecha_nacimiento\": \"1995-10-30\",\r\n    \"mail\": \"ale@gmail.com\",\r\n    \"cod_area_telefono\": \"11\",\r\n    \"numero_telefono\": \"28421685\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/rm/ejecutarmotor",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"rm",
+								"ejecutarmotor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/rm/estados",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token-JWT",
+								"value": "{{token_jwt}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"cuils\": [\r\n       \"20392207733\",\r\n       \"20392207733\"\r\n   ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/rm/estados",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"rm",
+								"estados"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "17. Parametrias",
+			"item": [
+				{
+					"name": "contenido dinamico",
+					"item": [
+						{
+							"name": "plantillas",
+							"item": [
+								{
+									"name": "/bb/api/config/contenido/dinamico/plantilla",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Token-JWT",
+												"value": "{{token_jwt}}",
+												"type": "default"
+											}
+										],
+										"url": {
+											"raw": "{{serv-prod}}/bb/api/config/contenido/dinamico/plantilla",
+											"host": [
+												"{{serv-prod}}"
+											],
+											"path": [
+												"bb",
+												"api",
+												"config",
+												"contenido",
+												"dinamico",
+												"plantilla"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "24",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/bb/api/config/contenido/dinamico/plantilla",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Token-JWT",
+												"value": "{{token_jwt}}",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id\": 18,\r\n    \"plantilla\": \"P_LAN_PROMOS_LIBERTAD\",\r\n    \"subtipo\": \"\",\r\n    \"imagen\": \"https://www.hipotecario.com.ar/media/buhobank/logos/Logos_ColorShop_OK.png\",\r\n    \"titulo\": \"15% OFF y 3 cuotas sin interés\",\r\n    \"texto\": \"Lunes a viernes con tu tarjeta de crédito\",\r\n    \"texto_legales\": \"Sin tope de devolución.\",\r\n    \"habilitado\": true\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{serv-prod}}/bb/api/config/contenido/dinamico/plantilla",
+											"host": [
+												"{{serv-prod}}"
+											],
+											"path": [
+												"bb",
+												"api",
+												"config",
+												"contenido",
+												"dinamico",
+												"plantilla"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/bb/api/config/contenido/dinamico/plantilla",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id\": 1\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{servidor}}/bb/api/config/contenido/dinamico/plantilla",
+											"host": [
+												"{{servidor}}"
+											],
+											"path": [
+												"bb",
+												"api",
+												"config",
+												"contenido",
+												"dinamico",
+												"plantilla"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/bb/api/config/contenido/dinamico/plantilla",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Token-JWT",
+												"value": "{{token_jwt}}",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id\": 8,\r\n    \"plantilla\": \"P_LAN_PROMOS_ONBOARDING\",\r\n    \"subtipo\": \"\",\r\n    \"imagen\": \"https://www.hipotecario.com.ar/media/buhobank/logos/Logos_Jumbo-Vea-Modo.png\",\r\n    \"titulo\": \"25% de descuento\",\r\n    \"texto\": \"Todos los martes con tarjeta de débito y crédito en un pago\",\r\n    \"texto_legales\": \"Tope de reintegro mensual: $2.500. Exclusivo en tiendas físicas\",\r\n    \"habilitado\": true\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{serv-prod}}/bb/api/config/contenido/dinamico/plantilla",
+											"host": [
+												"{{serv-prod}}"
+											],
+											"path": [
+												"bb",
+												"api",
+												"config",
+												"contenido",
+												"dinamico",
+												"plantilla"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "/bb/api/config/contenido/dinamico",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Token-JWT",
+										"value": "{{token_jwt}}",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "{{serv-prod}}/bb/api/config/contenido/dinamico",
+									"host": [
+										"{{serv-prod}}"
+									],
+									"path": [
+										"bb",
+										"api",
+										"config",
+										"contenido",
+										"dinamico"
+									],
+									"query": [
+										{
+											"key": "tipo",
+											"value": "beneficiobh",
+											"disabled": true
+										},
+										{
+											"key": "flujo",
+											"value": "FLUJO_ONBOARDING",
+											"disabled": true
+										},
+										{
+											"key": "plantilla",
+											"value": "P_BENEFICIOS_ONBOARDING_QA",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/bb/api/config/contenido/dinamico",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"flujo\": \"FLUJO_ONBOARDING\",\r\n    \"tipo\": \"beneficiobh\",\r\n    \"plantilla\": \"P_BENEFICIOS_ONBOARDING\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{servidor}}/bb/api/config/contenido/dinamico",
+									"host": [
+										"{{servidor}}"
+									],
+									"path": [
+										"bb",
+										"api",
+										"config",
+										"contenido",
+										"dinamico"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "/bb/api/config/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"usuario\": \"bbadmin\",\r\n    \"clave\": \"bbadmin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{serv-prod}}/bb/api/config/login",
+							"host": [
+								"{{serv-prod}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"config",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/config/parametrias",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Token-JWT",
+								"value": "{{token_jwt}}",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{serv-prod}}/bb/api/config/parametrias",
+							"host": [
+								"{{serv-prod}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"config",
+								"parametrias"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/config/parametrias",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Token-JWT",
+								"value": "{{token_jwt}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 14,\r\n    \"valor\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{serv-prod}}/bb/api/config/parametrias",
+							"host": [
+								"{{serv-prod}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"config",
+								"parametrias"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/config/sucursales",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Token-JWT",
+								"value": "{{token_jwt}}",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{serv-prod}}/bb/api/config/sucursales",
+							"host": [
+								"{{serv-prod}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"config",
+								"sucursales"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/config/sucursales",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Token-JWT",
+								"value": "{{token_jwt}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 34,\r\n    \"nombre\": \"NYP_LANDING\",\r\n    \"url_qr\": \"https://buhobanklanding.page.link/NYP_LANDING\",\r\n    \"flujo\": \"FLUJO_ONBOARDING\",\r\n    \"habilitado\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{serv-prod}}/bb/api/config/sucursales",
+							"host": [
+								"{{serv-prod}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"config",
+								"sucursales"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/config/contenido",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Token-JWT",
+								"value": "{{token_jwt}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/config/contenido?nombreOferta=BUHO_INICIA&flujo=FLUJO_ONBOARDING",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"config",
+								"contenido"
+							],
+							"query": [
+								{
+									"key": "nombreOferta",
+									"value": "BUHO_INICIA"
+								},
+								{
+									"key": "flujo",
+									"value": "FLUJO_ONBOARDING"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/contenido/finalizar",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Token-JWT",
+								"value": "{{token_jwt}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{serv-homo}}/bb/api/contenido/finalizar?nombreOferta=TARJETA_VIRTUAL&flujo=FLUJO_ONBOARDING&esBatch=true&tieneClaveActiva=false",
+							"host": [
+								"{{serv-homo}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"contenido",
+								"finalizar"
+							],
+							"query": [
+								{
+									"key": "nombreOferta",
+									"value": "TARJETA_VIRTUAL"
+								},
+								{
+									"key": "flujo",
+									"value": "FLUJO_ONBOARDING"
+								},
+								{
+									"key": "esBatch",
+									"value": "true"
+								},
+								{
+									"key": "tieneClaveActiva",
+									"value": "false"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/config/contenido/vistas",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Token-JWT",
+								"value": "{{token_jwt}}",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{serv-prod}}/bb/api/config/contenido/vistas",
+							"host": [
+								"{{serv-prod}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"config",
+								"contenido",
+								"vistas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/config/contenido/vistas/habilitar",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Token-JWT",
+								"value": "{{token_jwt}}",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{serv-prod}}/bb/api/config/contenido/vistas/habilitar",
+							"host": [
+								"{{serv-prod}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"config",
+								"contenido",
+								"vistas",
+								"habilitar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/config/contenido/vistas",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Token-JWT",
+								"value": "{{token_jwt}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"id\": 24,\r\n    \"habilitado\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{serv-homo}}/bb/api/config/contenido/vistas",
+							"host": [
+								"{{serv-homo}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"config",
+								"contenido",
+								"vistas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/config/contenido/flujo",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Token-JWT",
+								"value": "{{token_jwt}}",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{servidor}}/bb/api/config/contenido/flujo",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"config",
+								"contenido",
+								"flujo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/bb/api/config/contenido/flujo",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Token-JWT",
+								"value": "{{token_jwt}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"color_secundario\": \"#F37320\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{servidor}}/bb/api/config/contenido/flujo",
+							"host": [
+								"{{servidor}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"config",
+								"contenido",
+								"flujo"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "18. Chatbot",
+			"item": [
+				{
+					"name": "/bb/api/remarketing/chatbot",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Token-JWT",
+								"value": "{{token_jwt}}",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{serv-prod}}/bb/api/remarketing/chatbot?actualizar_historico=false",
+							"host": [
+								"{{serv-prod}}"
+							],
+							"path": [
+								"bb",
+								"api",
+								"remarketing",
+								"chatbot"
+							],
+							"query": [
+								{
+									"key": "actualizar_historico",
+									"value": "false"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "token_jwt",
+			"value": "eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2ODg3MzE4NDQsInN1YiI6ImJiYWRtaW4iLCJleHAiOjE2ODg3NDk4NDR9.56TUfxsur5Y2BXmqdAUdDGxDT8eoTWM_roZRadMG2M4",
+			"type": "default"
+		},
+		{
+			"key": "servidor",
+			"value": "http://localhost:8080",
+			"type": "string"
+		},
+		{
+			"key": "local",
+			"value": "http://localhost:8080",
+			"type": "string"
+		},
+		{
+			"key": "serv-desa",
+			"value": "https://backend-unificado-canales-desa.appd.bh.com.ar",
+			"type": "string"
+		},
+		{
+			"key": "serv-homo",
+			"value": "https://backend-unificado-canales-homo.appd.bh.com.ar",
+			"type": "string"
+		},
+		{
+			"key": "serv-prod",
+			"value": "https://backend.hipotecario.com.ar",
+			"type": "default"
+		},
+		{
+			"key": "api-ventas",
+			"value": "https://homoventasapi/BH.ApiVentas.WS",
+			"type": "string"
+		},
+		{
+			"key": "api-paquetes",
+			"value": "http://api-paquetes-microservicios-homo.appd.bh.com.ar",
+			"type": "string"
+		},
+		{
+			"key": "api-personas",
+			"value": "https://api-personas-microservicios-homo.appd.bh.com.ar",
+			"type": "string"
+		},
+		{
+			"key": "cuilOperador",
+			"value": "27317247678",
+			"type": "string"
+		},
+		{
+			"key": "idCobisOperador",
+			"value": "8155776",
+			"type": "string"
+		},
+		{
+			"key": "letraTC",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "embozado",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "idTarjetaCredito",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "idSolicitud",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "nemonicoPaquetes",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "canal",
+			"value": "BB",
+			"type": "string"
+		},
+		{
+			"key": "usuario",
+			"value": "ESACCS",
+			"type": "string"
+		},
+		{
+			"key": "subCanal",
+			"value": "1",
+			"type": "string"
+		},
+		{
+			"key": "idProceso",
+			"value": "0",
+			"type": "string"
+		},
+		{
+			"key": "canalVenta",
+			"value": "25",
+			"type": "string"
+		},
+		{
+			"key": "fechaInicio",
+			"value": "2022-04-25T00:00:00",
+			"type": "string"
+		},
+		{
+			"key": "idProductoFrontEndTC",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "productoTC",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "carteraGrupoTC",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "modeloLiquidacionTC",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "afinidadTC",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "distribucionTC",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "embozadoTC",
+			"value": ""
+		},
+		{
+			"key": "idPaquete",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "apiVU",
+			"value": "https://onboardingservice-desa.hipotecario.com.ar/vu-onboarding-rest/onboarding",
+			"type": "string"
+		},
+		{
+			"key": "apiKeyVU",
+			"value": "c7811548-3b26-4cfa-b112-41e57ff37487",
+			"type": "string"
+		},
+		{
+			"key": "apiKeyPrivateVU",
+			"value": "bb86030a-2993-4417-8faa-772ee6e7293c",
+			"type": "string"
+		},
+		{
+			"key": "idOperacionVU",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "dateOfIssueVU",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "dateOfExpiryVU",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "streetVU",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "cityVU",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "stateVU",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "zipCodeVU",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "countryVU",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "namesVU",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "lastNamesVU",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "numberVU",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "birthDateVU",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "genderVU",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "xmlEntrada",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "apiKeyVU2",
+			"value": "03b47ea7-0234-4c80-8114-5e226a948421",
+			"type": "string"
+		},
+		{
+			"key": "apiKeyPrivateVU2",
+			"value": "354d4e0c-d35a-480a-8dae-a5bfd28af688",
+			"type": "string"
+		},
+		{
+			"key": "apiVUprod",
+			"value": "https://onboardingservice.hipotecario.com.ar/vu-onboarding-rest/onboarding",
+			"type": "default"
+		}
+	]
+}

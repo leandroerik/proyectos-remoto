@@ -1,0 +1,17 @@
+{
+    "Variables": [
+		{
+            "Name": "hb_prendido_pausado_tc",
+            "Value": "true"  
+        },
+		{
+            "Name": "hb_prendido_pausado_tc_cobis",
+            "Value": "0123456789"  
+        },
+		{
+            "Name": "hb_cantidad_digitos_bin_tarjeta_credito",
+            "Value": "8"  
+        }
+    ],
+    "Redeploy": false
+}

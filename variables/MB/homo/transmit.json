@@ -1,0 +1,13 @@
+{
+    "Variables": [
+		{
+            "Name": "mb_prendido_migracion_transmit",
+            "Value": "true"   
+        },
+		{
+            "Name": "mb_cantidad_dias_reintento_transmit",
+            "Value": "3"   
+        }          
+    ],
+    "Redeploy": false
+}

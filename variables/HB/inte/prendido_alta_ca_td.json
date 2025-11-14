@@ -1,0 +1,13 @@
+{
+    "Variables": [
+		{
+            "Name": "hb_prendido_alta_ca_td_online",
+            "Value": "true"  
+        },
+		{
+            "Name": "hb_prendido_ley_7105_7106",
+            "Value": "false"  
+        }
+    ],
+    "Redeploy": false
+}

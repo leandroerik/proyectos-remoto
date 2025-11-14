@@ -1,0 +1,16 @@
+{
+    "Variables": [
+		{
+			"Name": "hb_prendido_fondos_fuera_de_horario_v2",
+			"Value": "false"
+		},{
+			"Name": "hb_prendido_fondos_fuera_de_horario_v2_cobis",
+			"Value": "4766510_5001188_3633092_6860246"
+		},
+		{
+			"Name": "hb_api_url_inversiones_agenda",
+			"Value": "http://api-inversiones-microservicios-prod.ocpp.bh.com.ar"
+		}
+    ],
+    "Redeploy": false
+}

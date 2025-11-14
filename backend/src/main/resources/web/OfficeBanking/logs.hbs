@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+		<style>
+			table, th, td {
+				border: 1px solid black;
+				border-collapse: collapse;
+			};
+		</style>
+	</head>
+	<body>
+		<div class="mt-5 mx-auto" style="max-height: 750px; overflow:auto;  margin-top:20px;">
+			<table class="table table-striped">
+				<thead class="table-dark" style="position: sticky;	z-index: 10; top: 0;">
+					 <tr>
+						<th scope="col">Fecha</th>
+						<th scope="col">Empresa</th>
+						<th scope="col">Usuario</th>
+						<th scope="col">Endpoint</th>
+						<th scope="col">Evento</th>
+						<th scope="col">Datos</th>
+					</tr>
+				</thead>
+				
+				{{#.}}
+					<tr onclick="redirect({{usuario}},{{empresa}})">
+						<td>{{momento}}</td>
+						<td>{{empresa}}</td>
+						<td>{{usuario}}</td>
+						<td>{{endpoint}}</td>
+						<td>{{evento}}</td>
+						<td>{{datos}}</td>
+					</tr>
+				{{/.}}
+			</table>
+		</div>
+		
+		<script type="text/javascript">
+			function redirect(usuario, empresa) {
+				let usuarioRec = usuario ? usuario : "usuario";
+				let empresaRec = empresa ? empresa : "empresa";
+				let url = usuarioRec + "/" + empresaRec;
+				
+				window.location.href = window.location.origin;
+				window.location = "/ob/api/logs/" + url;
+			};
+			
+			function reback() {
+				window.location="";
+			};
+		</script>
+	</body>
+</html>

@@ -1,0 +1,8 @@
+{
+    "Variables": [{
+            "Name": "mb_codigos_prestamos_refinanciables",
+            "Value": "DEUCCP_PPADELANTO_PERSPSG_PERSP"
+        }
+    ],
+    "Redeploy": false
+}

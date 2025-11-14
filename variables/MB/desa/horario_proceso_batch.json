@@ -1,0 +1,14 @@
+{
+    "Variables": [
+		{
+            "Name": "mb_procesos_horaInicio",
+            "Value": "7"  
+        },
+		{
+            "Name": "mb_procesos_horaFin",
+            "Value": "22"  
+        }
+
+    ],
+    "Redeploy": false
+}

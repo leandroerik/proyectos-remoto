@@ -1,0 +1,9 @@
+{
+    "Variables": [
+        {
+            "Name": "hb_prendido_nueva_gestion",
+            "Value": "true"
+        }
+    ],
+    "Redeploy": false
+}

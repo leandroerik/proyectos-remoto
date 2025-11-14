@@ -1,0 +1,13 @@
+{
+  "Variables": [
+    {
+      "Name": "buhobank_salesforce_onboarding",
+      "Value": "APIEvent-d42bd0ab-a5c8-43a1-bc6c-e47e698a01ce"
+    },{
+      "Name": "buhobank_prendido_salesforce_onboarding",
+      "Value": "true"
+    }
+  ],
+  "Redeploy": false
+}
+

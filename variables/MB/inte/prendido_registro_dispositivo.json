@@ -1,0 +1,17 @@
+{
+    "Variables": [
+		{
+            "Name": "mb_prendido_scan_dni",
+            "Value": "false"
+        },
+		{
+            "Name": "mb_prendido_scan_dni_cobis",
+            "Value": "1234567890"
+        },
+		{
+            "Name": "mb_prendido_registro_dispositivo",
+            "Value": "true"
+        },
+    ],
+    "Redeploy": true
+}

@@ -1,0 +1,37 @@
+{
+    "Variables": [
+        {
+            "Name": "mb_prendido_salesforce_cobis",
+            "Value": "8351078_7334314_6298127_7925090_8824120_1803121_8931202_8964396_7526300_3633092_31338_2179852_8348074_8964883_8861680_8964347_432011_4766510_1597173_824085_7327619_6173256"
+        },
+        {
+            "Name": "mb_prendido_salesforce",
+            "Value": "false"
+        },
+        {
+            "Name": "mb_salesforce_agenda_beneficiario",
+            "Value": "APIEvent-d138b155-76d5-a354-174f-731b2b9388fa"
+        },
+        {
+            "Name": "mb_salesforce_login",
+            "Value": "APIEvent-d15fafe8-fdad-1030-2a3a-d20935feb950"
+        },
+        {
+            "Name": "mb_salesforce_aumento_limite",
+            "Value": "APIEvent-67c8bd28-80fa-c48b-283c-d10512dcafaf"
+        },
+        {
+            "Name": "mb_salesforce_email_biometria",
+            "Value": "APIEvent-13877328-c78e-c4f3-ebf2-598388b0ab5b"
+        },
+        {
+            "Name": "mb_salesforce_registro_dispositivo_seguro",
+            "Value": "APIEvent-a01f11ae-2f82-ae17-567c-0a260d9fd0b8"
+        },
+        {
+            "Name": "mb_salesforce_alta_soft_token",
+            "Value": "APIEvent-dad27bd8-0682-b1cb-24e4-ac69ac20ebd8"
+        }
+    ],
+    "Redeploy": false
+}

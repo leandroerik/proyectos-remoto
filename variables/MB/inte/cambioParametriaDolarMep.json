@@ -1,0 +1,23 @@
+{
+    "Variables": [{
+            "Name": "mb_dolarMep_plazo_coeficiente_calculo",
+            "Value": "CI"
+        },{
+            "Name": "mb_plazos_liquidacion_habilitados",
+            "Value": "0_24"
+        },{
+            "Name": "mb_leyenda_dolar_mep_1",
+            "Value": "La cotizaci&oacute;n <b>surge del precio del Bono AL30 en pesos</b> en el plazo de Contado Inmediato <b>y su posterior venta en d&oacute;lares en el plazo de Contado Inmediato</b>."
+        },
+        {
+            "Name": "mb_leyenda_dolar_mep_2",
+            "Value": "<b>&Oacute;rdenes</b>: <b>tendr&aacute;s que vender el Bono AL30D en el plazo de Contado Inmediato</b> para ver el dinero reflejado en tu cuenta."
+        },
+        {
+            "Name": "mb_leyenda_dolar_mep_3",
+            "Value": "<b>Record&aacute; vender tu bono contra d&oacute;lares (AL30D) en el plazo contado inmediato</b> para acceder al tipo de cambio MEP de referencia. Tener en cuenta que <b>el precio es indicativo y puede fluctuar</b> por la cotizaci&oacute;n del bono al momento de la venta"
+        }
+
+    ],
+    "Redeploy": false
+}

@@ -1,0 +1,9 @@
+{
+    "Variables": [
+        {
+            "Name": "hb_leyenda_garantia_plazo_fijo",
+            "Value": "Los dep&oacute;sitos en pesos y en moneda extranjera cuentan con la garant&iacute;a de hasta $ 25.000.000. En las operaciones a nombre de dos o m&aacute;s personas, la garant&iacute;a se prorratear&aacute; entre sus titulares. En ning&uacute;n caso, el total de la garant&iacute;a por persona y por dep&oacute;sito podr&aacute; exceder de $ 25.000.000, cualquiera sea el n&uacute;mero de cuentas y/o dep&oacute;sitos. Ley 24.485, Decreto N&deg; 540/95 y modificatorios y Com. &quot;A&quot; 2337 y sus modificatorias y complementarias. Se encuentran excluidos los captados a tasas superiores a la de referencia conforme a los l&iacute;mites establecidos por el Banco Central, los adquiridos por endoso y los efectuados por personas vinculadas a la entidad financiera."
+        }
+    ],
+    "Redeploy": false
+}

@@ -1,0 +1,8 @@
+{
+    "Variables": [{
+            "Name": "hb_prendido_profundidad_mercado",
+            "Value": "true"
+        }
+    ],
+    "Redeploy": false
+}
